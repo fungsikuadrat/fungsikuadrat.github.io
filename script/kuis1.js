@@ -15,6 +15,7 @@ let nama;
 let sekolah;
 let kelas;
 function mulaikuis(){
+    MathJax.typeset();
     let indikator=0;
     nama = document.getElementById("nama").value;
     sekolah =  document.getElementById("sekolah").value;

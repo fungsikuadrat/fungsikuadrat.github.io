@@ -135,6 +135,9 @@ p.matitle {
   height: 500px;
   width: 600px;
 }
+#bentuk{
+  width: 285px;
+}
 @media(max-width: 420px){
   .indikator {
     width: 90%;
@@ -164,5 +167,11 @@ p.matitle {
 }
 .matisi2 {
   width: 90%;
+}
+p.matitle {
+  font-size: 17px;
+}
+#bentuk{
+  width: 250px;
 }
 }
