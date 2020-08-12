@@ -161,11 +161,3 @@
     }
   }
 
-  @media(max-width: 370px){
-    .kuis11{
-        font-size: 18px;
-    }
-    .kuis12{
-        margin-right: 1%;
-    }
-  }

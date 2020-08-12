@@ -401,7 +401,7 @@ body {
 
 @media(max-width: 430px){
   .Navigasi {
-    height: 6%;
+    height: 8%;
     width: 100%;
   }
   .logo{
@@ -419,7 +419,7 @@ body {
     cursor:pointer;
   }
   .footer{
-    width: 0;
+    width: 0%;
 }
   .ataskanan{
     height: 50%;
@@ -433,14 +433,13 @@ body {
     float: none;
   }
   .apaitu{
-    font-size: 105px;
+    font-size: 80px;
   }
   .fungsi{
-    font-size: 45px;
+    font-size: 35px;
   }
   .strip{
-    margin-left: 1px;
-    width: 385px;
+    width: 285px;
     height: 80px;
   }
   .menu img{
@@ -498,9 +497,23 @@ body {
 }
 #navlat{
   height: 180px;
-  width: 85%;
+  width: 70%;
 }
 #nonav th{
   width: 140px;
-  height: 65px;}
+  height: 65px;
+}
+.lat button {
+  font-size: 17px;
+  margin-right:0px;
+  font-family:  Impact;
+}
+.val {
+  font-size: 17px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.bodyKanan input{
+  width:30px;
+}
 }
