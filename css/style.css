@@ -315,7 +315,7 @@ body {
   overflow-x: hidden;
   overflow:auto;
 }
-#lat2, #lat3, #lat4, #lat22, #lat23, #lat24{
+#lat2, #lat3, #lat4, #lat5, #lat6, #lat7, #lat8, #lat22, #lat23, #lat24{
   height: 0;
   width: 420px;
   position: absolute;
@@ -332,16 +332,16 @@ body {
   position: relative;
 }
 #navlat{
-  height: 180px;
+  height: 210px;
   width: 185px;
 }
 #nonav th{
   border: 2px solid #006A4E;
   width: 200px;
-  height: 65px;
+  height: 35px;
   cursor: pointer;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   color: #006A4E;
 }
@@ -496,12 +496,12 @@ body {
   margin-bottom: 10px;
 }
 #navlat{
-  height: 180px;
+  height: 200px;
   width: 70%;
 }
 #nonav th{
   width: 140px;
-  height: 65px;
+  height: 40px;
 }
 .lat button {
   font-size: 17px;

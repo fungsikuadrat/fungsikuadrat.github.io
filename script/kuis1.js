@@ -121,7 +121,7 @@ dat.onreadystatechange = function () {
             if(y != 0){
                 txt += "<button type='button' onclick='backk()'>Sebelumnya</button>"
             }
-            txt += "<button type='button' onclick='ragu()'>Ragu - Ragu</button>"
+            // txt += "<button type='button' onclick='ragu()'>Ragu - Ragu</button>"
             if(y != 9){
                 txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center>"
             }

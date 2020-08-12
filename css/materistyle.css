@@ -174,4 +174,16 @@ p.matitle {
 #bentuk{
   width: 250px;
 }
+.m12{
+  width: 99%;
+  font-size: 25px;
+}
+.navmat {
+
+  font-size: 12px;
+  
+}
+.navmat th{
+  width: 12px;
+}
 }

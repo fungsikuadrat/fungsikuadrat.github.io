@@ -242,10 +242,251 @@ function next5(){
 	if(skor4==3){
 		document.getElementById("nonav4").style.backgroundColor="#00FF00";
 		document.getElementById("nonav4").style.color="#006A4E";
+		document.getElementById("lat4").style.height = "0";
+		document.getElementById("lat4").style.zIndex = "0";
+		
+		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.zIndex = "1";
 	}
 	else{
 		document.getElementById("nonav4").style.backgroundColor="red";
 		document.getElementById("nonav4").style.color="white";
+		document.getElementById("lat4").style.height = "0";
+		document.getElementById("lat4").style.zIndex = "0";
+		
+		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.zIndex = "1";
+	}
+}
+function back4(){
+	let skor5=0;
+	if (document.getElementById("jwb5a").value==2 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb5b").value==5 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb5c").value==-8 ) {
+		skor5 += 1;
+	}
+	if(skor5==3){
+		document.getElementById("nonav5").style.backgroundColor="#00FF00";
+		document.getElementById("nonav5").style.color="#006A4E";
+		document.getElementById("lat5").style.height = "0";
+		document.getElementById("lat5").style.zIndex = "0";
+		
+		document.getElementById("lat4").style.height = "210px";
+		document.getElementById("lat4").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav5").style.backgroundColor="red";
+		document.getElementById("nonav5").style.color="white";
+		document.getElementById("lat5").style.height = "0";
+		document.getElementById("lat5").style.zIndex = "0";
+		
+		document.getElementById("lat4").style.height = "210px";
+		document.getElementById("lat4").style.zIndex = "1";
+	}
+}
+function next6(){
+	let skor5=0;
+	if (document.getElementById("jwb5a").value==2 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb5b").value==5 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb5c").value==-8 ) {
+		skor5 += 1;
+	}
+	if(skor5==3){
+		document.getElementById("nonav5").style.backgroundColor="#00FF00";
+		document.getElementById("nonav5").style.color="#006A4E";
+		document.getElementById("lat5").style.height = "0";
+		document.getElementById("lat5").style.zIndex = "0";
+		
+		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav5").style.backgroundColor="red";
+		document.getElementById("nonav5").style.color="white";
+		document.getElementById("lat5").style.height = "0";
+		document.getElementById("lat5").style.zIndex = "0";
+		
+		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.zIndex = "1";
+	}
+}
+function back5(){
+	let skor5=0;
+	if (document.getElementById("jwb6a").value==4 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb6b").value==2 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb6c").value==-2 ) {
+		skor5 += 1;
+	}
+	if(skor5==3){
+		document.getElementById("nonav6").style.backgroundColor="#00FF00";
+		document.getElementById("nonav6").style.color="#006A4E";
+		document.getElementById("lat6").style.height = "0";
+		document.getElementById("lat6").style.zIndex = "0";
+		
+		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav6").style.backgroundColor="red";
+		document.getElementById("nonav6").style.color="white";
+		document.getElementById("lat6").style.height = "0";
+		document.getElementById("lat6").style.zIndex = "0";
+		
+		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.zIndex = "1";
+	}
+}
+function next7(){
+	let skor6=0;
+	if (document.getElementById("jwb6a").value==4 ) {
+		skor6 += 1;
+	} 
+	if (document.getElementById("jwb6b").value==2 ) {
+		skor6 += 1;
+	} 
+	if (document.getElementById("jwb6c").value==-2 ) {
+		skor6 += 1;
+	}
+	if(skor6==3){
+		document.getElementById("nonav6").style.backgroundColor="#00FF00";
+		document.getElementById("nonav6").style.color="#006A4E";
+		document.getElementById("lat6").style.height = "0";
+		document.getElementById("lat6").style.zIndex = "0";
+		
+		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav6").style.backgroundColor="red";
+		document.getElementById("nonav6").style.color="white";
+		document.getElementById("lat6").style.height = "0";
+		document.getElementById("lat6").style.zIndex = "0";
+		
+		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.zIndex = "1";
+	}
+}
+function back6(){
+	let skor6=0;
+	if (document.getElementById("jwb7a").value==-2 ) {
+		skor6 += 1;
+	} 
+	if (document.getElementById("jwb7b").value==-1 ) {
+		skor6 += 1;
+	} 
+	if (document.getElementById("jwb7c").value==6 ) {
+		skor6 += 1;
+	}
+	if(skor6==3){
+		document.getElementById("nonav7").style.backgroundColor="#00FF00";
+		document.getElementById("nonav7").style.color="#006A4E";
+		document.getElementById("lat7").style.height = "0";
+		document.getElementById("lat7").style.zIndex = "0";
+		
+		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav7").style.backgroundColor="red";
+		document.getElementById("nonav7").style.color="white";
+		document.getElementById("lat7").style.height = "0";
+		document.getElementById("lat7").style.zIndex = "0";
+		
+		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.zIndex = "1";
+	}
+}
+function next8(){
+	let skor8=0;
+	if (document.getElementById("jwb7a").value==-2 ) {
+		skor8 += 1;
+	} 
+	if (document.getElementById("jwb7b").value==-1 ) {
+		skor8 += 1;
+	} 
+	if (document.getElementById("jwb7c").value==6 ) {
+		skor8 += 1;
+	}
+	if(skor8==3){
+		document.getElementById("nonav7").style.backgroundColor="#00FF00";
+		document.getElementById("nonav7").style.color="#006A4E";
+		document.getElementById("lat7").style.height = "0";
+		document.getElementById("lat7").style.zIndex = "0";
+		
+		document.getElementById("lat8").style.height = "210px";
+		document.getElementById("lat8").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav7").style.backgroundColor="red";
+		document.getElementById("nonav7").style.color="white";
+		document.getElementById("lat7").style.height = "0";
+		document.getElementById("lat7").style.zIndex = "0";
+		
+		document.getElementById("lat8").style.height = "210px";
+		document.getElementById("lat8").style.zIndex = "1";
+	}
+}
+function back7(){
+	let skor7=0;
+	if (document.getElementById("jwb8a").value==-2 ) {
+		skor7 += 1;
+	} 
+	if (document.getElementById("jwb8b").value==1 ) {
+		skor7 += 1;
+	} 
+	if (document.getElementById("jwb8c").value==6 ) {
+		skor7 += 1;
+	}
+	if(skor7==3){
+		document.getElementById("nonav8").style.backgroundColor="#00FF00";
+		document.getElementById("nonav8").style.color="#006A4E";
+		document.getElementById("lat8").style.height = "0";
+		document.getElementById("lat8").style.zIndex = "0";
+		
+		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.zIndex = "1";
+	}
+	else{
+		document.getElementById("nonav7").style.backgroundColor="red";
+		document.getElementById("nonav7").style.color="white";
+		document.getElementById("lat8").style.height = "0";
+		document.getElementById("lat8").style.zIndex = "0";
+		
+		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.zIndex = "1";
+	}
+}
+function next9(){
+	let skor9=0;
+	if (document.getElementById("jwb8a").value==-4 ) {
+		skor9 += 1;
+	} 
+	if (document.getElementById("jwb8b").value==1 ) {
+		skor9 += 1;
+	} 
+	if (document.getElementById("jwb8c").value==3 ) {
+		skor9 += 1;
+	}
+	if(skor9==3){
+		document.getElementById("nonav8").style.backgroundColor="#00FF00";
+		document.getElementById("nonav8").style.color="#006A4E";
+
+	}
+	else{
+		document.getElementById("nonav8").style.backgroundColor="red";
+		document.getElementById("nonav8").style.color="white";
 	}
 }
 //Materi 2
