@@ -1,0 +1,502 @@
+body {
+  margin:0;
+  box-sizing: border-box;
+}
+/*Header*/
+
+/*Navigasi Menu Materi*/
+.sidenav {
+  height: 85%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 65px;
+  background-color:#080D11;
+  border-style: solid;
+  border-color:	#080D11;
+  border-width:2px;
+  overflow-x: hidden;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 2px;
+  
+}
+
+.sidenav ul {
+  list-style-type: circle;
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+.sidenav ul li {
+    margin-left: 0;
+    padding-left: 25px;
+    width: 90%;
+}
+
+.sidenav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+/* 
+.sidenav .nav-flyout {
+    position: absolute;
+    background-color: #19222a;
+    z-index: 9;
+    left: 2.5em;
+    top: 0;
+    height: 100vh;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidenav .nav-flyout a:hover {
+    background-color: rgba(0, 0, 0, 0.9);;
+  }
+
+.sidenav ul > li:hover .nav-flyout {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+} */
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #19222a;
+  display: block;
+  transition: 0.3s;
+  font-family: "Lato";
+  font-size: 100%;
+
+  font-family: sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+/*--*/
+.Navigasi {
+    background: #19222a ;
+    height: 10%;
+    width: 100%;
+    
+}
+
+.logo{
+  width:140px;
+  height:50px; 
+  margin-right: 30px;
+}
+
+.pointerr{
+  cursor:pointer;
+  font-size: 110px;
+}
+
+
+
+
+
+.Navigasi a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #f1f1f1;
+    transition: 0.3s;
+    position: relative;
+
+    
+    font-family:  Impact;
+  }
+  .Navigasi a:hover {
+    color: #818181;
+  }
+  .Navigasi span{
+    text-decoration: none;
+    font-size: 30px;
+    color: #f1f1f1;
+    background-color: #006A4E;
+    border-radius: 10px;
+    border: 2px solid #006A4E;
+    transition: 0.3s;
+    margin-right:10px;
+    margin-top:29px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family:  Impact;
+    cursor:pointer;
+  }
+  .Navigasi span:hover {
+
+    background-color: #19222a;
+    border-color: #19222a;
+  }
+  /* .Navigasi form {
+    float: left;
+  
+  } */
+  
+  /*Body*/
+  .body{
+      width:100%;
+      height:90%;
+      overflow:auto;
+  }
+  .body h1{
+      margin-top:200px;
+  }
+  .body span{
+      color:#818181;
+      size:1px;
+  }
+  .bodyKanan{
+   
+      border-style: solid;
+      border-color:black;
+      border-width:1px;
+      border-top:none;
+      border-left:none;
+      width:643px;
+      height:85%;
+      float:right;
+      overflow:auto;
+      padding-left:15px;
+      padding-right:15px;
+  }
+  .bodyKanan p{
+      text-align:justify;
+  }
+  .bodyKanan input{
+      width:50px;
+      background:transparent;
+      border-color: #006A4E;
+      /* border:none; */
+      text-align:center;
+  }
+  .bodyKiri{
+      
+      border-style: solid;
+      border-color:black;
+      border-width:1px;
+      border-top:none;
+      width:643px;
+      height:85%;
+      float:left;
+      overflow:auto;
+      padding-left:15px;
+      padding-right:15px;
+  }
+  .bodyfull{
+    border-style: solid;
+    border-color:black;
+    border-width:1px;
+    border-top:none;
+    width:99.9%;
+    height: auto;
+    float:left;
+
+}
+.bodyfull button {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  background-color: #006A4E;
+  border-radius: 10px;
+  border: 2px solid #006A4E;
+  transition: 0.3s;
+  position: relative;
+  bottom: 0;
+  margin-right:1px;
+  margin-top:29px;
+  font-family:  Impact;
+  cursor:pointer;
+}
+.bodyfull button:hover {
+
+  background-color: #19222a;
+  border-color: #19222a;
+}
+.bodyfull form{
+  position: relative;
+  text-align: center;
+}
+.fullatas{
+  height:55%;
+}
+.ataskiri{
+  height: 100%;
+  width: 30%;
+  float: left;
+  margin-top: 30px;
+}
+.ataskiri span{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  color: #19222a;
+  cursor: pointer;
+}
+.ataskiri img{
+  cursor: pointer;
+}
+.ataskanan{
+  height: 100%;
+  width: 70%;
+  float: right;
+  background-image: url("../img/rumpiang.jpg");
+  cursor: pointer;
+  background-size: 100%;
+}
+.fullbawah{
+  background-color:#d8d8d8;
+  height:30%;
+}
+.fullbawah a{
+  text-decoration: none;
+  color: #19222a;
+}
+.fullbawah img{
+  cursor: pointer;
+}
+.fullbawah table{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #19222a;
+  font-size: 30px;
+  float: left;
+  cursor: pointer;
+}
+  .bodyKiri dl{
+      font-family:"Times New Roman";
+      font-size:17px;
+      text-align:justify;
+  }
+  .bodyKiri li{
+      line-height:30px;
+  }
+.footer{
+    background: #19222a ;
+    height: 4.99%;
+    width: 100%;
+    padding-left: 70px;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    transition: 0.3s;
+    font-family:  Lato;
+    float: right;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+.footer a:hover {
+    color: #818181;
+}
+#lat1, #lat21 {
+  height: 210px;
+  width: 420px;
+  position: absolute;
+  z-index: 1;
+  background:white;
+  overflow-x: hidden;
+  overflow:auto;
+}
+#lat2, #lat3, #lat4, #lat22, #lat23, #lat24{
+  height: 0;
+  width: 420px;
+  position: absolute;
+  z-index: 0;
+  background:white;
+  overflow:auto;
+}
+.lat1kiri{
+  float: left;
+  position: relative;
+}
+.lat1kanan{
+  float: right;
+  position: relative;
+}
+#navlat{
+  height: 180px;
+  width: 185px;
+}
+#nonav th{
+  border: 2px solid #006A4E;
+  width: 200px;
+  height: 65px;
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #006A4E;
+}
+.lat button {
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  background-color: #006A4E;
+  border-radius: 10px;
+  border: 2px solid #006A4E;
+  transition: 0.3s;
+  position: relative;
+  bottom: 0;
+  margin-right:1px;
+  font-family:  Impact;
+  cursor:pointer;
+}
+.lat button:hover {
+
+  background-color: #19222a;
+  border-color: #19222a;
+}
+
+.val {
+  font-size: 20px;
+  color: #006A4E;
+  transition: 0.3s;
+  position: relative;
+  bottom: 0;
+  margin-right:1px;
+  font-family:  Impact;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.apaitu{
+  font-size: 100px;
+}
+.fungsi{
+  font-size: 50px;
+}
+.strip{
+  margin-left: -40px;
+  width: 449px;
+  height: 100px;
+}
+.menu{
+  text-align: center;
+}
+.menu th{
+  border: none;
+}
+.menu img{
+  width: 120px; 
+  height: 120px;
+}
+
+
+@media(max-width: 420px){
+  .Navigasi {
+    height: 6%;
+    width: 100%;
+  }
+  .logo{
+    width:110px;
+    height:30px; 
+    margin-right: 10px;
+  }
+  .Navigasi span{
+    font-size: 15px;
+    margin-right: -2px;
+    margin-top:19px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family:  Impact;
+    cursor:pointer;
+  }
+  .footer{
+    width: 0;
+}
+  .ataskanan{
+    height: 50%;
+    width: 100%;
+    float: none;
+    background-size: 100%;
+  }
+  .ataskiri{
+    height: 50%;
+    width: 100%;
+    float: none;
+  }
+  .apaitu{
+    font-size: 105px;
+  }
+  .fungsi{
+    font-size: 45px;
+  }
+  .strip{
+    width: 470px;
+    height: 80px;
+  }
+  .menu img{
+    width: 70px; 
+    height: 60px;
+  }
+  .fullbawah{
+    height:30%;
+    margin-top: 110px;
+    margin-bottom: 60px;
+  }
+  .sidenav {
+    top: 40px;
+    padding-top: 2px;
+  }
+  .bodyfull{
+    height: 100%;
+}
+.bodyKanan{
+  border: none;
+  width:100%;
+  height:auto;
+  float: none;;
+  overflow:auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+.bodyKiri{
+  border: none;
+  width:100%;
+  height:auto;
+  float:none;
+  overflow:auto;
+  padding-left:15px;
+  padding-right:15px;
+}
+#lat1, #lat21 {
+  width: 380px;
+}
+#lat2, #lat3, #lat4, #lat22, #lat23, #lat24{
+  height: 0;
+  width: 380px;
+}
+.lat1kiri{
+  float: none;
+}
+.lat1kanan{
+  float: none;
+  padding-top: 245px;
+  width: 380px;
+  margin-bottom: 10px;
+}
+#navlat{
+  height: 180px;
+  width: 380px;
+}
+#nonav th{
+  width: 140px;
+  height: 65px;}
+}

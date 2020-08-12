@@ -1,0 +1,270 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/materistyle.css" type="text/css">
+	<link rel="stylesheet" href="css/contohsoal.css" type="text/css">
+	<script src="script/sideKiri.js"></script>
+	<script src="script/latihan.js"></script>
+	
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body>
+<div>
+<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+		<ul>
+			<li>
+				<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/>
+		  <li>
+			<a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="quiz1.html"><i></i>Kuis</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="materi3.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi3.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			  </li>
+			  <!-- <li>
+				<a href="#"><i></i>Times</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Hates</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Beat</a>
+			  </li> -->
+			</ul>
+		  </li>
+		</ul>
+</div>
+<div class="Navigasi">
+    <a class="pointerr" onclick="buka()">&#9776; </a>
+    <img class="logo" src="img/icon.png" />
+    <a href="index.html"><span>Home</span></a>
+    <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a>
+</div>
+<div class="bodyKiri" onclick="tutup()">
+	<p class="matitle" id="kurang" style="width: 130px;">
+		<img src="/logo/indikator.png" width="20px" height="20px"> Indikator</p>
+	<table class="indikator" id="hilang2">
+		<tr><td>
+			<ul>
+				<li>Siswa dapat mengetahui bentuk umum fungsi kuadrat.</li>
+				<li>Siswa dapat mengetahui nilai $a,b,$ dan $c$ dari suatu fungsi kuadrat.</li>
+				<!-- <li>Siswa mampu menentukan nilai dari suatu fungsi kuadrat.</li> -->
+			</ul>
+		</td></tr>
+	</table>
+	<p class="matitle" style="width: 285px;">
+		<img src="/logo/mat.png" width="30px" height="20px"> Bentuk Umum Fungsi Kuadrat</p>
+	<table id="mat11">
+		<tr><td>
+			Fungsi Kuadrat berbentuk $y=ax^2+bx+c$ atau $f(x)=ax^2+bx+c$ dengan $a≠0$. Dibawah ini adalah beberapa contoh Fungsi Kuadrat :<br/></p>
+			<ol type="a">
+				<li>$f(x)=x^2+3x+5$</li>
+				<li>$f(x)=2x^2+4$</li>
+				<li>$f(x)=3x^2+2x-8$</li>
+				<li>$f(x)=-x^2-2x+3$</li>
+			</ol>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+					<!-- <th ><a>Sebelumnya</a></th> -->
+				  	<th onclick="mat11()" style="background-color: #006a4e;" class="m1"><a></a>1</a></th>
+				  	<th onclick="mat12()" class="m2"><a>2</a></th>
+				 	<th onclick="mat13()" class="m3"><a>3</a></th>
+				  	<th onclick="mat12()" class="m2"><a>Selanjutnya</a></th>
+				</tr>
+			  </table></center>
+			<!-- <p>Contoh Soal :</p>
+			<ul>
+				<li>$f(x)=x^2+2x-3$</li>
+			</ul>
+			<p>Penyelesaian :</p>
+			<p>$f(x)=x^2+2x-3$, maka $a$=1, $b$=2, $c$=-3</p> -->
+		</td></tr>
+	</table>
+	<table id="mat12">
+		<tr><td>
+			<div class="m12">$x=variable$
+			$a=koefisien$ $x^2$
+			$b=koefisien$ $x$
+			$c=konstanta$</div>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+					<th onclick="mat11()" class="m1"><a>Sebelumnya</a></th>
+				  	<th onclick="mat11()" class="m1"><a></a>1</a></th>
+				  	<th onclick="mat12()" class="m2" style="background-color: #006a4e;"><a>2</a></th>
+				 	<th onclick="mat13()" class="m3" ><a>3</a></th>
+				  	<th onclick="mat13()" class="m3" ><a>Selanjutnya</a></th>
+				</tr>
+			  </table></center>
+		</td></tr>
+	</table>
+	<table id="mat13">
+		<tr><td>
+			<iframe class="subs1" src="/scratch/subsection1.html"></iframe>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+					<th  onclick="mat12()" class="m2"><a>Sebelumnya</a></th>
+				  	<th  onclick="mat11()" class="m1" ><a></a>1</a></th>
+				  	<th  onclick="mat12()"class="m2"><a>2</a></th>
+				 	<th  onclick="mat13()"class="m3" style="background-color: #006a4e;"><a>3</a></th>
+				  	<!-- <th ><a>Selanjutnya</a></th> -->
+				</tr>
+			  </table></center>
+		</td></tr>
+	</table>
+</div>
+<div class="bodyKanan" onclick="tutup()">
+	<p class="matitle" style="width: 175px;">
+		<img src="/logo/contohsoal.png" width="25px" height="20px">Contoh Soal</p>
+	<table id="csoal1">
+		<tr><td>
+			<ol >
+				<li>Tentukan nilai a, b, dan c dari fungsi kuadrat berikut $f(x)=4x^2-2x$</br>
+					<p><b>Pembahasan : </b></p>
+					<p>$a=4$</p>
+					<p>$b=-2$</p>
+					<p>$c=0$</p>
+					</li>
+			</ol>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+				  	<th onclick="csoal1()" style="background-color: #006a4e;" class="m1"><a></a>1</a></th>
+				  	<th onclick="csoal2()" class="m2"><a>2</a></th>
+				  	<th onclick="csoal2()" class="m2"><a>Selanjutnya</a></th>
+				</tr>
+			  </table></center>
+		</td></tr>
+	</table>
+	<table id="csoal2">
+		<tr><td>
+			<ol >
+				<li>Tentukan nilai a, b, dan c dari fungsi kuadrat berikut $f(x)=x^2-4x+3$</br>
+					<p><b>Pembahasan : </b></p>
+					<p>$a=1$</p>
+					<p>$b=-4$</p>
+					<p>$c=3$</p>
+					</li>
+			</ol>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+					<th onclick="csoal1()" class="m2"><a>Sebelumnya</a></th>
+				  	<th onclick="csoal1()" class="m1"><a></a>1</a></th>
+				  	<th onclick="csoal2()" style="background-color: #006a4e;" class="m2"><a>2</a></th>
+				</tr>
+			  </table></center>
+		</td></tr>
+	</table>
+	<p class="matitle" style="width: 150px;" id="klik1">
+		<img src="/logo/petunjuk.png" width="20px" height="20px"> Petunjuk</p>
+	<table class="matisi" id="hilang1"><tr><td>
+		<p>Petunjuk untuk menjawab pertanyaan dibawah ini adalah sebagai berikut :
+			<ol>
+				<li>Isi jawaban pada kolom yang disediakan seperti gambar dibawah ini.<br/>
+					<img src="/img/jwb.png"></li>
+				<li>Di bagian kanan ada indikator benar atau salah dari jawaban yang sudah di isi.<br/>
+					<ul><li>Jika benar maka kotaknya akan berwarna hijau.
+					<img src="/img/bnr.png" height="40px"></li>
+					<li>Jika salah maka kotak akan berwarna merah.
+					<img src="/img/slh.png" height="40px"></li></ul>
+				</li>
+			</ol>
+		</p>
+	</td></tr></table>
+	<p class="matitle" style="width: 150px;" >
+		<img src="/logo/pertanyaan.png" width="30px" height="20px"> Pertanyaan</p>
+	<div class="lat">
+		<div class="lat1kiri">
+	<table class="matisi2" id="lat1">
+		<tr><td>
+	<p>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : </p>
+	<ol>
+		<li>$f(x)=x^2-2x-3$</li>
+		<p>$a$ = <input id=jwb1a></input><span id="1a"></span> $b$ = <input id=jwb1b></input><span id="1b"></span>
+			$c$ = <input id=jwb1c></input><span id="1c"></span></p>
+		</ol><center><span class="val">1/4</span><button type="button" onclick="next2()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+		<table class="matisi" id="lat2">
+			<tr><td>
+				<p>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : </p>
+		<ol start="2">
+		<li>$f(x)=-2x^2+2x+4$</li>
+		<p>$a$ = <input id=jwb2a></input><span id="2a"></span> $b$ = <input id=jwb2b></input><span id="2b"></span>
+			$c$ = <input id=jwb2c></input><span id="2c"></span></p>
+		</ol><center><button type="button" onclick="back1()">Sebelumnya</button><span class="val">2/4</span>
+		<button type="button" onclick="next3()">Selanjutnya</button></center></td></tr></table>
+		<table class="matisi" id="lat3">
+			<tr><td>
+				<p>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : </p>
+		<ol start="3">
+			<li>$f(x)=-x^2+5x$</li>
+			<p>$a$ = <input id=jwb3a></input><span id="3a"></span> $b$ = <input id=jwb3b></input><span id="3b"></span>
+				$c$ = <input id=jwb3c></input><span id="3c"></span></p>
+		</ol><center><button type="button" onclick="back2()">Sebelumnya</button><span class="val">3/4</span>
+		<button type="button" onclick="next4()">Selanjutnya</button></center></td></tr></table>
+		<table class="matisi" id="lat4">
+			<tr><td>
+				<p>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : </p>
+		<ol start="4">
+			<li>$f(x)=-2x^2+8$</li>
+		<p>$a$ = <input id=jwb4a></input><span id="4a"></span> $b$ = <input id=jwb4b></input><span id="4b"></span>
+			$c$ = <input id=jwb4c></input><span id="4c"></span></p>
+		</ol><center><button type="button" onclick="back3()">Sebelumnya</button><span class="val">4/4</span>
+		<button type="button" onclick="next5()">Selanjutnya</button>
+	</center></td></tr></table>
+		<!-- <li>$f(x)=-x^2+5x$</li>
+		<p>$a$ = <input id=jwb3a></input><span id="3a"></span> $b$ = <input id=jwb3b></input><span id="3b"></span>
+			$c$ = <input id=jwb3c></input><span id="3c"></span></p>
+		<li>$f(x)=-2x^2+8$</li>
+		<p>$a$ = <input id=jwb4a></input><span id="4a"></span> $b$ = <input id=jwb4b></input><span id="4b"></span>
+			$c$ = <input id=jwb4c></input><span id="4c"></span></p> -->
+		</div>
+		<div class="lat1kanan">
+			<table class="matisi" id="navlat">
+				<tr>
+					<td>
+						<table class="matisi" id="nonav" style="border:none">
+							<br>
+							<tr>
+							<th id="nonav1">1</th>
+							<th id="nonav2">2</th></tr>
+							<th id="nonav3">3</th>
+							<th id="nonav4">4</th>
+						</table>
+					</td>
+				</tr></table>
+		</div>
+		</div>
+</div>
+<div id="menubawah" class="footer" style="width:95%;float:right;">
+	<a>&copy;Muhammad Drajat</a>
+	<!-- <a>&phone;</a> -->
+</div>
+</div>
+<script src="script/navigasi.js"></script>
+</body>
+</html>

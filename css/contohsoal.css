@@ -1,0 +1,27 @@
+#csoal1 {
+    border: 3px solid #006A4E;
+    border-radius: 8px;
+    margin-top: -25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 21px;
+  }
+  #csoal2{
+    display: none;
+    font-size: 21px;
+  }
+
+  @media(max-width: 420px){
+    #csoal1 {
+        width: 380px;
+        font-size: 21px;
+      }
+      #csoal2{
+        display: none;
+        width: 380px;
+        font-size: 21px;
+      }
+  }

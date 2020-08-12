@@ -1,0 +1,120 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="css/sidestyle.css" type="text/css">
+	<script src="script/sideKiri.js"></script>
+	<script src="script/latihan.js"></script>
+	<script src="script/dragdrop.js"></script>
+	<script src="script/navigasi.js"></script>
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body>
+<div>
+<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+		<ul>
+			<li>
+			<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/>
+		  <li>
+			
+			<a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="quiz1.html"><i></i>Kuis</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="materi3.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi3.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			  </li>
+			  <!-- <li>
+				<a href="#"><i></i>Times</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Hates</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Beat</a>
+			  </li> -->
+			</ul>
+		  </li>
+		</ul>
+</div>
+<div class="Navigasi">
+    <a class="pointerr" onclick="buka()">&#9776; </a>
+    <img class="logo" src="img/icon.png" />
+    <a href="index.html"><span>Home</span></a>
+    <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a>
+</div>
+<div class="bodyfull" onclick="tutup()">
+	<div id="apaitu" class="kikd" style="float:left;text-decoration:none;font-size: 21px;"> 
+		<span onclick="tutupapaitu()">&times;</span>
+		<center><img src="/img/rumpiang.jpg" height="400" class="rumpiang"></center>
+		<p>Coba perhatikan gambar diatas. Pada rangka atas jembatan rumpiang bentuknya menyerupai grafik parabola. Sama halnya dengan grafik fungsi kuadrat yang juga berbentuk grafik parabola. Seperti halnya garis lurus, parabola memiliki persamaan. Persamaan garis lurus berbentuk linear, sedangkan persamaan parabola berbentuk kuadrat.
+		</p>
+	</div>
+	<div id="kikd" class="kikd" style="float:left;text-decoration:none;">
+		<span onclick="tutupkikd()">&times;</span>
+		<b><dl><dt>Kompetensi Dasar: </dt></b>
+		<ol start="3"><li><ol start="3" style="margin-left:-20px;"><li>Menjelaskan fungsi kuadrat dengan menggunakan tabel, persamaan, dan grafik.</li></ol></li></ol>
+		<ol start="3"><li><ol start="4" style="margin-left:-20px;"><li>Menjelaskan hubungan antara koefisien dan diskriminan fungsi kuadrat dengan grafiknya.</li></ol></li></ol>
+		<ol start="4"><li><ol start="3" style="margin-left:-20px;"><li>Menyajikan fungsi kuadrat menggunakan tabel, persamaan, dan grafik.</li></ol></li></ol>
+		<ol start="4"><li><ol start="3" style="margin-left:-20px;"><li>Menyajikan dan menyelesaikan masalah kontekstual dengan menggunakan sifat-sifat fungsi kuadrat.</li></ol></li></ol></dl>
+	</div>
+	<div class="fullatas" onclick="tutup()">
+		<div class="ataskanan" onclick="tutup()" onclick="bukaapaitu()"></div>
+		<div class="ataskiri" onclick="tutup()">
+			<center><span onclick="bukaapaitu()" class="apaitu">APA ITU</span>
+			<span onclick="bukaapaitu()" class="fungsi">Fungsi Kuadrat ?</span></center>
+			<img src="/logo/strip.jpg" class="strip" onclick="bukaapaitu()"> 
+		</div>
+		</div>
+	<div class="fullbawah" onclick="tutup()">
+		<center><table class="menu">
+			<tr>
+			  <th><a href="materi1.html"><img src="/logo/materii.png" ></a></th>
+			  <th onclick="bukakikd()"><img src="/logo/kikd.png"  onclick="bukakikd()"></th>
+			  <th ><a href="#"><center><img src="/logo/petkons.png" ></center></a></th>
+			  <th ><a href="#"><img src="/logo/info.png" ></a></th>
+			</tr>
+			<tr>
+			  <td><a href="materi1.html">Materi</a></td>
+			  <td onclick="bukakikd()">KD</td>
+			  <td><a href="#">Peta Konsep</a></td>
+			  <td><a href="#">Info</a></td>
+			</tr>
+		  </table></center>
+	</div>
+    <!-- <center><p class="matitle" style="width: 260px;">Fungsi Kuadrat IX SMP</p></center>
+    <a href="#"> KI & KD </a>
+	<a href="materi1.1.html"> Materi </a>
+	<a href="#"> Peta Konsep </a> -->
+</div>
+
+<div id="menubawah" class="footer" style="width:95%;float:right;">
+	<a>&copy;Muhammad Drajat</a>
+	<!-- <a>&phone;</a> -->
+</div>
+</div>
+</body>
+</html>

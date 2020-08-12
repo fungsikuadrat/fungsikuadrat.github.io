@@ -1,0 +1,112 @@
+.pertanyaan1 {
+    height: 0;
+    width: 97.7%;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    background:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-left:10px;
+    padding-right:20px;
+    overflow:auto;
+  }
+  .pertanyaan1 dl{
+      font-family:"Times New Roman";
+      font-size:20px;
+      text-align:justify;
+      display:block;
+  }
+  #close{
+      float:right;
+      font-size:50px;
+      color:#006A4E;
+      cursor:pointer;
+      font-family:  Impact;
+  }
+  #kotak1, #kotak2, #kotak3, #kotak4 {
+
+    width: 130px;
+    height: 20px;
+    margin-left: 60px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+  }
+  #txt {
+      float:left;
+      padding-left: 0;
+      position: relative;
+      text-align: center;
+  }
+  .pertanyaan1 p{
+    cursor:pointer;
+  }
+
+  #koefisien2, #koefisien1, #konstanta, #variabel{
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .pertanyaan1 button {
+    text-decoration: none;
+    font-size: 201px;
+    color: #f1f1f1;
+    background-color: #006A4E;
+    border-radius: 10px;
+    border: 2px solid #006A4E;
+    transition: 0.3s;
+    position: relative;
+    bottom: 0;
+    margin-right:1px;
+    margin-top:29px;
+    font-family:  Impact;
+    cursor:pointer;
+  }
+  .pertanyaan1 button:hover {
+  
+    background-color: #19222a;
+    border-color: #19222a;
+  }
+  .pertanyaan1 form{
+    position: relative;
+    text-align: center;
+  }
+
+  .kikd {
+    height: 0;
+    width: 97%;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    left: 5px;
+    background:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-left:10px;
+    padding-right:20px;
+  }
+  .kikd dl{
+    font-family:"Times New Roman";
+    font-size:21px;
+    text-align:justify;
+    display:block;
+  }
+  .kikd span{
+    float:right;
+    font-size:50px;
+    color:#006A4E;
+    cursor:pointer;
+    font-family:  Impact;
+  }
+
+  @media(max-width: 420px){
+    .kikd {
+      top: 40px;
+      width: 86%;
+    }
+    .rumpiang{
+      width: 95%;
+    }
+  }
