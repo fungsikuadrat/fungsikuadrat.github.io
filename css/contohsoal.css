@@ -16,12 +16,12 @@
 
   @media(max-width: 420px){
     #csoal1 {
-        width: 380px;
-        font-size: 21px;
+      width: 90%;
+        font-size: 18px;
       }
       #csoal2{
         display: none;
-        width: 380px;
-        font-size: 21px;
+        width: 90%;
+        font-size: 18px;
       }
   }

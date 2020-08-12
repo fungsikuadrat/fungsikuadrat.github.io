@@ -137,32 +137,32 @@ p.matitle {
 }
 @media(max-width: 420px){
   .indikator {
-    width: 380px;
-    font-size: 21px;
+    width: 90%;
+    font-size: 18px;
   }
   #mat11 {
-    font-size: 21px;
-    width: 380px;
+    font-size: 18px;
+    width: 90%;
     padding-right: none;
   }
   #mat12, #mat13{
     display: none;
-    width: 380px;
-    font-size: 21px;
+    width: 90%;
+    font-size: 18px;
   }
   .subs1{
     height: 250px;
-    width: 350px;
+    width: 90%;
   }
   .subs2{
     height: 250px;
-    width: 350px;
+    width: 90%;
   }
   .matisi {
-    width: 380px;
-    font-size: 21px;
+    width: 90%;
+    font-size: 18px;
 }
 .matisi2 {
-  width: 380px;
+  width: 90%;
 }
 }

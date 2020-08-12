@@ -259,7 +259,7 @@ body {
   float: right;
   background-image: url("../img/rumpiang.jpg");
   cursor: pointer;
-  background-size: 100%;
+  background-size: 90%;
 }
 .fullbawah{
   background-color:#d8d8d8;
@@ -399,7 +399,7 @@ body {
 }
 
 
-@media(max-width: 420px){
+@media(max-width: 430px){
   .Navigasi {
     height: 6%;
     width: 100%;
@@ -410,11 +410,11 @@ body {
     margin-right: 10px;
   }
   .Navigasi span{
-    font-size: 15px;
+    font-size: 12px;
     margin-right: -2px;
     margin-top:19px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-family:  Impact;
     cursor:pointer;
   }
@@ -439,7 +439,8 @@ body {
     font-size: 45px;
   }
   .strip{
-    width: 470px;
+    margin-left: 1px;
+    width: 385px;
     height: 80px;
   }
   .menu img{
@@ -456,6 +457,7 @@ body {
     padding-top: 2px;
   }
   .bodyfull{
+    width:100%;
     height: 100%;
 }
 .bodyKanan{
@@ -477,11 +479,13 @@ body {
   padding-right:15px;
 }
 #lat1, #lat21 {
-  width: 380px;
+  width: 90%;
+  font-size: 18px;
 }
 #lat2, #lat3, #lat4, #lat22, #lat23, #lat24{
   height: 0;
-  width: 380px;
+  font-size: 18px;
+  width: 90%;
 }
 .lat1kiri{
   float: none;
@@ -494,7 +498,7 @@ body {
 }
 #navlat{
   height: 180px;
-  width: 380px;
+  width: 85%;
 }
 #nonav th{
   width: 140px;
