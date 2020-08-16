@@ -174,7 +174,6 @@ function next(){
     //         skor1 += 10;
     //     }
     // }
-    console.log("SEKOR = "+skor1);
     n += 1;
     z += 1;
 }
@@ -208,7 +207,8 @@ function backk(){
 }
 
 function skor(){
-
+    let skor1 = 0;
+    let cek11 = 0;
     for(d=0;d<10;d++){
         let x= cek[d];
         let form = document.querySelector("#soall"+x);
@@ -216,6 +216,9 @@ function skor(){
         let jwb = '';
         for (const entry of data) {
             jwb = entry[1];
+            if(jwb!=''){
+                cek11+=1;
+            }
             console.log("jawaban dipilih = "+jwb);
             console.log("jawaban benar = "+jwb_benar[d]);
             if(jwb==jwb_benar[d]){
@@ -224,9 +227,10 @@ function skor(){
         }
         console.log("SEKOR AKHER = "+skor1);
     }
-    let lanjut = document.getElementById("kuis"+z);
-    lanjut.classList.remove("kuis11");
-    lanjut.className += "hilang0";
+    if(cek11==10){
+        let lanjut = document.getElementById("kuis"+z);
+        lanjut.classList.remove("kuis11");
+        lanjut.className += "hilang0";
     
     let element2 = document.getElementById("kuiss12");
     element2.classList.remove("kuis12");
@@ -243,6 +247,10 @@ function skor(){
     let harinya = hari();
 
     createTask(sekolah, nama, kelas, skor1, waktunya, harinya);
+    }
+    else{
+        alert("Masih Ada Soal Yang Belum Dijawab");
+    }
 }
 
 function no10(){

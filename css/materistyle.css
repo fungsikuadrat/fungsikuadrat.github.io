@@ -140,12 +140,12 @@ p.matitle {
 }
 @media(max-width: 420px){
   .indikator {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
   #mat11 {
     font-size: 18px;
-    width: 90%;
+    width: 100%;
     padding-right: none;
   }
   #mat12, #mat13{
@@ -162,7 +162,7 @@ p.matitle {
     width: 90%;
   }
   .matisi {
-    width: 90%;
+    width: 100%;
     font-size: 18px;
 }
 .matisi2 {

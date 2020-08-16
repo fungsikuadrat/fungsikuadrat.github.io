@@ -1,11 +1,15 @@
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
 	<title>Media Pembelajaran Fungsi Kuadrat</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/materistyle.css" type="text/css">
 	<link rel="stylesheet" href="css/contohsoal.css" type="text/css">
 	<script src="script/sideKiri.js"></script>
-	<script src="script/latihan.js"></script>
+  <script src="script/latihan.js"></script>
+  <script src="script/contohsoal.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
 		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
@@ -16,9 +20,12 @@
 
 <body>
 <div>
-<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+  <div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
 		<ul>
+			<li>
+			<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/>
 		  <li>
+			
 			<a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
 			<ul class="nav-flyout">
 			  <li>
@@ -33,21 +40,21 @@
 			</ul>
 		  </li>
 		  <li>
-			<a href="materi3.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<a href="section21.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
 			<ul class="nav-flyout">
 			  <li>
-				<a href="materi3.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+				<a href="section21.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
 			  </li>
 			</ul>
 		  </li>
 		</ul>
 </div>
-<div class="Navigasi" style="width:100%;">
-    <a style="cursor:pointer;font-size: 50px;" onclick="buka()">&#9776; </a>
-    <img src="img/icon.png" style="width:150px;height:60px; margin-right: 30px;"/>
-    <a href="index.html"><span>Home</span></a>
-    <a href="materi1.html"><span>Materi</span></a>
-    <a href="quiz1.html"><span>Evaluasi</span></a>
+<div class="Navigasi">
+  <a class="pointerr" onclick="buka()">&#9776; </a>
+  <img class="logo" src="img/icon.png" />
+  <a href="index.html"><span>Home</span></a>
+  <a href="materi1.html"><span>Materi</span></a>
+  <a href="quiz1.html"><span>Evaluasi</span></a>
 </div>
 <div class="bodyKiri" onclick="tutup()">
 	<p class="matitle" id="kurang" style="width: 130px;">
@@ -64,7 +71,7 @@
     </table>
     <p class="matitle" style="width: 350px;">
         <img src="/logo/mat.png" width="30px" height="20px"> Menggambar Grafik Fungsi Kuadrat</p>
-    <table id="ss21">
+    <table id="mat11">
             <tr><td>
                 <p>Untuk menggambar grafik fungsi kuadrat adalah dengan menentukan bilangan bulat (nilai $x$) dan menentukan 
                 nilai fungsi  (nilai $f(x)$) untuk setiap nilai $x$ yang sudah dipilih tadi. Dari setiap nilai $f(x)$ maka diperoleh beberapa titik yang akan dilalui kurva sampai membentuk grafik parabola.<br/></p>
@@ -75,7 +82,21 @@
                               <th onclick="s22()" class="m2"><a>Selanjutnya</a></th>
                         </tr>
                       </table></center></td></tr></table>
-	<table id="ss22">
+                      <table id="mat12">
+                        <tr><td>
+                        <p>Amin sedang bermain basket di lapangan basket patung bekantan, saat Amin melempar bola dari tengah lapangan. Coba gambar sketsa grafik yang dilalui bola jika fungsi nya adalah $f(x)=-3x^2+9x+12$, dan memiliki nilai $x={-1, 0, 1, 2, 3, 4}$
+                          Bagaimana cara menggambar sketsa grafik fungsi kuadrat tersebut? <br/>
+                        Coba perhatikan animasi dibawah ini.
+                        </p>
+                        <iframe class="subs1" src="/scratch/section2.html"></iframe>
+                              <center><table class="navmat" style="text-align: center;text-decoration: none;">
+                                <tr>
+                                  <th onclick="s21()" class="m2"><a>Sebelumnya</a></th>
+                                      <th onclick="s21()" class="m1"><a></a>1</a></th>
+                                      <th onclick="s22()" style="background-color: #006a4e;" class="m2"><a>2</a></th>
+                                </tr>
+                              </table></center></td></tr></table>
+	<!-- <table id="ss22">
 		<tr><td>
                 <p>Coba kalian bayangkan pada musim dingin di Kecamatan Loksado memiliki suhu -5° C pada jam 02:00 dan setiap 1 jam suhunya meningkat 1°C. Dibawah ini adalah data suhu selama 7 jam terakhir pada kota tersebut</p>
                 <center><table class="suhu">
@@ -121,10 +142,50 @@
                   </table></center>
 
             </td></tr>
-    </table>
+    </table> -->
     
 </div>
 <div class="bodyKanan" onclick="tutup()">
+  <p class="matitle" style="width: 175px;">
+		<img src="/logo/contohsoal.png" width="25px" height="20px">Contoh Soal</p>
+	<table id="csoal21">
+		<tr><td>
+			<ol >
+				<li>	Diketahui bentuk fungsi kuadrat adalah $f(x)=2x^2-2x$. coba gambar grafik fungsi kuadrat tersebut.</br>
+					<p><b>Pembahasan : </b></p>
+					<table id="chartContainer" style="height: 300px; width: 100%;">
+					</table>
+
+					</li>
+			</ol>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+				  	<th onclick="csoal1()" style="background-color: #006a4e;" class="m1"><a></a>1</a></th>
+				  	<th onclick="csoal2()" class="m2"><a>2</a></th>
+				  	<th onclick="csoal2()" class="m2"><a>Selanjutnya</a></th>
+				</tr>
+			  </table></center>
+		</td></tr>
+	</table>
+	<!-- <table id="csoal2">
+		<tr><td>
+			<ol >
+				<li>Tentukan nilai a, b, dan c dari fungsi kuadrat berikut $f(x)=x^2-4x+3$</br>
+					<p><b>Pembahasan : </b></p>
+					<p>$a=1$</p>
+					<p>$b=-4$</p>
+					<p>$c=3$</p>
+					</li>
+			</ol>
+			<center><table class="navmat" style="text-align: center;text-decoration: none;">
+				<tr>
+					<th onclick="csoal1()" class="m2"><a>Sebelumnya</a></th>
+				  	<th onclick="csoal1()" class="m1"><a></a>1</a></th>
+				  	<th onclick="csoal2()" style="background-color: #006a4e;" class="m2"><a>2</a></th>
+				</tr>
+			  </table></center>
+		</td></tr>
+	</table> -->
 	<p class="matitle" style="width: 150px;" id="klik1">
 		<img src="/logo/petunjuk.png" width="20px" height="20px"> Petunjuk</p>
 	<table class="matisi" id="hilang1"><tr><td>
