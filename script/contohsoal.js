@@ -3,14 +3,20 @@ window.onload = function () {
     {
 	  axisY: {	
 	  tickPlacement: "inside",
-	  tickLength: 200,
+    tickLength: 75,
+    labelFontWeight: "bold",
+    labelFontSize: 15,
 	  labelPlacement: "inside", 
-	   
 			interval: 2
 		},
 		axisX: {
+      tickPlacement: "inside",
+	  tickLength: 15,
+    labelPlacement: "inside", 
+    labelFontWeight: "bold",
+    labelFontSize: 15,
 			interval: 1,
-			gridThickness: 1
+      gridThickness: 1,
 		},
       data: [
       {

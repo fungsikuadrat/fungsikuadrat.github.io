@@ -117,18 +117,22 @@ function csoal2(){
 }
 
 function s21(){
-    let mat121 = document.querySelector('#mat12');
-    mat121.className += "hapus";
+    let mat121 = document.querySelector('#ss22');
+    console.log(mat121);
+    mat121.className = "hapus";
     mat121.style.display="none";
-    let mat = document.getElementById("mat11");
-    mat.className += " matisi";
+    let mat = document.getElementById("ss21");
+    console.log(mat);
+    mat.className = "matisi";
     
 }
 
 function s22(){
-    let mat111 = document.querySelector('#mat11');
-    mat111.className += "hapus";
+    let mat111 = document.querySelector('#ss21');
+    console.log(mat111);
+    mat111.className = "hapus";
     mat111.style.display="none";
-    let mat = document.getElementById("#mat12");
-    mat.className += " matisi";
+    let mat121 = document.querySelector('#ss22');
+    console.log(mat121);
+    mat121.className = "matisi";
 }

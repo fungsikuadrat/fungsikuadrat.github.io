@@ -24,14 +24,20 @@
     display: none;
     font-size: 21px;
   }
-
+  /* #chartContainer{
+    height: 300px; width: 500px;
+  } */
   @media(max-width: 420px){
     #csoal1 {
-         width: 100%;
+        width: 100%;
         font-size: 18px;
       }
       #csoal2{
         display: none;
+        width: 100%;
+        font-size: 18px;
+      }
+      #csoal21 {
         width: 100%;
         font-size: 18px;
       }

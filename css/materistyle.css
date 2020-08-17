@@ -138,19 +138,35 @@ p.matitle {
 #bentuk{
   width: 285px;
 }
+.perbesar{
+  border: 1px solid #006A4E;
+  cursor: pointer;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+#mat13 a:hover {
+  background-color: #006A4E;
+}
+.matisi a:hover {
+  background-color: #006A4E;
+}
+#ss22 a:hover {
+  background-color: #006A4E;
+}
 @media(max-width: 420px){
   .indikator {
     width: 100%;
     font-size: 18px;
   }
-  #mat11 {
+  #mat11, #ss21{
     font-size: 18px;
     width: 100%;
     padding-right: none;
   }
-  #mat12, #mat13{
+  #mat12, #mat13, #ss22{
     display: none;
-    width: 90%;
+    width: 100%;
     font-size: 18px;
   }
   .subs1{
