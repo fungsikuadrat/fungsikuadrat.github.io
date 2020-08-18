@@ -242,6 +242,7 @@ body {
   height: 100%;
   width: 30%;
   float: left;
+  /* margin-left: 1px; */
   margin-top: 30px;
 }
 .ataskiri span{
@@ -257,13 +258,17 @@ body {
   height: 100%;
   width: 70%;
   float: right;
-  background-image: url("../img/rumpiang.jpg");
-  cursor: pointer;
-  background-size: 100%;
+  /* background-image: url("../img/rumpiang.jpg"); */
+  /* cursor: pointer;
+  background-size: 100%; */
+}
+.ataskanan iframe{
+  height: 100%;
+  width: 99%;
 }
 .fullbawah{
   background-color:#d8d8d8;
-  height:30%;
+  margin: 2%;
 }
 .fullbawah a{
   text-decoration: none;
@@ -290,10 +295,14 @@ body {
 .footer{
     background: #19222a ;
     height: 4.99%;
-    width: 100%;
-    padding-left: 70px;
+    /* margin-left: -70px; */
+    /* padding-left: 70px; */
+    
 }
-.footer a {
+/* .footer span{
+  padding-left: -170px;
+} */
+/* .footer a {
     text-decoration: none;
     font-size: 20px;
     color: #f1f1f1;
@@ -302,10 +311,10 @@ body {
     float: right;
     padding-right: 10px;
     padding-top: 5px;
-  }
-.footer a:hover {
+  } */
+/* .footer a:hover {
     color: #818181;
-}
+} */
 #lat1, #lat21 {
   height: 210px;
   width: 420px;
@@ -384,7 +393,7 @@ body {
 }
 .strip{
   margin-left: -40px;
-  width: 449px;
+  width: 435px;
   height: 100px;
 }
 .menu{

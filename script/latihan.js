@@ -1,76 +1,110 @@
 //Materi 1
-function next2(){
-	// let c3= 1+document.getElementById("jwb3c").value;
-	// let b4= 1+document.getElementById("jwb4b").value;
-	let skora1 =0;
-    // let ceka1= " ";
-	// let ceka2= " ";
-	// let ceka3= " ";
-    // let ceka4= " ";
-    // let cekb1= " ";
-	// let cekb2= " ";
-	// let cekb3= " ";
-    // let cekb4= " ";
-    // let cekc1= " ";
-	// let cekc2= " ";
-	// let cekc3= " ";
-    // let cekc4= " ";
+// function next2(){
+// 	// let c3= 1+document.getElementById("jwb3c").value;
+// 	// let b4= 1+document.getElementById("jwb4b").value;
+// 	let skora1 =0;
+//     // let ceka1= " ";
+// 	// let ceka2= " ";
+// 	// let ceka3= " ";
+//     // let ceka4= " ";
+//     // let cekb1= " ";
+// 	// let cekb2= " ";
+// 	// let cekb3= " ";
+//     // let cekb4= " ";
+//     // let cekc1= " ";
+// 	// let cekc2= " ";
+// 	// let cekc3= " ";
+//     // let cekc4= " ";
     
-	if (document.getElementById("jwb1a").value==1 ) {
-		// ceka1 = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
-		skora1 += 1;
-	  } 
-	//   else {
-	// 	ceka1 = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
-	// 	alert("Jawaban kamu masih salah!");
-    //   }
-      if (document.getElementById("jwb1b").value==-2 ) {
-		// cekb1 = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
-		skora1 += 1;
-	  } 
-	//   else {
-	// 	cekb1 = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
-    //   }
-      if (document.getElementById("jwb1c").value==-3 ) {
-		// cekc1 = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
-		skora1 += 1;
-	  }
-	//    else {
-	// 	cekc1 = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
-	//   }
-	if(skora1==3){
-		document.getElementById("nonav1").style.backgroundColor="#00FF00";
-		document.getElementById("nonav1").style.color="#006A4E";
-		document.getElementById("lat1").style.height = "0";
-		// document.getElementById("lat1").style.width = "0";
-		document.getElementById("lat1").style.zIndex = "0";
+// 	if (document.getElementById("jwb1a").value==1 ) {
+// 		// ceka1 = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
+// 		skora1 += 1;
+// 	  } 
+// 	//   else {
+// 	// 	ceka1 = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
+// 	// 	alert("Jawaban kamu masih salah!");
+//     //   }
+//       if (document.getElementById("jwb1b").value==-2 ) {
+// 		// cekb1 = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
+// 		skora1 += 1;
+// 	  } 
+// 	//   else {
+// 	// 	cekb1 = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
+//     //   }
+//       if (document.getElementById("jwb1c").value==-3 ) {
+// 		// cekc1 = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
+// 		skora1 += 1;
+// 	  }
+// 	//    else {
+// 	// 	cekc1 = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
+// 	//   }
+// 	if(skora1==3){
+// 		document.getElementById("nonav1").style.backgroundColor="#00FF00";
+// 		document.getElementById("nonav1").style.color="#006A4E";
+// 		document.getElementById("lat1").style.height = "0";
+// 		// document.getElementById("lat1").style.width = "0";
+// 		document.getElementById("lat1").style.zIndex = "0";
 		
-		document.getElementById("lat2").style.height = "210px";
-		document.getElementById("lat2").style.zIndex = "1";
-	}
-	else{
-		document.getElementById("nonav1").style.backgroundColor="red";
-		document.getElementById("nonav1").style.color="white";
-		document.getElementById("lat1").style.height = "0";
-		document.getElementById("lat1").style.zIndex = "0";
+// 		document.getElementById("lat2").style.height = "210px";
+// 		document.getElementById("lat2").style.zIndex = "1";
+// 	}
+// 	else{
+// 		document.getElementById("nonav1").style.backgroundColor="red";
+// 		document.getElementById("nonav1").style.color="white";
+// 		document.getElementById("lat1").style.height = "0";
+// 		document.getElementById("lat1").style.zIndex = "0";
 		
-		document.getElementById("lat2").style.height = "210px";
-		document.getElementById("lat2").style.zIndex = "1";
-	}
-	}
+// 		document.getElementById("lat2").style.height = "210px";
+// 		document.getElementById("lat2").style.zIndex = "1";
+// 	}
+// 	}
+function next2(){
+	let rbs = document.querySelectorAll('input[name="pertanyaan1"]');
+	let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+			}
+			console.log("SELECTED "+selectedValue);
+			if(selectedValue=="c"){
+				document.getElementById("nonav1").style.backgroundColor="#00FF00";
+				document.getElementById("nonav1").style.color="#006A4E";
+				document.getElementById("lat1").style.height = "0";
+				document.getElementById("lat1").style.zIndex = "0";
+				document.getElementById("lat2").style.height = "210px";
+				document.getElementById("lat2").style.zIndex = "1";
+			}
+			else{
+				document.getElementById("nonav1").style.backgroundColor="red";
+				document.getElementById("nonav1").style.color="white";
+				document.getElementById("lat1").style.height = "0";
+				document.getElementById("lat1").style.zIndex = "0";
+				document.getElementById("lat2").style.height = "210px";
+				document.getElementById("lat2").style.zIndex = "1";}
+}
 function back1(){
-	let skor2=0;
-	if (document.getElementById("jwb2a").value==-2 ) {
-		skor2 += 1;
-	  } 
-      if (document.getElementById("jwb2b").value==2 ) {
-		skor2 += 1;
-	  }
-      if (document.getElementById("jwb2c").value==4 ) {
-		skor2 += 1;
-	  }
+	// let skor2=0;
+	// if (document.getElementById("jwb2a").value==-2 ) {
+	// 	skor2 += 1;
+	//   } 
+    //   if (document.getElementById("jwb2b").value==2 ) {
+	// 	skor2 += 1;
+	//   }
+    //   if (document.getElementById("jwb2c").value==4 ) {
+	// 	skor2 += 1;
+	//   }
+	let rbs = document.querySelectorAll('input[name="pertanyaan2"]');
+	let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+			}
 
-	  if(skor2==3){
+	  if(selectedValue=="b"){
 		document.getElementById("nonav2").style.backgroundColor="#00FF00";
 		document.getElementById("nonav2").style.color="#006A4E";
 		// document.getElementById("lat1").style.display="inline-block";
@@ -94,18 +128,25 @@ function back1(){
 }
 
 function next3(){
-	let skor2=0;
-	if (document.getElementById("jwb2a").value==-2 ) {
-		skor2 += 1;
-	  } 
-      if (document.getElementById("jwb2b").value==2 ) {
-		skor2 += 1;
-	  }
-      if (document.getElementById("jwb2c").value==4 ) {
-		skor2 += 1;
-	  }
-
-	  if(skor2==3){
+	// let skor2=0;
+	// if (document.getElementById("jwb2a").value==-2 ) {
+	// 	skor2 += 1;
+	//   } 
+    //   if (document.getElementById("jwb2b").value==2 ) {
+	// 	skor2 += 1;
+	//   }
+    //   if (document.getElementById("jwb2c").value==4 ) {
+	// 	skor2 += 1;
+	//   }
+	let rbs = document.querySelectorAll('input[name="pertanyaan2"]');
+	let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+			}
+	  if(selectedValue=="b"){
 		document.getElementById("nonav2").style.backgroundColor="#00FF00";
 		document.getElementById("nonav2").style.color="#006A4E";
 		document.getElementById("lat2").style.height = "0";
