@@ -268,7 +268,7 @@ body {
 }
 .fullbawah{
   background-color:#d8d8d8;
-  margin: 2%;
+  height: 205px;
 }
 .fullbawah a{
   text-decoration: none;
@@ -281,6 +281,7 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #19222a;
   font-size: 30px;
+  padding-left: 200px;
   float: left;
   cursor: pointer;
 }
@@ -505,8 +506,9 @@ body {
   margin-bottom: 10px;
 }
 #navlat{
-  height: 200px;
+  height: auto;
   width: 80%;
+  margin-top: 10px;
 }
 #nonav th{
   width: 140px;
@@ -527,5 +529,9 @@ body {
 }
 .iconjwb{
   width: 100%;
+}
+.fullbawah table{
+  padding-left: 0;
+  float: none;
 }
 }

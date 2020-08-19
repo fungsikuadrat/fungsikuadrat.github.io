@@ -73,7 +73,7 @@ function next2(){
 				document.getElementById("nonav1").style.color="#006A4E";
 				document.getElementById("lat1").style.height = "0";
 				document.getElementById("lat1").style.zIndex = "0";
-				document.getElementById("lat2").style.height = "210px";
+				document.getElementById("lat2").style.height = "240px";
 				document.getElementById("lat2").style.zIndex = "1";
 			}
 			else{
@@ -81,8 +81,27 @@ function next2(){
 				document.getElementById("nonav1").style.color="white";
 				document.getElementById("lat1").style.height = "0";
 				document.getElementById("lat1").style.zIndex = "0";
-				document.getElementById("lat2").style.height = "210px";
+				document.getElementById("lat2").style.height = "240px";
 				document.getElementById("lat2").style.zIndex = "1";}
+}
+function m1cek1(){
+	let rbs = document.querySelectorAll('input[name="pertanyaan1"]');
+	let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+			}
+			console.log("SELECTED "+selectedValue);
+			if(selectedValue=="c"){
+				document.getElementById("nonav1").style.backgroundColor="#00FF00";
+				document.getElementById("nonav1").style.color="#006A4E";
+			}
+			else{
+				document.getElementById("nonav1").style.backgroundColor="red";
+				document.getElementById("nonav1").style.color="white";
+}
 }
 function back1(){
 	// let skor2=0;
@@ -126,6 +145,25 @@ function back1(){
 		document.getElementById("lat1").style.zIndex = "1";
 	}
 }
+function m1cek1(){
+	let rbs = document.querySelectorAll('input[name="pertanyaan1"]');
+	let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+			}
+			console.log("SELECTED "+selectedValue);
+			if(selectedValue=="c"){
+				document.getElementById("nonav1").style.backgroundColor="#00FF00";
+				document.getElementById("nonav1").style.color="#006A4E";
+			}
+			else{
+				document.getElementById("nonav1").style.backgroundColor="red";
+				document.getElementById("nonav1").style.color="white";
+}
+}
 
 function next3(){
 	// let skor2=0;
@@ -153,7 +191,7 @@ function next3(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat2").style.zIndex = "0";
 		
-		document.getElementById("lat3").style.height = "210px";
+		document.getElementById("lat3").style.height = "260px";
 		document.getElementById("lat3").style.zIndex = "1";
 	}
 	else{
@@ -163,8 +201,26 @@ function next3(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat2").style.zIndex = "0";
 		
-		document.getElementById("lat3").style.height = "210px";
+		document.getElementById("lat3").style.height = "260px";
 		document.getElementById("lat3").style.zIndex = "1";
+	}
+}
+function m1cek2(){
+	let rbs = document.querySelectorAll('input[name="pertanyaan2"]');
+	let selectedValue;
+            for (const rb of rbs) {
+                if (rb.checked) {
+                    selectedValue = rb.value;
+                    break;
+                }
+			}
+	  if(selectedValue=="b"){
+		document.getElementById("nonav2").style.backgroundColor="#00FF00";
+		document.getElementById("nonav2").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav2").style.backgroundColor="red";
+		document.getElementById("nonav2").style.color="white";
 	}
 }
 
@@ -187,7 +243,7 @@ function back2(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat3").style.zIndex = "0";
 		
-		document.getElementById("lat2").style.height = "210px";
+		document.getElementById("lat2").style.height = "240px";
 		document.getElementById("lat2").style.zIndex = "1";
 	}
 	else{
@@ -197,8 +253,29 @@ function back2(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat3").style.zIndex = "0";
 		
-		document.getElementById("lat2").style.height = "210px";
+		document.getElementById("lat2").style.height = "240px";
 		document.getElementById("lat2").style.zIndex = "1";
+	}
+}
+function m1cek3(){
+	let c3= 1+document.getElementById("jwb3c").value;
+	let skor3=0;
+	  if (document.getElementById("jwb3a").value==-1 ) {
+		skor3 += 1;
+	  }
+      if (document.getElementById("jwb3b").value==5 ) {
+		skor3 += 1;
+	  }
+      if (c3==10 ) {
+		skor3 += 1;
+	  }
+	  if(skor3==3){
+		document.getElementById("nonav3").style.backgroundColor="#00FF00";
+		document.getElementById("nonav3").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav3").style.backgroundColor="red";
+		document.getElementById("nonav3").style.color="white";
 	}
 }
 
@@ -221,7 +298,7 @@ function next4(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat3").style.zIndex = "0";
 		
-		document.getElementById("lat4").style.height = "210px";
+		document.getElementById("lat4").style.height = "260px";
 		document.getElementById("lat4").style.zIndex = "1";
 	}
 	else{
@@ -231,7 +308,7 @@ function next4(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat3").style.zIndex = "0";
 		
-		document.getElementById("lat4").style.height = "210px";
+		document.getElementById("lat4").style.height = "260px";
 		document.getElementById("lat4").style.zIndex = "1";
 	}
 }
@@ -254,7 +331,7 @@ function back3(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat4").style.zIndex = "0";
 		
-		document.getElementById("lat3").style.height = "210px";
+		document.getElementById("lat3").style.height = "260px";
 		document.getElementById("lat3").style.zIndex = "1";
 	}
 	else{
@@ -264,8 +341,29 @@ function back3(){
 		// document.getElementById("lat1").style.width = "0";
 		document.getElementById("lat4").style.zIndex = "0";
 		
-		document.getElementById("lat3").style.height = "210px";
+		document.getElementById("lat3").style.height = "260px";
 		document.getElementById("lat3").style.zIndex = "1";
+	}
+}
+function m1cek4(){
+	let b4= 1+document.getElementById("jwb4b").value;
+	let skor4=0;
+	if (document.getElementById("jwb4a").value==-2 ) {
+		skor4 += 1;
+	} 
+	if (b4==10 ) {
+		skor4 += 1;
+	} 
+	if (document.getElementById("jwb4c").value==8 ) {
+		skor4 += 1;
+	}
+	if(skor4==3){
+		document.getElementById("nonav4").style.backgroundColor="#00FF00";
+		document.getElementById("nonav4").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav4").style.backgroundColor="red";
+		document.getElementById("nonav4").style.color="white";
 	}
 }
 function next5(){
@@ -286,7 +384,7 @@ function next5(){
 		document.getElementById("lat4").style.height = "0";
 		document.getElementById("lat4").style.zIndex = "0";
 		
-		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.height = "260px";
 		document.getElementById("lat5").style.zIndex = "1";
 	}
 	else{
@@ -295,7 +393,7 @@ function next5(){
 		document.getElementById("lat4").style.height = "0";
 		document.getElementById("lat4").style.zIndex = "0";
 		
-		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.height = "260px";
 		document.getElementById("lat5").style.zIndex = "1";
 	}
 }
@@ -316,7 +414,7 @@ function back4(){
 		document.getElementById("lat5").style.height = "0";
 		document.getElementById("lat5").style.zIndex = "0";
 		
-		document.getElementById("lat4").style.height = "210px";
+		document.getElementById("lat4").style.height = "260px";
 		document.getElementById("lat4").style.zIndex = "1";
 	}
 	else{
@@ -325,10 +423,32 @@ function back4(){
 		document.getElementById("lat5").style.height = "0";
 		document.getElementById("lat5").style.zIndex = "0";
 		
-		document.getElementById("lat4").style.height = "210px";
+		document.getElementById("lat4").style.height = "260px";
 		document.getElementById("lat4").style.zIndex = "1";
 	}
 }
+
+function m1cek5(){
+	let skor5=0;
+	if (document.getElementById("jwb5a").value==2 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb5b").value==5 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb5c").value==-8 ) {
+		skor5 += 1;
+	}
+	if(skor5==3){
+		document.getElementById("nonav5").style.backgroundColor="#00FF00";
+		document.getElementById("nonav5").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav5").style.backgroundColor="red";
+		document.getElementById("nonav5").style.color="white";
+	}
+}
+
 function next6(){
 	let skor5=0;
 	if (document.getElementById("jwb5a").value==2 ) {
@@ -346,7 +466,7 @@ function next6(){
 		document.getElementById("lat5").style.height = "0";
 		document.getElementById("lat5").style.zIndex = "0";
 		
-		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.height = "260px";
 		document.getElementById("lat6").style.zIndex = "1";
 	}
 	else{
@@ -355,7 +475,7 @@ function next6(){
 		document.getElementById("lat5").style.height = "0";
 		document.getElementById("lat5").style.zIndex = "0";
 		
-		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.height = "260px";
 		document.getElementById("lat6").style.zIndex = "1";
 	}
 }
@@ -376,7 +496,7 @@ function back5(){
 		document.getElementById("lat6").style.height = "0";
 		document.getElementById("lat6").style.zIndex = "0";
 		
-		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.height = "260px";
 		document.getElementById("lat5").style.zIndex = "1";
 	}
 	else{
@@ -385,10 +505,32 @@ function back5(){
 		document.getElementById("lat6").style.height = "0";
 		document.getElementById("lat6").style.zIndex = "0";
 		
-		document.getElementById("lat5").style.height = "210px";
+		document.getElementById("lat5").style.height = "260px";
 		document.getElementById("lat5").style.zIndex = "1";
 	}
 }
+
+function m1cek6(){
+	let skor5=0;
+	if (document.getElementById("jwb6a").value==4 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb6b").value==2 ) {
+		skor5 += 1;
+	} 
+	if (document.getElementById("jwb6c").value==-2 ) {
+		skor5 += 1;
+	}
+	if(skor5==3){
+		document.getElementById("nonav6").style.backgroundColor="#00FF00";
+		document.getElementById("nonav6").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav6").style.backgroundColor="red";
+		document.getElementById("nonav6").style.color="white";
+	}
+}
+
 function next7(){
 	let skor6=0;
 	if (document.getElementById("jwb6a").value==4 ) {
@@ -406,7 +548,7 @@ function next7(){
 		document.getElementById("lat6").style.height = "0";
 		document.getElementById("lat6").style.zIndex = "0";
 		
-		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.height = "260px";
 		document.getElementById("lat7").style.zIndex = "1";
 	}
 	else{
@@ -415,7 +557,7 @@ function next7(){
 		document.getElementById("lat6").style.height = "0";
 		document.getElementById("lat6").style.zIndex = "0";
 		
-		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.height = "260px";
 		document.getElementById("lat7").style.zIndex = "1";
 	}
 }
@@ -436,7 +578,7 @@ function back6(){
 		document.getElementById("lat7").style.height = "0";
 		document.getElementById("lat7").style.zIndex = "0";
 		
-		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.height = "260px";
 		document.getElementById("lat6").style.zIndex = "1";
 	}
 	else{
@@ -445,10 +587,32 @@ function back6(){
 		document.getElementById("lat7").style.height = "0";
 		document.getElementById("lat7").style.zIndex = "0";
 		
-		document.getElementById("lat6").style.height = "210px";
+		document.getElementById("lat6").style.height = "260px";
 		document.getElementById("lat6").style.zIndex = "1";
 	}
 }
+
+function m1cek7(){
+	let skor6=0;
+	if (document.getElementById("jwb7a").value==-2 ) {
+		skor6 += 1;
+	} 
+	if (document.getElementById("jwb7b").value==-1 ) {
+		skor6 += 1;
+	} 
+	if (document.getElementById("jwb7c").value==6 ) {
+		skor6 += 1;
+	}
+	if(skor6==3){
+		document.getElementById("nonav7").style.backgroundColor="#00FF00";
+		document.getElementById("nonav7").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav7").style.backgroundColor="red";
+		document.getElementById("nonav7").style.color="white";
+	}
+}
+
 function next8(){
 	let skor8=0;
 	if (document.getElementById("jwb7a").value==-2 ) {
@@ -466,7 +630,7 @@ function next8(){
 		document.getElementById("lat7").style.height = "0";
 		document.getElementById("lat7").style.zIndex = "0";
 		
-		document.getElementById("lat8").style.height = "210px";
+		document.getElementById("lat8").style.height = "260px";
 		document.getElementById("lat8").style.zIndex = "1";
 	}
 	else{
@@ -475,7 +639,7 @@ function next8(){
 		document.getElementById("lat7").style.height = "0";
 		document.getElementById("lat7").style.zIndex = "0";
 		
-		document.getElementById("lat8").style.height = "210px";
+		document.getElementById("lat8").style.height = "260px";
 		document.getElementById("lat8").style.zIndex = "1";
 	}
 }
@@ -496,7 +660,7 @@ function back7(){
 		document.getElementById("lat8").style.height = "0";
 		document.getElementById("lat8").style.zIndex = "0";
 		
-		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.height = "260px";
 		document.getElementById("lat7").style.zIndex = "1";
 	}
 	else{
@@ -505,10 +669,32 @@ function back7(){
 		document.getElementById("lat8").style.height = "0";
 		document.getElementById("lat8").style.zIndex = "0";
 		
-		document.getElementById("lat7").style.height = "210px";
+		document.getElementById("lat7").style.height = "260px";
 		document.getElementById("lat7").style.zIndex = "1";
 	}
 }
+
+// function m1cek8(){
+// 	let skor7=0;
+// 	if (document.getElementById("jwb8a").value==-2 ) {
+// 		skor7 += 1;
+// 	} 
+// 	if (document.getElementById("jwb8b").value==1 ) {
+// 		skor7 += 1;
+// 	} 
+// 	if (document.getElementById("jwb8c").value==6 ) {
+// 		skor7 += 1;
+// 	}
+// 	if(skor7==3){
+// 		document.getElementById("nonav8").style.backgroundColor="#00FF00";
+// 		document.getElementById("nonav8").style.color="#006A4E";
+// 	}
+// 	else{
+// 		document.getElementById("nonav7").style.backgroundColor="red";
+// 		document.getElementById("nonav7").style.color="white";
+// 	}
+// }
+
 function next9(){
 	let skor9=0;
 	if (document.getElementById("jwb8a").value==-4 ) {
@@ -627,6 +813,19 @@ function next22(){
 		document.getElementById("xx1").innerHTML=isi[1];
 	}
 }
+function m2cek1(){
+	let aa=((isi[0]*isi[0])*(a[0]));
+	let bb=(b[0]*isi[0]);
+	let hasil=aa+bb+c[0];
+	if (document.getElementById("jwb0").value==hasil ){
+		document.getElementById("nonav21").style.backgroundColor="#00FF00";
+		document.getElementById("nonav21").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav21").style.backgroundColor="red";
+		document.getElementById("nonav21").style.color="white";
+	}
+}
 
 function back21(){
 	let aa=((isi[1]*isi[1])*(a[1]));
@@ -649,6 +848,19 @@ function back21(){
 		
 		document.getElementById("lat21").style.height = "180px";
 		document.getElementById("lat21").style.zIndex = "1";
+	}
+}
+function m2cek2(){
+	let aa=((isi[1]*isi[1])*(a[1]));
+	let bb=(b[1]*isi[1]);
+	let hasil=aa+bb+c[1];
+	if (document.getElementById("jwb1").value==hasil ){
+		document.getElementById("nonav22").style.backgroundColor="#00FF00";
+		document.getElementById("nonav22").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav22").style.backgroundColor="red";
+		document.getElementById("nonav22").style.color="white";
 	}
 }
 
@@ -701,6 +913,20 @@ function back22(){
 		
 		document.getElementById("lat22").style.height = "180px";
 		document.getElementById("lat22").style.zIndex = "1";
+	}
+}
+
+function m2cek3(){
+	let aa=((isi[2]*isi[2])*(a[2]));
+	let bb=(b[2]*isi[2]);
+	let hasil=aa+bb+c[2];
+	if (document.getElementById("jwb2").value==hasil ){
+		document.getElementById("nonav23").style.backgroundColor="#00FF00";
+		document.getElementById("nonav23").style.color="#006A4E";
+	}
+	else{
+		document.getElementById("nonav23").style.backgroundColor="red";
+		document.getElementById("nonav23").style.color="white";
 	}
 }
 
