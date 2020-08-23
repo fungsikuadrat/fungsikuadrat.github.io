@@ -166,20 +166,24 @@ body {
   }
   .bodyKanan{
    
-      border-style: solid;
-      border-color:black;
-      border-width:1px;
-      border-top:none;
-      border-left:none;
-      width:643px;
-      height:85%;
-      float:right;
-      overflow:auto;
-      padding-left:15px;
-      padding-right:15px;
-  }
+    border-style: solid;
+    border-color:black;
+    border-width:1px;
+    border-top:none;
+    border-left:none;
+    width:643px;
+    height:81.4%;
+    float:right;
+    overflow:auto;
+    padding-left:15px;
+    padding-right:15px;
+}
+.munculkiri{
+  width: 250px;
+}
   .bodyKanan p{
       text-align:justify;
+      font-size: 23px;
   }
   .bodyKanan input{
       width:50px;
@@ -189,17 +193,24 @@ body {
       text-align:center;
   }
   .bodyKiri{
-      
       border-style: solid;
       border-color:black;
       border-width:1px;
       border-top:none;
       width:643px;
-      height:85%;
+      height:81.4%;
       float:left;
       overflow:auto;
       padding-left:15px;
       padding-right:15px;
+  }
+  .bodyKiri p{
+    font-size: 21px;
+  }
+  .bodyKiri ol{
+    font-size: 21px;
+    margin-top: -15px;
+    margin-bottom: -15px;
   }
   .bodyfull{
     border-style: solid;
@@ -295,7 +306,8 @@ body {
   }
 .footer{
     background: #19222a ;
-    height: 4.99%;
+    height: 7%;
+    padding-top: 10px;
     /* margin-left: -70px; */
     /* padding-left: 70px; */
     
@@ -318,16 +330,16 @@ body {
 } */
 #lat1, #lat21 {
   height: 210px;
-  width: 420px;
+  width: auto;
   position: absolute;
   z-index: 1;
   background:white;
   overflow-x: hidden;
   overflow:auto;
 }
-#lat2, #lat3, #lat4, #lat5, #lat6, #lat7, #lat8, #lat22, #lat23, #lat24{
+#lat2, #lat3, #lat4, #lat5, #lat6, #lat7, #lat8, #lat22, #lat23, #lat24, #lat25{
   height: 0;
-  width: 420px;
+  width: auto;
   position: absolute;
   z-index: 0;
   background:white;
@@ -355,25 +367,7 @@ body {
   text-align: center;
   color: #006A4E;
 }
-.lat button {
-  text-decoration: none;
-  font-size: 20px;
-  color: #f1f1f1;
-  background-color: #006A4E;
-  border-radius: 10px;
-  border: 2px solid #006A4E;
-  transition: 0.3s;
-  position: relative;
-  bottom: 0;
-  margin-right:1px;
-  font-family:  Impact;
-  cursor:pointer;
-}
-.lat button:hover {
 
-  background-color: #19222a;
-  border-color: #19222a;
-}
 
 .val {
   font-size: 20px;
@@ -407,9 +401,39 @@ body {
   width: 120px; 
   height: 120px;
 }
+.navbawah{
+  position: relative;
+  height: 48px;
+}
+.footer a{
+  margin-top: 100px;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+.footer span{
+  border:3px solid #006A4E;
+  
+  font-size: 30px;
+  padding: 5px;
 
+}
+.footer span:hover{
+  background-color: #006A4E;
+}
+/* .navbawah{
+  border-radius: 8px;
+  background-color: #006A4E;
+}
+.navbawah span:hover{
+  background-color: white;
+} */
 @media(max-width: 430px){
+  .footer span{
+    font-size: 15px;
+  }
   .Navigasi {
     height: 8%;
     width: 100%;
@@ -430,6 +454,7 @@ body {
   }
   .footer{
     width: 0%;
+    height: 5%;
 }
   .ataskanan{
     height: 50%;

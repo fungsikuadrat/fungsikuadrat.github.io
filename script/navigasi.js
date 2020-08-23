@@ -60,20 +60,25 @@ function mat13(){
 // mat2.addEventListener('click', mat12);
 // mat3.addEventListener('click', mat13);
 
-var klick = document.getElementById("klik1");
-var napakah = document.getElementById("hilang1");
-klick.addEventListener('click', function(){
-    napakah.classList.toggle("hide")
-    console.log("bujur")
-})
+// var klick = document.getElementById("klik1");
+// var napakah = document.getElementById("hilang1");
+// klick.addEventListener('click', function(){
+//     napakah.classList.toggle("hide")
+//     console.log("bujur")
+// })
 
 var klick2 = document.getElementById("kurang");
 console.log(klick2)
 var napakah2 = document.getElementById("hilang2");
-console.log(napakah2)
 klick2.addEventListener('click', function(){
-    napakah2.classList.toggle("hide")
-    console.log("bujur")
+    // if(kelas=="hide"){
+    //     napakah2.className="indikator";
+    // }
+    // else{
+    //     napakah2.className="hide"
+    // }
+    napakah2.classList.toggle("hide");
+    // napakah2.className = "indikator";
 });
 
 

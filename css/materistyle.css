@@ -36,7 +36,7 @@ p.matitle {
 .indikator {
   border: 3px solid #006A4E;
   border-radius: 8px;
-  margin-top: -25px;
+  margin-top : -25px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -65,8 +65,8 @@ p.matitle {
 
 #mat11 {
   border: 3px solid #006A4E;
+  width: auto;
   border-radius: 8px;
-  margin-top: -25px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -91,7 +91,7 @@ p.matitle {
   text-align: center;
 }
 .hide{
-  display: none !important;
+  display: none ;
 }
 
 #klik1, #kurang{
@@ -128,7 +128,7 @@ p.matitle {
 }
 
 .subs1{
-  height: 500px;
+  height: 400px;
   width: 600px;
 }
 .subs2{
@@ -153,6 +153,19 @@ p.matitle {
 }
 #ss22 a:hover {
   background-color: #006A4E;
+}
+
+.animasi {
+  border: 3px solid #006A4E;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  text-align: left;
+  line-height: 20px;
+  font-size: 21px;
+  margin:20px;
+  width: 100%;
 }
 @media(max-width: 420px){
   .indikator {

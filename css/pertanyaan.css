@@ -1,0 +1,203 @@
+.latar{
+    width: 90%;
+    height: 66%;
+    padding: 68px;
+    padding-top: 40px;
+    background-color: #D3D3D3;
+}
+
+.pertanyaantitle{
+    width: 90%;
+    height: 12%;
+    box-shadow: 1px 1px 3px 3px #19222a;
+    background-color: white;
+    padding-top:10px;
+}
+.pertanyaantitle p{
+    margin:0;
+    color: #006A4E;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+}
+
+#pertanyaannav{
+    padding: 10px;
+    height: auto;
+}
+#pertanyaannav th{
+    border: 2px solid #006A4E;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #006A4E;
+}
+
+.pertanyaanval {
+    margin-top: 30px;
+    border-bottom: 3px solid #19222a ;
+    font-size: 25px;
+    color: #006A4E;
+    transition: 0.3s;
+    position: relative;
+    bottom: 0;
+    margin-right:1px;
+    font-family:  Impact;
+  }
+.pertanyaanKiri{
+    box-shadow: 1px 1px 3px 3px #19222a;
+    margin-top: 20px;
+    width:68%;
+    height:85%;
+    float:left;
+    overflow:auto;
+    background-color: white;
+    margin-left: 60px;
+
+}
+.pertanyaanKiri input{
+    width: 50px;
+    border-color: #006A4E;
+}
+.kirisoal{
+    width:70%;
+    height:100%;
+    float: left;
+}
+.kirikalkulator{
+    width:30%;
+    height:90%;
+    padding-top:20px ;
+    float: right;
+}
+.hilangkal{
+    display: none;
+}
+.hilangi{
+    display: none;
+}
+.kirikalkulator span {
+    margin-bottom: 20px;
+    border: 3px solid #006A4E ;
+    border-radius: 8px;
+    font-size: 25px;
+    background-color: #006A4E;
+    color: white;
+    transition: 0.3s;
+    position: relative;
+    margin-right:1px;
+    font-family:  Impact;
+    cursor: pointer;
+  }
+.kirikalkulator input[type="button"] { 
+background-color:#bcbcbc; 
+color: black; 
+border: solid black 2px; 
+font-size: 21px;
+width:100% 
+} 
+
+.kirikalkulator input[type="text"] { 
+background-color:white; 
+border: solid black 2px; 
+font-size: 21px;
+width:100% 
+} 
+
+.pertanyaanKanan{
+    box-shadow: 1px 1px 3px 3px #19222a;
+    margin-top: 20px;
+    background-color: white;
+    width:20%;
+    height:85%;
+    float:right;
+    overflow:auto;
+    margin-right: 60px;
+}
+.lat table{
+    font-size: 25px;
+}
+.lat button {
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    background-color: #006A4E;
+    border-radius: 10px;
+    border: 2px solid #006A4E;
+    transition: 0.3s;
+    position: relative;
+    bottom: 0;
+    margin-right:1px;
+    font-family:  Impact;
+    cursor:pointer;
+  }
+  .lat button:hover {
+  
+    background-color: #19222a;
+    border-color: #19222a;
+  }
+  @media(max-width: 430px){
+    .latar{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        padding-top: 0;
+        background-color: white;
+    }
+    .pertanyaantitle{
+        width: 100%;
+        height: 10%;
+        box-shadow: none;
+    }
+    .pertanyaanKiri{
+        box-shadow: none;
+        margin-top: 0;
+        width:100%;
+        height:auto;
+        background-color: white;
+        margin-left: 0;
+    }
+    .pertanyaanKanan{
+        box-shadow: none;
+
+        width:100%;
+        height:auto;
+        margin-right: 0;
+        margin-top: 70%;
+    }
+    #pertanyaannav th{
+    border: 2px solid #006A4E;
+    height: 30px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #006A4E;
+}
+.pertanyaanKiri input{
+    width: 50px;
+    border-color: #006A4E;
+}
+.pertanyaanKiri button{
+    font-size: 15px;
+}
+.kirisoal{
+    width:100%;
+    height:auto;
+    float: none;
+}
+.kirikalkulator{
+    width:100%;
+    height:auto;
+    float: none;
+    padding-top:10px ;
+}
+.hilangkal{
+    display: inline;
+}
+.hape{
+    display: none;
+}
+}

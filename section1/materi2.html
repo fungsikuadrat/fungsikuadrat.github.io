@@ -1,0 +1,116 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+	
+	
+	
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body onload="randomx()">
+<div>
+<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+	<ul>
+		<li>
+			<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/>
+		<li>
+		  <a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+		  <ul class="nav-flyout">
+			<li>
+			  <a href="materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			</li>
+			<li>
+			  <a href="materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			</li>
+			<li>
+				<a href="quiz1.html"><i></i>Kuis</a>
+			  </li>
+		  </ul>
+		</li>
+		<li>
+		  <a href="section21.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+		  <ul class="nav-flyout">
+			<li>
+			  <a href="section21.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			</li>
+			<!-- <li>
+			  <a href="#"><i></i>Times</a>
+			</li>
+			<li>
+			  <a href="#"><i></i>Hates</a>
+			</li>
+			<li>
+			  <a href="#"><i></i>Beat</a>
+			</li> -->
+		  </ul>
+		</li>
+	  </ul>
+</div>
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+</div>
+<div class="bodyKiri" onclick="tutup()">
+	<p class="matitle" id="kurang" style="width: 130px;">
+		<img src="../logo/indikator.png" width="20px" height="20px"> Indikator</p>
+	<table class="Indikator" id="hilang2">
+		<tr><td>
+			<ul>
+				<!-- <li>Siswa dapat mengetahui bentuk umum fungsi kuadrat.</li>
+				<li>Siswa dapat mengetahui nilai $a,b,$ dan $c$ dari suatu fungsi kuadrat.</li> -->
+				<li>Siswa mampu menentukan nilai dari suatu fungsi kuadrat.</li>
+			</ul>
+		</td></tr>
+	</table>
+	<p class="matitle" style="width: 260px;">
+		<img src="../logo/mat.png" width="30px" height="20px"> Nilai Fungsi Kuadrat</p>
+	<table class="matisi">
+		<tr><td>
+			<p>Dalam fungsi kuadrat memiliki nilai yang dapat dihitung yang sering disebut dengan nilai 
+				$f(x)$ atau $y$. Untuk dapat menghitung nilai tersebut sangat bergantung pada nilai $x$. <br/>
+			Coba perhatikan animasi disamping untuk dapat memahami bagaimana menentukan suatu nilai fungsi kuadrat</p>
+			<!-- <ol type="a">
+                <p>Diketahui : $f(x)=x^2-3x+2$</p>
+                <p>Tentukan nilai $f(x)$ jika $x=4$</p>
+                <p>Jawab : <br/>
+                $f(4)=(4)^2-3(4)+2=16-12+2=6$<br/>
+                Jadi, nilai $f(4)$ adalah 6</p>
+			</ol> -->
+		</td></tr>
+	</table>
+</div>
+<div class="bodyKanan" onclick="tutup()">
+	<p>Simak video dibawah ini untuk memahami bagaimana menentukan suatu nilai fungsi kuadrat</p>
+	<iframe class="subs1" src="../vid/nilai.mp4"></iframe><br/><br/>
+	<!-- <iframe class="subs2" src="../scratch/subsection2.html"></iframe><br/><br/>
+				<center><a href="../scratch/subsection2.html" target="_blank" class="perbesar">Perbesar</a></center>
+			<p style="color: red;font-size: 15px;">*Bila tombol mulai di dalam animasi tidak muncul tekan tombol perbesar diatas</p> -->
+</div>
+<div id="menubawah" class="footer" style="width:100%;float: left;">
+	<center>
+		<a href="materi1.html"><span class="navbawah">Sebelumnya</span></a>
+		<a href="materi2.html"><span style="background-color: #006A4E;">1</span></a>
+		<a href="contoh(nilai).html"><span>2</span></a>
+		<a href="pertanyaan2.html"><span>3</span></a>
+		<a href="contoh(nilai).html"><span class="navbawah">Selanjutnya</span></a>
+	</center>
+</div>
+</div>
+<script src="../script/navigasi.js"></script>
+<script src="../script/latihan.js"></script>
+<script src="../script/sideKiri.js"></script>
+</body>
+</html>

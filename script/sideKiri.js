@@ -1,9 +1,17 @@
+var strip = document.querySelector(".pointerr");
+console.log(strip);
+var kiri = document.getElementById("menukiri");
+strip.addEventListener('click', function(){
+    kiri.classList.toggle("munculkiri");
+});
+
 function buka() {
   document.getElementById("menukiri").style.width = "250px";
 }
 
 function tutup() {
-  document.getElementById("menukiri").style.width = "0";
+  
+  kiri.classList.remove("munculkiri");
 }
 
 function buka1() {

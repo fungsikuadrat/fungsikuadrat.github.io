@@ -645,13 +645,13 @@ function next8(){
 }
 function back7(){
 	let skor7=0;
-	if (document.getElementById("jwb8a").value==-2 ) {
+	if (document.getElementById("jwb8a").value==-4 ) {
 		skor7 += 1;
 	} 
 	if (document.getElementById("jwb8b").value==1 ) {
 		skor7 += 1;
 	} 
-	if (document.getElementById("jwb8c").value==6 ) {
+	if (document.getElementById("jwb8c").value==3 ) {
 		skor7 += 1;
 	}
 	if(skor7==3){
@@ -664,8 +664,8 @@ function back7(){
 		document.getElementById("lat7").style.zIndex = "1";
 	}
 	else{
-		document.getElementById("nonav7").style.backgroundColor="red";
-		document.getElementById("nonav7").style.color="white";
+		document.getElementById("nonav8").style.backgroundColor="red";
+		document.getElementById("nonav8").style.color="white";
 		document.getElementById("lat8").style.height = "0";
 		document.getElementById("lat8").style.zIndex = "0";
 		
@@ -674,26 +674,6 @@ function back7(){
 	}
 }
 
-// function m1cek8(){
-// 	let skor7=0;
-// 	if (document.getElementById("jwb8a").value==-2 ) {
-// 		skor7 += 1;
-// 	} 
-// 	if (document.getElementById("jwb8b").value==1 ) {
-// 		skor7 += 1;
-// 	} 
-// 	if (document.getElementById("jwb8c").value==6 ) {
-// 		skor7 += 1;
-// 	}
-// 	if(skor7==3){
-// 		document.getElementById("nonav8").style.backgroundColor="#00FF00";
-// 		document.getElementById("nonav8").style.color="#006A4E";
-// 	}
-// 	else{
-// 		document.getElementById("nonav7").style.backgroundColor="red";
-// 		document.getElementById("nonav7").style.color="white";
-// 	}
-// }
 
 function next9(){
 	let skor9=0;
@@ -716,90 +696,310 @@ function next9(){
 		document.getElementById("nonav8").style.color="white";
 	}
 }
+
 //Materi 2
 let isi = new Object;
 function randomx(){
 	let x;
-	let start = 1, end = 10;
-	for(let i=0; i<4;i++){
+	let start = -5, end = 5;
+	for(let i=0; i<5;i++){
 		x = (Math.random() * (end - start) + start) ^ 0;
 		isi[i] = x;
 	}
 	document.getElementById("x0").innerHTML=isi[0];
+	document.getElementById("x1x0").innerHTML=isi[0];
 	document.getElementById("xx0").innerHTML=isi[0];
-	console.log(isi[0]);
-	console.log(isi[1]);
-	console.log(isi[2]);
-	console.log(isi[3]);	
 }
-
-// function latihan2(){
-// 	let cek = new Object;
-// 	let a = new Object;
-// 	let b = new Object;
-// 	let c = new Object;
-// 	a[0]= -1;
-// 	a[1]=5;
-// 	a[2]=3;
-// 	a[3]=1;
-
-// 	b[0]=2;
-// 	b[1]=3;
-// 	b[2]=0;
-// 	b[3]=1;
-
-// 	c[0]=3;
-// 	c[1]=-2;
-// 	c[2]=-1;
-// 	c[3]=-2;
-// 	for(let i=0; i<4; i++){
-// 		let aa=((isi[i]*isi[i])*(a[i]));
-// 		let bb=(b[i]*isi[i]);
-// 		let hasil=aa+bb+c[i];
-// 		if (document.getElementById("jwb"+i).value==hasil ) {
-// 			cek[i] = "<img alt='Image' src='img/benar.png' style='width:30px;height:30px;'/>";
-// 		  } else {
-// 			cek[i] = "<img alt='Image' src='img/salah.png' style='width:30px;height:30px;'/>";
-// 		  }
-// 	}
-// 	for(let i=0; i<4; i++){
-// 		document.getElementById("cek"+i).innerHTML=cek[i];
-// 	}
-	
-// }
 
 let cek = new Object;
 let a = new Object;
 let b = new Object;
 let c = new Object;
+let lan = 0;
+let lan1 = 0;
+let lan2 = 0;
+let lan3 = 0;
 a[0]= -1;
-a[1]=5;
+a[1]=2;
 a[2]=3;
 a[3]=1;
+a[4]=3;
 
 b[0]=2;
-b[1]=3;
+b[1]=1;
 b[2]=0;
 b[3]=1;
+b[4]=-6
 
 c[0]=3;
-c[1]=-2;
+c[1]=0;
 c[2]=-1;
 c[3]=-2;
+c[4]=2;
+
+
+function ax4(val){
+	lan1 = 1;
+	let hhas=a[4]*((isi[4]-1)*(isi[4]-1));
+	if(val==hhas){
+		document.getElementById("ax4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax4").style.borderColor="red";
+	}
+	// if(lan=="2"){
+	// 	let lanjut1 = document.getElementById("xj4");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function bx4(val){
+	lan2 = 1;
+	if(val=="1"){
+		document.getElementById("bx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx4").style.borderColor="red";
+	}
+	// lan = lan1+lan2;
+
+	// if(lan=="2"){
+	// 	let lanjut1 = document.getElementById("xj4");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+
+function ax0(val){
+	lan1 = 1;
+	let hhas=a[0]*(isi[0]*isi[0]);
+	if(val==hhas){
+		document.getElementById("ax0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax0").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj0");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function bx0(val){
+	lan2 = 1;
+	let hhas=b[0]*isi[0];
+	if(val==hhas){
+		document.getElementById("bx0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx0").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj0");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function cx0(val){
+	lan3 = 1;
+	if(val==c[0]){
+		document.getElementById("cx0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx0").style.borderColor="red";
+	}
+	// lan = lan1+lan2+lan3;
+
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj0");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function ax1(val){
+	lan1 = 1;
+	let hhas=a[1]*(isi[1]*isi[1]);
+	if(val==hhas){
+		document.getElementById("ax1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax1").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj1");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function bx1(val){
+	lan2 = 1;
+	let hhas=b[1]*isi[1];
+	if(val==hhas){
+		document.getElementById("bx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx1").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj1");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function cx1(val){
+	lan3 = 1;
+	if(val==c[1]){
+		document.getElementById("cx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx1").style.borderColor="red";
+	}
+	lan = lan1+lan2+lan3;
+
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj1");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+
+function ax2(val){
+	lan1 = 1;
+	let hhas=a[2]*(isi[2]*isi[2]);
+	if(val==hhas){
+		document.getElementById("ax2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax2").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj2");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function bx2(val){
+	lan2 = 1;
+	let hhas=b[2]*isi[2];
+	if(val==hhas){
+		document.getElementById("bx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx2").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj2");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function cx2(val){
+	lan3 = 1;
+	if(val=="1"){
+		document.getElementById("cx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx2").style.borderColor="red";
+	}
+	lan = lan1+lan2+lan3;
+
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj2");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+
+function ax3(val){
+	lan1 = 1;
+	let hhas=a[3]*(isi[3]*isi[3]);
+	if(val==hhas){
+		document.getElementById("ax3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax3").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj3");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function bx3(val){
+	lan2 = 1;
+	let hhas=b[3]*isi[3];
+	if(val==hhas){
+		document.getElementById("bx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx3").style.borderColor="red";
+	}
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj3");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+function cx3(val){
+	lan3 = 1;
+	if(val=="2"){
+		document.getElementById("cx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx3").style.borderColor="red";
+	}
+	// lan = lan1+lan2+lan3;
+
+	// if(lan=="3"){
+	// 	let lanjut1 = document.getElementById("xj3");
+	
+	// 	lanjut1.classList.remove("hilangi");
+	// }
+}
+
+
 function next22(){
 	let aa=((isi[0]*isi[0])*(a[0]));
 	let bb=(b[0]*isi[0]);
 	let hasil=aa+bb+c[0];
+	if (document.getElementById("ax0").value==aa ){
+		document.getElementById("ax0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax0").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx0").value==bb ){
+		document.getElementById("bx0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx0").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx0").value==c[0] ){
+		document.getElementById("cx0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx0").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb0").value==hasil ){
 		document.getElementById("nonav21").style.backgroundColor="#00FF00";
 		document.getElementById("nonav21").style.color="#006A4E";
 		document.getElementById("lat21").style.height = "0";
 		document.getElementById("lat21").style.zIndex = "0";
+
+		document.getElementById("lat21").classList.toggle("hilangi");
 		
+		document.getElementById("jwb0").style.borderColor="#006A4E";
+
 		document.getElementById("lat22").style.height = "180px";
 		document.getElementById("lat22").style.zIndex = "1";
+		document.getElementById("lat22").classList.remove("hilangi");
 		document.getElementById("x1").innerHTML=isi[1];
+		document.getElementById("x2x0").innerHTML=isi[1];
 		document.getElementById("xx1").innerHTML=isi[1];
+		lan = 0;
 	}
 	else{
 		document.getElementById("nonav21").style.backgroundColor="red";
@@ -807,23 +1007,58 @@ function next22(){
 		document.getElementById("lat21").style.height = "0";
 		document.getElementById("lat21").style.zIndex = "0";
 		
+		document.getElementById("jwb0").style.borderColor="red";
+
+		document.getElementById("lat21").classList.toggle("hilangi");
+
 		document.getElementById("lat22").style.height = "180px";
 		document.getElementById("lat22").style.zIndex = "1";
+		document.getElementById("lat22").classList.remove("hilangi");
 		document.getElementById("x1").innerHTML=isi[1];
+		document.getElementById("x2x0").innerHTML=isi[1];
 		document.getElementById("xx1").innerHTML=isi[1];
+		lan = 0;
 	}
 }
 function m2cek1(){
 	let aa=((isi[0]*isi[0])*(a[0]));
 	let bb=(b[0]*isi[0]);
 	let hasil=aa+bb+c[0];
+	console.log("ax0 "+document.getElementById("ax0").value);
+	if (document.getElementById("ax0").value==" " ){
+		document.getElementById("ax0").style.borderColor="blue";
+	}
+
 	if (document.getElementById("jwb0").value==hasil ){
 		document.getElementById("nonav21").style.backgroundColor="#00FF00";
 		document.getElementById("nonav21").style.color="#006A4E";
+		document.getElementById("jwb0").style.borderColor="#006A4E";
 	}
 	else{
 		document.getElementById("nonav21").style.backgroundColor="red";
 		document.getElementById("nonav21").style.color="white";
+		document.getElementById("jwb0").style.borderColor="red";
+	}
+
+	if (document.getElementById("ax0").value==aa ){
+		document.getElementById("ax0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax0").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx0").value==bb ){
+		document.getElementById("bx0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx0").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx0").value==c[0] ){
+		document.getElementById("cx0").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx0").style.borderColor="red";
 	}
 }
 
@@ -831,14 +1066,41 @@ function back21(){
 	let aa=((isi[1]*isi[1])*(a[1]));
 	let bb=(b[1]*isi[1]);
 	let hasil=aa+bb+c[1];
+
+	if (document.getElementById("ax1").value==aa ){
+		document.getElementById("ax1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax1").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx1").value==bb ){
+		document.getElementById("bx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx1").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx1").value==c[1] ){
+		document.getElementById("cx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx1").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb1").value==hasil ){
 		document.getElementById("nonav22").style.backgroundColor="#00FF00";
 		document.getElementById("nonav22").style.color="#006A4E";
 		document.getElementById("lat22").style.height = "0";
 		document.getElementById("lat22").style.zIndex = "0";
 		
+		document.getElementById("lat22").classList.toggle("hilangi");
+
+		document.getElementById("jwb1").style.borderColor="#006A4E";
+
 		document.getElementById("lat21").style.height = "180px";
 		document.getElementById("lat21").style.zIndex = "1";
+		document.getElementById("lat21").classList.toggle("hilangi");
 	}
 	else{
 		document.getElementById("nonav22").style.backgroundColor="red";
@@ -846,8 +1108,13 @@ function back21(){
 		document.getElementById("lat22").style.height = "0";
 		document.getElementById("lat22").style.zIndex = "0";
 		
+		document.getElementById("jwb1").style.borderColor="red";
+
+		document.getElementById("lat22").classList.toggle("hilangi");
+
 		document.getElementById("lat21").style.height = "180px";
 		document.getElementById("lat21").style.zIndex = "1";
+		document.getElementById("lat21").classList.toggle("hilangi");
 	}
 }
 function m2cek2(){
@@ -857,10 +1124,34 @@ function m2cek2(){
 	if (document.getElementById("jwb1").value==hasil ){
 		document.getElementById("nonav22").style.backgroundColor="#00FF00";
 		document.getElementById("nonav22").style.color="#006A4E";
+		document.getElementById("jwb1").style.borderColor="#006A4E";
 	}
 	else{
 		document.getElementById("nonav22").style.backgroundColor="red";
 		document.getElementById("nonav22").style.color="white";
+
+		document.getElementById("jwb1").style.borderColor="red";
+	}
+
+	if (document.getElementById("ax1").value==aa ){
+		document.getElementById("ax1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax1").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx1").value==bb ){
+		document.getElementById("bx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx1").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx1").value==c[1] ){
+		document.getElementById("cx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx1").style.borderColor="red";
 	}
 }
 
@@ -868,16 +1159,45 @@ function next23(){
 	let aa=((isi[1]*isi[1])*(a[1]));
 	let bb=(b[1]*isi[1]);
 	let hasil=aa+bb+c[1];
+
+	if (document.getElementById("ax1").value==aa ){
+		document.getElementById("ax1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax1").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx1").value==bb ){
+		document.getElementById("bx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx1").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx1").value==c[1] ){
+		document.getElementById("cx1").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx1").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb1").value==hasil ){
 		document.getElementById("nonav22").style.backgroundColor="#00FF00";
 		document.getElementById("nonav22").style.color="#006A4E";
 		document.getElementById("lat22").style.height = "0";
 		document.getElementById("lat22").style.zIndex = "0";
 		
+		document.getElementById("lat22").classList.toggle("hilangi");
+
+		document.getElementById("jwb1").style.borderColor="#006A4E";
+
 		document.getElementById("lat23").style.height = "180px";
 		document.getElementById("lat23").style.zIndex = "1";
+		document.getElementById("lat23").classList.remove("hilangi");
 		document.getElementById("x2").innerHTML=isi[2];
+		document.getElementById("x3x0").innerHTML=isi[2];
 		document.getElementById("xx2").innerHTML=isi[2];
+		lan=0;
 	}
 	else{
 		document.getElementById("nonav22").style.backgroundColor="red";
@@ -885,10 +1205,17 @@ function next23(){
 		document.getElementById("lat22").style.height = "0";
 		document.getElementById("lat22").style.zIndex = "0";
 		
+		document.getElementById("jwb1").style.borderColor="red";
+
+		document.getElementById("lat22").classList.toggle("hilangi");
+
 		document.getElementById("lat23").style.height = "180px";
 		document.getElementById("lat23").style.zIndex = "1";
+		document.getElementById("lat23").classList.remove("hilangi");
 		document.getElementById("x2").innerHTML=isi[2];
+		document.getElementById("x3x0").innerHTML=isi[2];
 		document.getElementById("xx2").innerHTML=isi[2];
+		lan=0;
 	}
 }
 
@@ -896,14 +1223,41 @@ function back22(){
 	let aa=((isi[2]*isi[2])*(a[2]));
 	let bb=(b[2]*isi[2]);
 	let hasil=aa+bb+c[2];
+
+	if (document.getElementById("ax2").value==aa ){
+		document.getElementById("ax2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax2").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx2").value==bb ){
+		document.getElementById("bx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx2").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx2").value=="1" ){
+		document.getElementById("cx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx2").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb2").value==hasil ){
 		document.getElementById("nonav23").style.backgroundColor="#00FF00";
 		document.getElementById("nonav23").style.color="#006A4E";
 		document.getElementById("lat23").style.height = "0";
 		document.getElementById("lat23").style.zIndex = "0";
 		
+		document.getElementById("lat23").classList.toggle("hilangi");
+
+		document.getElementById("jwb2").style.borderColor="#006A4E";
+
 		document.getElementById("lat22").style.height = "180px";
 		document.getElementById("lat22").style.zIndex = "1";
+		document.getElementById("lat22").classList.toggle("hilangi");
 	}
 	else{
 		document.getElementById("nonav23").style.backgroundColor="red";
@@ -911,8 +1265,13 @@ function back22(){
 		document.getElementById("lat23").style.height = "0";
 		document.getElementById("lat23").style.zIndex = "0";
 		
+		document.getElementById("jwb2").style.borderColor="red";
+
+		document.getElementById("lat23").classList.toggle("hilangi");
+
 		document.getElementById("lat22").style.height = "180px";
 		document.getElementById("lat22").style.zIndex = "1";
+		document.getElementById("lat22").classList.toggle("hilangi");
 	}
 }
 
@@ -923,10 +1282,34 @@ function m2cek3(){
 	if (document.getElementById("jwb2").value==hasil ){
 		document.getElementById("nonav23").style.backgroundColor="#00FF00";
 		document.getElementById("nonav23").style.color="#006A4E";
+		document.getElementById("jwb2").style.borderColor="#006A4E";
 	}
 	else{
 		document.getElementById("nonav23").style.backgroundColor="red";
 		document.getElementById("nonav23").style.color="white";
+
+		document.getElementById("jwb2").style.borderColor="red";
+	}
+
+	if (document.getElementById("ax2").value==aa ){
+		document.getElementById("ax2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax2").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx2").value==bb ){
+		document.getElementById("bx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx2").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx2").value=="1" ){
+		document.getElementById("cx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx2").style.borderColor="red";
 	}
 }
 
@@ -934,16 +1317,45 @@ function next24(){
 	let aa=((isi[2]*isi[2])*(a[2]));
 	let bb=(b[2]*isi[2]);
 	let hasil=aa+bb+c[2];
+
+	if (document.getElementById("ax2").value==aa ){
+		document.getElementById("ax2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax2").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx2").value==bb ){
+		document.getElementById("bx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx2").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx2").value=="1" ){
+		document.getElementById("cx2").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx2").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb2").value==hasil ){
 		document.getElementById("nonav23").style.backgroundColor="#00FF00";
 		document.getElementById("nonav23").style.color="#006A4E";
 		document.getElementById("lat23").style.height = "0";
 		document.getElementById("lat23").style.zIndex = "0";
 		
+		document.getElementById("lat23").classList.toggle("hilangi");
+
+		document.getElementById("jwb2").style.borderColor="#006A4E";
+
 		document.getElementById("lat24").style.height = "180px";
 		document.getElementById("lat24").style.zIndex = "1";
+		document.getElementById("lat24").classList.remove("hilangi");
 		document.getElementById("x3").innerHTML=isi[3];
+		document.getElementById("x4x0").innerHTML=isi[3];
 		document.getElementById("xx3").innerHTML=isi[3];
+		lan=0;
 	}
 	else{
 		document.getElementById("nonav23").style.backgroundColor="red";
@@ -951,10 +1363,16 @@ function next24(){
 		document.getElementById("lat23").style.height = "0";
 		document.getElementById("lat23").style.zIndex = "0";
 		
+		document.getElementById("jwb2").style.borderColor="red";
+		document.getElementById("lat23").classList.toggle("hilangi");
+
 		document.getElementById("lat24").style.height = "180px";
 		document.getElementById("lat24").style.zIndex = "1";
+		document.getElementById("lat24").classList.remove("hilangi");
 		document.getElementById("x3").innerHTML=isi[3];
+		document.getElementById("x4x0").innerHTML=isi[3];
 		document.getElementById("xx3").innerHTML=isi[3];
+		lan=0;
 	}
 }
 
@@ -962,14 +1380,41 @@ function back23(){
 	let aa=((isi[3]*isi[3])*(a[3]));
 	let bb=(b[3]*isi[3]);
 	let hasil=aa+bb+c[3];
+
+	if (document.getElementById("ax3").value==aa ){
+		document.getElementById("ax3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax3").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx3").value==bb ){
+		document.getElementById("bx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx3").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx3").value=="2" ){
+		document.getElementById("cx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx3").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb3").value==hasil ){
 		document.getElementById("nonav24").style.backgroundColor="#00FF00";
 		document.getElementById("nonav24").style.color="#006A4E";
 		document.getElementById("lat24").style.height = "0";
 		document.getElementById("lat24").style.zIndex = "0";
 		
+		document.getElementById("lat24").classList.toggle("hilangi");
+
+		document.getElementById("jwb3").style.borderColor="#006A4E";
+
 		document.getElementById("lat23").style.height = "180px";
 		document.getElementById("lat23").style.zIndex = "1";
+		document.getElementById("lat23").classList.toggle("hilangi");
 	}
 	else{
 		document.getElementById("nonav24").style.backgroundColor="red";
@@ -977,8 +1422,13 @@ function back23(){
 		document.getElementById("lat24").style.height = "0";
 		document.getElementById("lat24").style.zIndex = "0";
 		
+		document.getElementById("jwb3").style.borderColor="red";
+
+		document.getElementById("lat24").classList.toggle("hilangi");
+
 		document.getElementById("lat23").style.height = "180px";
 		document.getElementById("lat23").style.zIndex = "1";
+		document.getElementById("lat23").classList.toggle("hilangi");
 	}
 }
 
@@ -986,12 +1436,192 @@ function next25(){
 	let aa=((isi[3]*isi[3])*(a[3]));
 	let bb=(b[3]*isi[3]);
 	let hasil=aa+bb+c[3];
+	if (document.getElementById("ax3").value==aa ){
+		document.getElementById("ax3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax3").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx3").value==bb ){
+		document.getElementById("bx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx3").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx3").value=="2" ){
+		document.getElementById("cx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx3").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb3").value==hasil ){
 		document.getElementById("nonav24").style.backgroundColor="#00FF00";
 		document.getElementById("nonav24").style.color="#006A4E";
+		document.getElementById("lat24").style.height = "0";
+		document.getElementById("lat24").style.zIndex = "0";
+		
+		document.getElementById("jwb3").style.borderColor="#006A4E";
+
+		document.getElementById("lat24").classList.toggle("hilangi");
+
+		document.getElementById("lat25").style.height = "180px";
+		document.getElementById("lat25").style.zIndex = "1";
+		document.getElementById("lat25").classList.remove("hilangi");
+		document.getElementById("x4").innerHTML=isi[4];
+		document.getElementById("x5x0").innerHTML=isi[4];
+		document.getElementById("xx4").innerHTML=isi[4];
+		lan=0;
 	}
 	else{
 		document.getElementById("nonav24").style.backgroundColor="red";
 		document.getElementById("nonav24").style.color="white";
+		document.getElementById("lat24").style.height = "0";
+		document.getElementById("lat24").style.zIndex = "0";
+		
+		document.getElementById("jwb3").style.borderColor="red";
+
+		document.getElementById("lat24").classList.toggle("hilangi");
+
+		document.getElementById("lat25").style.height = "180px";
+		document.getElementById("lat25").style.zIndex = "1";
+		document.getElementById("lat25").classList.remove("hilangi");
+		document.getElementById("x4").innerHTML=isi[4];
+		document.getElementById("x5x0").innerHTML=isi[4];
+		document.getElementById("xx4").innerHTML=isi[4];
+		lan=0;
+	}
+}
+
+function m2cek4(){
+	let aa=((isi[3]*isi[3])*(a[3]));
+	let bb=(b[3]*isi[3]);
+	let hasil=aa+bb+c[3];
+	if (document.getElementById("jwb3").value==hasil ){
+		document.getElementById("nonav24").style.backgroundColor="#00FF00";
+		document.getElementById("nonav24").style.color="#006A4E";
+		document.getElementById("jwb3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("nonav24").style.backgroundColor="red";
+		document.getElementById("nonav24").style.color="white";
+		
+		document.getElementById("jwb3").style.borderColor="red";
+
+	}
+	if (document.getElementById("ax3").value==aa ){
+		document.getElementById("ax3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax3").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx3").value==bb ){
+		document.getElementById("bx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx3").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx3").value=="2" ){
+		document.getElementById("cx3").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx3").style.borderColor="red";
+	}
+}
+
+function back24(){
+	let aa=a[4]*((isi[4]-1)*(isi[4]-1));
+	let hasil=aa-1;
+
+	if (document.getElementById("ax4").value==aa ){
+		document.getElementById("ax4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax4").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx4").value==bb ){
+		document.getElementById("bx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx4").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx4").value=="1"){
+		document.getElementById("cx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx4").style.borderColor="red";
+	}
+
+	if (document.getElementById("jwb4").value==hasil ){
+		document.getElementById("nonav25").style.backgroundColor="#00FF00";
+		document.getElementById("nonav25").style.color="#006A4E";
+		document.getElementById("lat25").style.height = "0";
+		document.getElementById("lat25").style.zIndex = "0";
+		
+		document.getElementById("lat25").classList.toggle("hilangi");
+
+		document.getElementById("lat24").style.height = "180px";
+		document.getElementById("lat24").style.zIndex = "1";
+		document.getElementById("jwb4").style.borderColor="#006A4E";
+		document.getElementById("lat24").classList.toggle("hilangi");
+	}
+	else{
+		document.getElementById("nonav25").style.backgroundColor="red";
+		document.getElementById("nonav25").style.color="white";
+		document.getElementById("lat25").style.height = "0";
+		document.getElementById("lat25").style.zIndex = "0";
+		
+		document.getElementById("jwb4").style.borderColor="red";
+
+		document.getElementById("lat25").classList.toggle("hilangi");
+
+		document.getElementById("lat24").style.height = "180px";
+		document.getElementById("lat24").style.zIndex = "1";
+		document.getElementById("lat24").classList.toggle("hilangi");
+	}
+}
+
+
+function m2cek5(){
+	let aa=a[4]*((isi[4]-1)*(isi[4]-1));
+	let hasil=aa-1;
+	if (document.getElementById("jwb4").value==hasil ){
+		document.getElementById("nonav25").style.backgroundColor="#00FF00";
+		document.getElementById("nonav25").style.color="#006A4E";
+		document.getElementById("jwb4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("nonav25").style.backgroundColor="red";
+		document.getElementById("nonav25").style.color="white";
+		
+		document.getElementById("jwb4").style.borderColor="red";
+
+	}
+
+	if (document.getElementById("ax4").value==aa ){
+		document.getElementById("ax4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax4").style.borderColor="red";
+	}
+
+	if (document.getElementById("bx4").value==bb ){
+		document.getElementById("bx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx4").style.borderColor="red";
+	}
+
+	if (document.getElementById("cx4").value=="1"){
+		document.getElementById("cx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx4").style.borderColor="red";
 	}
 }

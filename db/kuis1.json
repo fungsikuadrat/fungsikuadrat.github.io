@@ -1,12 +1,12 @@
 [
     {
         "soal0": {
-            "lat":"Nilai \\[f(-3)\\] dari fungsi \\[f(x)=x^2-4x+2\\] adalah...",
-            "a": "-1",
-            "b": "1",
-            "c": "5",
-            "d": "23",
-            "jawab" : "d"
+            "lat":"Dari bentuk berikut yang bukan merupakan fungsi kuadrat, adalah...",
+            "a": "\\[f(x)=x^2-2x\\]",
+            "b": "\\[y=x^2+px+k\\]",
+            "c": "\\[f(x)=x^2(x-1)+2\\]",
+            "d": "\\[y=x(x+3)^2-1\\]",
+            "jawab" : "c"
         }
     },{
         "soal1": {
@@ -20,7 +20,7 @@
     }
     ,{
         "soal2": {
-            "lat":"Nilai \\[c\\] dari fungsi \\[f(x)=-x^2+3x\\] adalah ...",
+            "lat":"Konstanta dari fungsi \\[f(x)=-x^2+3x\\] adalah ...",
             "a": "13",
             "b": "0",
             "c": "4",
@@ -29,20 +29,20 @@
         }
     },{
         "soal3": {
-            "lat":"Nilai \\[b\\] dari fungsi \\[f(x)=x^2-3x-4\\] adalah...",
+            "lat":"Koefisien \\[x^2\\] dari fungsi kuadrat \\[y=(x-1)(x-2)\\] adalah...",
             "a": "2",
             "b": "1",
             "c": "-2",
             "d": "-3",
-            "jawab" : "d"
+            "jawab" : "b"
         }
     },{
         "soal4": {
-            "lat":"Nilai \\[f(-4)\\] dari fungsi \\[f(x)=2x^2-2\\] adalah...",
-            "a": "106",
-            "b": "10",
-            "c": "19",
-            "d": "30",
+            "lat":"Nilai \\[f(-1)\\] dari fungsi \\[f(x)=-2x^2+4x+6\\] adalah...",
+            "a": "30",
+            "b": "1",
+            "c": "-1",
+            "d": "0",
             "jawab" : "d"
         }
     },{
@@ -56,39 +56,39 @@
         }
     },{
         "soal6": {
-            "lat":"Nilai \\[a,b,\\]dan \\[c\\] dari fungsi \\[f(x)=3x^2-3x-6\\] adalah...",
-            "a": "3, -3, dan -6",
-            "b": "-3, 6, dan 3",
-            "c": "2, 4, dan 3",
-            "d": "-2, 6, dan 2",
-            "jawab" : "a"
-        }
-    },{
-        "soal7": {
-            "lat":"Nilai \\[f(-1)\\] dari fungsi \\[f(x)=-2x^2+4x+6\\] adalah...",
-            "a": "30",
-            "b": "1",
-            "c": "-1",
-            "d": "0",
+            "lat":"Nilai f(4) dari fungsi kuadrat \\[f(x)=(x-3)(x-1)\\] adalah...",
+            "a": "4",
+            "b": "2",
+            "c": "-4",
+            "d": "3",
             "jawab" : "d"
         }
     },{
+        "soal7": {
+            "lat":"Nilai \\[f(-3)\\] dari fungsi kuadrat \\[f(x)=4(x-2)^2\\] adalah...",
+            "a": "16",
+            "b": "12",
+            "c": "4",
+            "d": "24",
+            "jawab" : "a"
+        }
+    },{
         "soal8": {
-            "lat":"Nilai \\[f(2)\\] dari fungsi \\[f(x)=-x^2+4\\] adalah...",
+            "lat":"Nilai \\[f(-1)\\] dari fungsi kuadrat\\[f(x)=2(x+2)(x-1)\\] adalah...",
             "a": "2",
-            "b": "0",
-            "c": "-2",
-            "d": "4",
+            "b": "-4",
+            "c": "8",
+            "d": "10",
             "jawab" : "b"
         }
     },{
         "soal9": {
-            "lat":"Nilai \\[f(-1)\\] dari fungsi \\[f(x)=4x^2-x\\] adalah...",
-            "a": "3",
-            "b": "4",
-            "c": "5",
-            "d": "1",
-            "jawab" : "c"
+            "lat":"Diketahui fungsi kuadrat \\[y=-x^2+2x+c\\] dengan nilai \\[x=2\\] dan \\[y=5\\] , maka nilai \\[c\\] adalah...",
+            "a": "2",
+            "b": "-1",
+            "c": "8",
+            "d": "5",
+            "jawab" : "d"
         }
     }
 ]

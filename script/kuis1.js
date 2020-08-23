@@ -93,9 +93,9 @@ dat.onreadystatechange = function () {
             // jawaban array
             jwb_benar.push(bnr);
             no = y+1;
-            txt += "<ol start='"+no+"' class=soalno  style=font-size:21px;>";
+            txt += "<ol start='"+no+"' class=soalno>";
             txt += "<li>";
-            txt += "<p style=font-size:25px;>" + soal + "</p>";
+            txt += "<p>" + soal + "</p>";
             txt += "</li>";
 
             txt += "<form name=soall id='soall" + x + "'>";

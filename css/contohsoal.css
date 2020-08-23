@@ -1,7 +1,7 @@
-#csoal1 {
+/* #csoal1 {
+  margin: 20px;
     border: 3px solid #006A4E;
     border-radius: 8px;
-    margin-top: -25px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
@@ -9,8 +9,8 @@
     line-height: 20px;
     font-size: 21px;
     height: auto;
-  }
-  #csoal21 {
+  } */
+  /* #csoal21 {
     border: 3px solid #006A4E;
     border-radius: 8px;
     margin-top: -25px;
@@ -19,26 +19,147 @@
     text-align: left;
     font-size: 21px;
     height: 500px;
-  }
-  #csoal2{
+  } */
+  /* #csoal2{
     display: none;
     font-size: 21px;
-  }
+    
+  } */
+  .latarcontoh{
+    width: 100%;
+    height: 75.8%;
+    background-color: #D3D3D3;
+    padding-top: 40px;
+}
+.contohtitle{
+  width: 90%;
+  height: 12%;
+  box-shadow: 1px 1px 3px 3px #19222a;
+  background-color: white;
+}
+.contohtitle p{
+  margin:0;
+  color: #006A4E;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 45px;
+}
+.contohKiri{
+  margin-top: 50px;
+  width:24.5%;
+  height:65%;
+  float:left;
+  overflow:hidden;
+  margin-left: 70px;
+
+}
+.contohKiri span{
+  margin-left: 5px;
+  line-height: 115px;
+  background-color: white;
+  padding: 10px;
+  font-size: 40px;
+  color: #006A4E;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  box-shadow: 1px 1px 3px 3px #19222a;
+  cursor: pointer;
+}
+.contohKanan{
+  line-height: 20px;
+  font-size: 23px;
+  box-shadow: 1px 1px 3px 3px #19222a;
+  margin-top: 50px;
+  background-color: white;
+  width:65%;
+  height:65%;
+  float:right;
+  overflow:auto;
+  margin-right: 70px;
+}
+.contohKanan span{
+  width: auto
+}
+.contohKanan button{
+  font-size: 18px;
+  margin:10px;
+  background-color: rgba(255, 255, 255, 0);
+  border:1px solid #006A4E;
+  cursor: pointer;
+}
+.contohhilang{
+  display: none;
+}
+#logocontoh{
+  width:50px;
+  height:50px;
+}
+.fx21{
+  margin-left: 69px;
+}
+.fx22{
+  margin-left: 50px;
+}
   /* #chartContainer{
     height: 300px; width: 500px;
   } */
   @media(max-width: 420px){
-    #csoal1 {
-        width: 100%;
-        font-size: 18px;
-      }
-      #csoal2{
-        display: none;
-        width: 100%;
-        font-size: 18px;
-      }
-      #csoal21 {
-        width: 100%;
-        font-size: 18px;
-      }
+    .latarcontoh{
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      padding-top: 0;
   }
+  .contohtitle{
+    width: 100%;
+    height: 10%;
+    box-shadow: none;
+  }
+  .contohtitle p{
+    margin:20px;
+    color: #006A4E;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+  }
+  #logocontoh{
+    width:25px;
+    height:25px;
+  }
+  .contohKiri{
+    margin-top: 0;
+    width:100%;
+    height:auto;
+    float:none;
+    overflow:hidden;
+    margin-left: 8px;
+  
+  }
+  .contohKiri span{
+    margin-left: 0;
+    line-height: 40px;
+    padding: 3px;
+    border:2px solid #19222a ;
+    background-color: white;
+    font-size: 17px;
+    box-shadow: none;
+  }
+  #hor1, #hor2, #hor3, #hor21, #hor22, #hor23{
+    display: none;
+  }
+  .contohKanan{
+    line-height: 0;
+    font-size: 18px;
+    box-shadow: none;
+    margin-top: 0;
+    background-color: white;
+    width:100%;
+    height:auto;
+    float:none;
+    overflow:auto;
+    margin-right: 0;
+  }
+  .fx21{
+    margin-left: 54px;
+  }
+  .fx22{
+    margin-left: 39px;
+  }
+}

@@ -26,6 +26,7 @@ mjx-container {
   .bodyfull2 form{
     position: relative;
     text-align: center;
+    line-height: 30px;
   }
 .kuistitle{
     border-bottom:4px solid #006A4E;
@@ -75,7 +76,8 @@ mjx-container {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
-    font-size: 21px;
+    font-size: 23px;
+    width: 600px;
 }
 .kuis11 label{
     float: left;
@@ -148,7 +150,7 @@ mjx-container {
     .kuis11{
         font-size: 18px;
         margin-left: 25px;
-        width: 330px;
+        width: 300px;
         padding-right: 1px;
         padding-left: 1px;
     }
@@ -193,7 +195,7 @@ mjx-container {
         font-size: 18px;
       }
       #navkuis{
-          width: 100%;
+        width: 300px;
         padding-top: -100px;
       }
       .bodyfull2{

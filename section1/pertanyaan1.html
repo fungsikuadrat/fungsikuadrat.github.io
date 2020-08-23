@@ -1,0 +1,249 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="../contohsoal.css" type="text/css">
+    <link rel="stylesheet" href="../css/pertanyaan.css" type="text/css">
+	
+	<script src="../script/latihan.js"></script>
+	
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body>
+<div>
+<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+		<ul>
+			<!-- <li>
+				<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/> -->
+		  <li>
+			<a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="quiz1.html"><i></i>Kuis</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="section21.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="section21.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			  </li>
+			  <!-- <li>
+				<a href="#"><i></i>Times</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Hates</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Beat</a>
+			  </li> -->
+			</ul>
+		  </li>
+		</ul>
+</div>
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+</div>
+<div class="latar" onclick="tutup()">
+<center><div class="pertanyaantitle">
+    <center><p ><img src="../logo/pertanyaan.png" width="50px" height="40px"> Pertanyaan</p></center>
+</div></center>
+<div class="pertanyaanKiri" onclick="tutup()">
+	<div class="lat">
+	<table class="pertanyaan" id="lat1">
+		<tr><td>
+			<center><span class="pertanyaanval">1 dari 5</span></center>
+			<ol><li>Dari bentuk berikut yang bukan merupakan fungsi kuadrat, adalah...
+				
+					<form name=soall id="pp11"></form>
+					<input type="radio" id="a" name="pertanyaan1" value="a">
+ 					<label for="a">$f(x)=9-3x-2x^2$</label><br>
+					<input type="radio" id="b" name="pertanyaan1" value="b">
+					<label for="b">$f(x)=3x^2+6x-9$</label><br>
+					<input type="radio" id="c" name="pertanyaan1" value="c">
+					<label for="c">$f(x)=2x+4$</label></form>
+				</li>
+			
+		</ol><center><button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
+			<button type="button" onclick="m1cek1()">Cek Jawaban</button>
+			<button type="button" onclick="next2()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat2">
+		<tr><td>
+			<center><span class="pertanyaanval">2 dari 5</span></center>
+			<ol start="2"><li>Dari bentuk berikut yang bukan merupakan fungsi kuadrat, adalah...
+				
+				<form name=soall id="pp12"></form>
+				<input type="radio" id="a" name="pertanyaan2" value="a">
+				 <label for="a">$f(x)=6x+3x^2-9$</label><br>
+				<input type="radio" id="b" name="pertanyaan2" value="b">
+				<label for="b">$f(x)=3x^3+2x$</label><br>
+				<input type="radio" id="c" name="pertanyaan2" value="c">
+				<label for="c">$f(x)=-4x^2+2x+12$</label></form>
+			</li>
+			
+		</ol><center><button type="button" onclick="back1()">Sebelumnya</button>
+			<button type="button" onclick="m1cek2()">Cek Jawaban</button>
+			<button type="button" onclick="next3()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat3">
+		<tr><td>
+			<center><span class="pertanyaanval">3 dari 5</span></center>
+			<ol start="3">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=-x^2+5x$</li>
+				<p>$a$ = <input id=jwb3a></input><span id="3a"></span> $b$ = <input id=jwb3b></input>
+					<span id="3b"></span>
+					$c$ = <input id=jwb3c></input><span id="3c"></span></p>
+			
+		</ol><center><button type="button" onclick="back2()">Sebelumnya</button>
+			<button type="button" onclick="m1cek3()">Cek Jawaban</button>
+			<button type="button" onclick="next4()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat4">
+		<tr><td>
+			<center><span class="pertanyaanval">4 dari 5</span></center>
+			<ol start="4">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=-2x^2+8$</li>
+					<p>$a$ = <input id=jwb4a></input><span id="4a"></span> $b$ = <input id=jwb4b></input><span id="4b"></span>
+						$c$ = <input id=jwb4c></input><span id="4c"></span></p>
+			
+		</ol><center><button type="button" onclick="back3()">Sebelumnya</button>
+			<button type="button" onclick="m1cek4()">Cek Jawaban</button>
+			<button type="button" onclick="next5()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat5">
+		<tr><td>
+			<center><span class="pertanyaanval">5 dari 5</span></center>
+			<ol start="5">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=2x^2+5x-8$</li>
+					<p>$a$ = <input id=jwb5a></input><span id="5a"></span> $b$ = <input id=jwb5b></input><span id="5b"></span>
+						$c$ = <input id=jwb5c></input><span id="5c"></span></p>
+			
+		</ol><center><button type="button" onclick="back4()">Sebelumnya</button>
+			<button type="button" onclick="m1cek5()">Cek Jawaban</button>
+			<button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;" onclick="next6()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<!-- <table class="pertanyaan" id="lat6">
+		<tr><td>
+			<center><span class="pertanyaanval">6 dari 8</span></center>
+			<ol start="6">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=4x^2+2x-2$</li>
+					<p>$a$ = <input id=jwb6a></input><span id="6a"></span> $b$ = <input id=jwb6b></input><span id="6b"></span>
+						$c$ = <input id=jwb6c></input><span id="6c"></span></p>
+			
+		</ol><center><button type="button" onclick="back5()">Sebelumnya</button>
+			<button type="button" onclick="m1cek6()">Cek Jawaban</button>
+			<button type="button" onclick="next7()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat7">
+		<tr><td>
+			<center><span class="pertanyaanval">7 dari 8</span></center>
+			<ol start="7">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=-2x^2-x+6$</li>
+					<p>$a$ = <input id=jwb7a></input><span id="7a"></span> $b$ = <input id=jwb7b></input><span id="7b"></span>
+						$c$ = <input id=jwb7c></input><span id="7c"></span></p>
+			
+		</ol><center><button type="button" onclick="back6()">Sebelumnya</button>
+			<button type="button" onclick="m1cek7()">Cek Jawaban</button>
+			<button type="button" onclick="next8()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat8">
+		<tr><td>
+			<center><span class="pertanyaanval">8 dari 8</span></center>
+			<ol start="8">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=-4x^2+x+3$</li>
+					<p>$a$ = <input id=jwb8a></input><span id="8a"></span> $b$ = <input id=jwb8b></input><span id="8b"></span>
+						$c$ = <input id=jwb8c></input><span id="8c"></span></p>
+			
+		</ol><center><button type="button" onclick="back7()">Sebelumnya</button>
+			<button type="button" onclick="next9()">Cek Jawaban</button>
+			<button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table> -->
+</div>
+</div>
+<div class="pertanyaanKanan" onclick="tutup()">
+                <td>
+                    <table id="pertanyaannav" style="border:none">
+                        <br>
+                        <tr>
+                        <th id="nonav1">1</th>
+                        <th id="nonav2">2</th></tr>
+                        <th id="nonav3">3</th>
+                        <th id="nonav4">4</th></tr>
+                        <th id="nonav5">5</th>
+                        <!-- <th id="nonav6">6</th></tr>
+                        <th id="nonav7">7</th>
+                        <th id="nonav8">8</th> -->
+                    </table>
+                </td>
+</div>
+</div>
+
+<div id="menubawah" class="footer" style="width:100%;float:left;">
+	<center>
+		<a href="contohsoal(bentuk).html"><span class="navbawah">Sebelumnya</span></a>
+		<a href="materi1.html"><span>1</span></a>
+		<a href="contohsoal(bentuk).html"><span>2</span></a>
+		<a href="pertanyaan1.html"><span style="background-color: #006A4E;">3</span></a>
+		<a href="materi2.html"><span class="navbawah">Selanjutnya</span></a>
+		<!-- <button><img src="../img/belums.png" class="navbawah img1"></button>
+		<button>1</button> -->
+		<!-- <a href="materi2.html"><img src="../img/lanjut.png" class="navbawah mg2"></a> -->
+	</center>
+
+</div>
+</div>
+
+<script src="../script/navigasi.js"></script>
+<script src="../script/sideKiri.js"></script>
+</body>
+</html>

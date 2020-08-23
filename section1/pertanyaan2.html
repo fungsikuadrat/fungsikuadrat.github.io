@@ -1,0 +1,264 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="../contohsoal.css" type="text/css">
+    <link rel="stylesheet" href="../css/pertanyaan.css" type="text/css">
+	
+	
+	
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body onload="randomx()">
+<div>
+<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+		<ul>
+			<!-- <li>
+				<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/> -->
+		  <li>
+			<a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="quiz1.html"><i></i>Kuis</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="section21.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="section21.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			  </li>
+			  <!-- <li>
+				<a href="#"><i></i>Times</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Hates</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Beat</a>
+			  </li> -->
+			</ul>
+		  </li>
+		</ul>
+</div>
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+</div>
+<div class="latar" onclick="tutup()">
+<center><div class="pertanyaantitle">
+    <center><p ><img src="../logo/pertanyaan.png" width="50px" height="40px"> Pertanyaan</p></center>
+</div></center>
+<div class="pertanyaanKiri" onclick="tutup()">
+    <center><div class="kirikalkulator">
+        <span class="kal2">Kalkulator</span>
+        <table border="1" id="kal3" class="hape"> 
+            <tr> 
+               <td colspan="3"><input type="text" id="result"/></td> 
+               <td><input type="button" value="c" onclick="clr()"/> </td> 
+            </tr> 
+            <tr> 
+               <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+               <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+               <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+               <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+            </tr> 
+            <tr> 
+               <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+               <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+               <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+               <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+            </tr> 
+            <tr> 
+               <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+               <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+               <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+               <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+            </tr> 
+            <tr> 
+               <td><input type="button" value="." onclick="dis('.')"/> </td> 
+               <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+               
+               <td><input type="button" value="=" onclick="solve()"/> </td> 
+               <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+            </tr> 
+         </table> 
+    </div></center>
+    <div class="kirisoal">
+	<div class="lat">
+	<table class="pertanyaan" id="lat21">
+		<tr><td>
+			<center><span class="pertanyaanval">1 dari 5</span></center>
+            <ol><li>Tentukan nilai fungsi kuadrat dibawah ini :
+			
+			<p>$x=$<span id=x0></span><br/>
+				$f(x)=-x^2+2x+3$<br/>
+				$f$(<span id=x1x0></span>) = <input type="text" id="ax0" onchange="ax0(this.value)"></input>$+$
+				<input type="text" id="bx0" onchange="bx0(this.value)"></input>$+$
+				<input type="text" id="cx0" onchange="cx0(this.value)"></input><br/>
+				<!-- <span class="hilangi" id="xj0"> -->
+					$f$(<span id=xx0></span>) = <input id=jwb0></input>
+				<!-- </span> -->
+		</p></li>
+		</ol>
+		<center>
+            <button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
+            <button type="button" onclick="m2cek1()">Cek Jawaban</button>
+            <button type="button" onclick="next22()">Selanjutnya</button>
+        </center></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat22">
+		<tr><td>
+            <center><span class="pertanyaanval">2 dari 5</span></center>
+            <ol start="2"><li>Tentukan nilai fungsi kuadrat dibawah ini :
+			
+			<p>$x=$<span id=x1></span><br/>
+				$f(x)=2x^2+x$<br/>
+				$f$(<span id=x2x0></span>) = <input type="text" id="ax1" onchange="ax1(this.value)"></input>$+$
+				<input type="text" id="bx1" onchange="bx1(this.value)"></input>$+$
+				<input type="text" id="cx1" onchange="cx1(this.value)"></input><br/>
+				<!-- <span class="hilangi" id="xj1"> -->
+					$f$(<span id=xx1></span>) = <input id=jwb1></input>
+				<!-- </span> -->
+		</p></li>
+		</ol>
+		<center>
+			<button type="button" onclick="back21()">Sebelumnya</button>
+            <button type="button" onclick="m2cek2()">Cek Jawaban</button>
+            <button type="button" onclick="next23()">Selanjutnya</button>
+        </center></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat23">
+		<tr><td>
+            <center><span class="pertanyaanval">3 dari 5</span></center>
+            <ol start="3"><li>Tentukan nilai fungsi kuadrat dibawah ini :
+            
+                <p>$x=$<span id=x2></span><br/>
+					$f(x)=3x^2-1$<br/>
+					$f$(<span id=x3x0></span>) = <input type="text" id="ax2" onchange="ax2(this.value)"></input>$+$
+					<input type="text" id="bx2" onchange="bx2(this.value)"></input>$-$
+					<input type="text" id="cx2" onchange="cx2(this.value)"></input><br/>
+					<!-- <span class="hilangi" id="xj2"> -->
+						$f$(<span id=xx2></span>) = <input id=jwb2></input>
+					<!-- </span> -->
+            </ol></p></li>
+            <center>
+                <button type="button" onclick="back22()">Sebelumnya</button>
+                <button type="button" onclick="m2cek3()">Cek Jawaban</button>
+                <button type="button" onclick="next24()">Selanjutnya</button>
+            </center></td>
+	<td></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat24">
+		<tr><td>
+            <center><span class="pertanyaanval">4 dari 5</span></center>
+            <ol start="4"><p><li>Tentukan nilai fungsi kuadrat dibawah ini :
+            
+                <p>$x=$<span id=x3></span><br/>
+					$f(x)=x^2+x-2$<br/>
+					$f$(<span id=x4x0></span>) = <input type="text" id="ax3" onchange="ax3(this.value)"></input>$+$
+					<input type="text" id="bx3" onchange="bx3(this.value)"></input>$-$
+					<input type="text" id="cx3" onchange="cx3(this.value)"></input><br/>
+					<!-- <span class="hilangi" id="xj3"> -->
+						$f$(<span id=xx3></span>) = <input id=jwb3></input>
+					<!-- </span> -->
+			</p></li>
+            </ol>
+            <center>
+                <button type="button" onclick="back23()">Sebelumnya</button>
+                <button type="button" onclick="m2cek4()">Cek Jawaban</button>
+                <button type="button" onclick="next25()">Selanjutnya</button>
+            </center></td>
+	</tr>
+	</table>
+	<table class="pertanyaan" id="lat25">
+		<tr><td>
+            <center><span class="pertanyaanval">5 dari 5</span></center>
+            <ol start="5"><p><li>Tentukan nilai fungsi kuadrat dibawah ini :
+            
+                <p>$x=$<span id=x4></span><br/>
+					$f(x)=3(x-1)^2-1$<br/>
+					$f$(<span id=x5x0></span>) = <input type="text" id="ax4" onchange="ax4(this.value)"></input>$-$
+					<input type="text" id="bx4" onchange="bx4(this.value)"></input><br/>
+					<!-- <span class="hilangi" id="xj4"> -->
+						$f$(<span id=xx4></span>) = <input id=jwb4></input>
+					<!-- </span> -->
+			</p></li>
+            </ol>
+            <center>
+                <button type="button" onclick="back24()">Sebelumnya</button>
+                <button type="button" onclick="m2cek5()">Cek Jawaban</button>
+                <button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;" >Selanjutnya</button>
+            </center></td>
+	</tr>
+	</table>
+	<!-- <table class="pertanyaan" id="lat5">
+		<tr><td>
+			<center><span class="pertanyaanval">5 dari 5</span></center>
+			<ol start="5">
+				
+				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
+					$f(x)=2x^2+5x-8$</li>
+					<p>$a$ = <input id=jwb5a></input><span id="5a"></span> $b$ = <input id=jwb5b></input><span id="5b"></span>
+						$c$ = <input id=jwb5c></input><span id="5c"></span></p>
+			
+		</ol><center><button type="button" onclick="back4()">Sebelumnya</button>
+			<button type="button" onclick="m1cek5()">Cek Jawaban</button>
+			<button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;" onclick="next6()">Selanjutnya</button></center></td>
+	<td></td>
+	</tr>
+	</table> -->
+</div></div>
+</div>
+<div class="pertanyaanKanan" onclick="tutup()">
+                <td>
+                    <table id="pertanyaannav" style="border:none">
+                        <br>
+                        <tr>
+                            <th id="nonav21">1</th>
+                            <th id="nonav22">2</th></tr>
+                            <th id="nonav23">3</th>
+							<th id="nonav24">4</th></tr>
+							<th id="nonav25">5</th>
+                    </table>
+                </td>
+</div>
+</div>
+
+<div id="menubawah" class="footer" style="width:100%;float:left;">
+	<center>
+		<a href="contoh(nilai).html"><span class="navbawah">Sebelumnya</span></a>
+		<a href="materi2.html"><span>1</span></a>
+		<a href="contoh(nilai).html"><span>2</span></a>
+		<a href="pertanyaan2.html"><span style="background-color: #006A4E;">3</span></a>
+		<a href="quiz1.html"><span class="navbawah">Selanjutnya</span></a>
+	</center>
+
+</div>
+</div>
+<script src="../script/latihan.js"></script>
+<script src="../script/sideKiri.js"></script>
+<script src="../script/kalkulator.js"></script>
+</body>
+</html>
