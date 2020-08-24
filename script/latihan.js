@@ -2039,26 +2039,26 @@ function back24(){
 	lan3=0;
 
 	//input a5
-	if (document.getElementById("ax4").value==""){
-		document.getElementById("ax4").style.borderColor="red";
-	}
-	else if (document.getElementById("ax4").value==aa ){
-		document.getElementById("ax4").style.borderColor="#006A4E";
-	}
-	else{
-		document.getElementById("ax4").style.borderColor="red";
-	}
+	// if (document.getElementById("ax4").value==""){
+	// 	document.getElementById("ax4").style.borderColor="red";
+	// }
+	// else if (document.getElementById("ax4").value==aa ){
+	// 	document.getElementById("ax4").style.borderColor="#006A4E";
+	// }
+	// else{
+	// 	document.getElementById("ax4").style.borderColor="red";
+	// }
 
-	//input b5
-	if (document.getElementById("bx4").value==""){
-		document.getElementById("bx4").style.borderColor="red";
-	}
-	else if (document.getElementById("bx4").value==bb ){
-		document.getElementById("bx4").style.borderColor="#006A4E";
-	}
-	else{
-		document.getElementById("bx4").style.borderColor="red";
-	}
+	// //input b5
+	// if (document.getElementById("bx4").value==""){
+	// 	document.getElementById("bx4").style.borderColor="red";
+	// }
+	// else if (document.getElementById("bx4").value==bb){
+	// 	document.getElementById("bx4").style.borderColor="#006A4E";
+	// }
+	// else{
+	// 	document.getElementById("bx4").style.borderColor="red";
+	// }
 
 	// //input c5
 	// if (document.getElementById("cx4").value==""){
