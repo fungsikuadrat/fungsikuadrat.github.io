@@ -279,7 +279,7 @@ body {
 }
 .fullbawah{
   background-color:#d8d8d8;
-  height: 81.5%;
+  height: 99.6%;
 }
 .fullbawah a{
   text-decoration: none;
@@ -287,6 +287,8 @@ body {
 }
 .fullbawah img{
   cursor: pointer;
+  width: 300px;
+  height: 300px;
 }
 .fullbawah table{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -385,8 +387,13 @@ body {
   font-size: 100px;
 }
 .fungsi{
+  display: inline-block;
+  margin-bottom: 100px;
+  color: #19222a;
+  width: 100%;
+  box-shadow: 1px 1px 3px 3px #19222a;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 50px;
+  font-size: 80px;
 }
 .strip{
   margin-left: -40px;
@@ -476,6 +483,7 @@ body {
   }
   .fungsi{
     font-size: 35px;
+    margin-bottom: 20px;
   }
   .strip{
     width: 285px;
@@ -563,5 +571,9 @@ body {
 }
 .menu th{
   padding: 25px;
+}
+.fullbawah img{
+  width: 100px;
+  height: 80px;
 }
 }

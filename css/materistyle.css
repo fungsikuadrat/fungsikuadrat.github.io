@@ -167,6 +167,20 @@ p.matitle {
   margin:20px;
   width: 100%;
 }
+.menuawal{
+  padding: 20px;
+  display: inline-block;
+  margin-right: 50px;
+  box-shadow: 1px 1px 3px 3px #19222a;
+}
+.menuawal a{
+  cursor: pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+}
+.navawal span:hover{
+  background-color: white;
+}
 @media(max-width: 420px){
   /* .suhu td, th {
     padding: 25px;
@@ -217,5 +231,12 @@ p.matitle {
 }
 .navmat th{
   width: 12px;
+}
+.menuawal{
+  margin-right: 0;
+  margin-bottom: 25px;
+}
+.menuawal a{
+  font-size: 40px;
 }
 }

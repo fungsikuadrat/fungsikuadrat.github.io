@@ -138,6 +138,9 @@ width:100%
     background-color: #19222a;
     border-color: #19222a;
   }
+  .f25{
+      margin-left: 60px;
+  }
   @media(max-width: 430px){
     .latar{
         width: 100%;

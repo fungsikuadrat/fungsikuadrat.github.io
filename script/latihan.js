@@ -776,36 +776,171 @@ c[3]=-2;
 c[4]=2;
 
 
+function dx4(val){
+	lan1 = 1;
+	let hhas=isi[4]-1;
+	if(val==""){
+		document.getElementById("dx4").style.borderColor="red";
+	}
+	else if(val==hhas){
+		document.getElementById("dx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("dx4").style.borderColor="red";
+	}
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("f251");
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
+}
+
+function cx4(val){
+	lan2 = 1;
+	let hhas=isi[4]-1;
+	if(val==""){
+		document.getElementById("cx4").style.borderColor="red";
+	}
+	else if(val==hhas){
+		document.getElementById("cx4").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("cx4").style.borderColor="red";
+	}
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("f251");
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
+}
+
 function ax4(val){
 	lan1 = 1;
 	let hhas=a[4]*((isi[4]-1)*(isi[4]-1));
+	if(val==""){
+		document.getElementById("ax4").style.borderColor="red";
+	}
 	if(val==hhas){
 		document.getElementById("ax4").style.borderColor="#006A4E";
 	}
 	else{
 		document.getElementById("ax4").style.borderColor="red";
 	}
-	// if(lan=="2"){
-	// 	let lanjut1 = document.getElementById("xj4");
-	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+	lan = lan1+lan2;
+	if(lan=="2"){
+		let lanjut1 = document.getElementById("xj4");
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
 }
-function bx4(val){
+function bx42(val){
 	lan2 = 1;
-	if(val=="1"){
+	if(val==""){
+		document.getElementById("bx42").style.borderColor="red";
+	}
+	else if(val=="1"){
+		document.getElementById("bx42").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx42").style.borderColor="red";
+	}
+	lan = lan1+lan2;
+
+	if(lan=="2"){
+		let lanjut1 = document.getElementById("xj4");
+	
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
+}
+
+function bx4(val){
+	lan3 = 1;
+	if(val==""){
+		document.getElementById("bx4").style.borderColor="red";
+	}
+	else if(val=="1"){
 		document.getElementById("bx4").style.borderColor="#006A4E";
 	}
 	else{
 		document.getElementById("bx4").style.borderColor="red";
 	}
-	// lan = lan1+lan2;
+	lan = lan1+lan2+lan3;
 
-	// if(lan=="2"){
-	// 	let lanjut1 = document.getElementById("xj4");
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("f251");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
+}
+
+function ax41(val){
+	lan1 = 1;
+	let hhas=isi[4]-1;
+	let hhas1=hhas*hhas;
+	if(val==""){
+		document.getElementById("ax41").style.borderColor="red";
+	}
+	else if(val==hhas1){
+		document.getElementById("ax41").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("ax41").style.borderColor="red";
+	}
+	lan = lan1+lan2;
+
+	if(lan=="2"){
+		let lanjut1 = document.getElementById("f252");
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
+}
+function bx41(val){
+	lan2 = 1;
+	if(val==""){
+		document.getElementById("bx41").style.borderColor="red";
+	}
+	else if(val=="1"){
+		document.getElementById("bx41").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("bx41").style.borderColor="red";
+	}
+	lan = lan1+lan2;
+
+	if(lan=="2"){
+		let lanjut1 = document.getElementById("f252");
+	
+		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
+	}
 }
 
 function ax0(val){
@@ -817,11 +952,13 @@ function ax0(val){
 	else{
 		document.getElementById("ax0").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj0");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj0");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function bx0(val){
 	lan2 = 1;
@@ -832,11 +969,13 @@ function bx0(val){
 	else{
 		document.getElementById("bx0").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj0");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj0");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function cx0(val){
 	lan3 = 1;
@@ -846,13 +985,13 @@ function cx0(val){
 	else{
 		document.getElementById("cx0").style.borderColor="red";
 	}
-	// lan = lan1+lan2+lan3;
+	lan = lan1+lan2+lan3;
 
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj0");
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj0");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function ax1(val){
 	lan1 = 1;
@@ -863,11 +1002,13 @@ function ax1(val){
 	else{
 		document.getElementById("ax1").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj1");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj1");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function bx1(val){
 	lan2 = 1;
@@ -878,11 +1019,13 @@ function bx1(val){
 	else{
 		document.getElementById("bx1").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj1");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj1");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function cx1(val){
 	lan3 = 1;
@@ -894,11 +1037,11 @@ function cx1(val){
 	}
 	lan = lan1+lan2+lan3;
 
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj1");
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj1");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 
 function ax2(val){
@@ -910,11 +1053,13 @@ function ax2(val){
 	else{
 		document.getElementById("ax2").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj2");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj2");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function bx2(val){
 	lan2 = 1;
@@ -925,11 +1070,13 @@ function bx2(val){
 	else{
 		document.getElementById("bx2").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj2");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj2");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function cx2(val){
 	lan3 = 1;
@@ -941,11 +1088,11 @@ function cx2(val){
 	}
 	lan = lan1+lan2+lan3;
 
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj2");
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj2");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 
 function ax3(val){
@@ -957,11 +1104,13 @@ function ax3(val){
 	else{
 		document.getElementById("ax3").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj3");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj3");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function bx3(val){
 	lan2 = 1;
@@ -972,11 +1121,13 @@ function bx3(val){
 	else{
 		document.getElementById("bx3").style.borderColor="red";
 	}
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj3");
+	lan = lan1+lan2+lan3;
+
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj3");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 function cx3(val){
 	lan3 = 1;
@@ -986,13 +1137,13 @@ function cx3(val){
 	else{
 		document.getElementById("cx3").style.borderColor="red";
 	}
-	// lan = lan1+lan2+lan3;
+	lan = lan1+lan2+lan3;
 
-	// if(lan=="3"){
-	// 	let lanjut1 = document.getElementById("xj3");
+	if(lan=="3"){
+		let lanjut1 = document.getElementById("xj3");
 	
-	// 	lanjut1.classList.remove("hilangi");
-	// }
+		lanjut1.classList.remove("hilangi");
+	}
 }
 
 
@@ -1001,6 +1152,10 @@ function next22(){
 	let bb=(b[0]*isi[0]);
 	let hasil=aa+bb+c[0];
 
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
 	//input a1
 	if (document.getElementById("ax0").value=="" ){
 		document.getElementById("ax0").style.borderColor="red";
@@ -1151,6 +1306,11 @@ function back21(){
 	let bb=(b[1]*isi[1]);
 	let hasil=aa+bb+c[1];
 
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
+
 	if (document.getElementById("ax1").value==aa ){
 		document.getElementById("ax1").style.borderColor="#006A4E";
 	}
@@ -1280,6 +1440,11 @@ function next23(){
 	let bb=(b[1]*isi[1]);
 	let hasil=aa+bb+c[1];
 
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
+
 	//input a2
 	if (document.getElementById("ax1").value=="" ){
 		document.getElementById("ax1").style.borderColor="red";
@@ -1375,6 +1540,11 @@ function back22(){
 	let bb=(b[2]*isi[2]);
 	let hasil=aa+bb+c[2];
 
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
+
 	//input a3
 	if (document.getElementById("ax2").value=="" ){
 		document.getElementById("ax2").style.borderColor="red";
@@ -1459,7 +1629,7 @@ function m2cek3(){
 	let hasil=aa+bb+c[2];
 
 	//input jawab3
-	if (document.getElementById("jwb2").value==hasil ){
+	if (document.getElementById("jwb2").value==""){
 		document.getElementById("nonav23").style.backgroundColor="red";
 		document.getElementById("nonav23").style.color="white";
 		document.getElementById("jwb2").style.borderColor="red";
@@ -1514,6 +1684,11 @@ function next24(){
 	let aa=((isi[2]*isi[2])*(a[2]));
 	let bb=(b[2]*isi[2]);
 	let hasil=aa+bb+c[2];
+
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
 
 	//input a3
 	if (document.getElementById("ax2").value==""){
@@ -1609,6 +1784,11 @@ function back23(){
 	let bb=(b[3]*isi[3]);
 	let hasil=aa+bb+c[3];
 
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
+
 	//input a4
 	if (document.getElementById("ax3").value==""){
 		document.getElementById("ax3").style.borderColor="red";
@@ -1691,6 +1871,7 @@ function next25(){
 	let aa=((isi[3]*isi[3])*(a[3]));
 	let bb=(b[3]*isi[3]);
 	let hasil=aa+bb+c[3];
+	let xx4 = document.querySelectorAll(".xx4");
 	//input a4
 	if (document.getElementById("ax3").value==""){
 		document.getElementById("ax3").style.borderColor="red";
@@ -1740,7 +1921,11 @@ function next25(){
 		document.getElementById("lat25").classList.remove("hilangi");
 		document.getElementById("x4").innerHTML=isi[4];
 		document.getElementById("x5x0").innerHTML=isi[4];
-		document.getElementById("xx4").innerHTML=isi[4];
+		// document.querySelectorAll(".xx4").innerHTML=isi[4];
+		xx4[0].innerHTML=isi[4];
+		xx4[1].innerHTML=isi[4];
+		xx4[2].innerHTML=isi[4];
+		
 		lan=0;
 	}
 	else if (document.getElementById("jwb3").value==hasil ){
@@ -1758,7 +1943,10 @@ function next25(){
 		document.getElementById("lat25").classList.remove("hilangi");
 		document.getElementById("x4").innerHTML=isi[4];
 		document.getElementById("x5x0").innerHTML=isi[4];
-		document.getElementById("xx4").innerHTML=isi[4];
+		// document.getElementById("xx4").innerHTML=isi[4];
+		xx4[0].innerHTML=isi[4];
+		xx4[1].innerHTML=isi[4];
+		xx4[2].innerHTML=isi[4];
 		lan=0;
 	}
 	else{
@@ -1776,7 +1964,10 @@ function next25(){
 		document.getElementById("lat25").classList.remove("hilangi");
 		document.getElementById("x4").innerHTML=isi[4];
 		document.getElementById("x5x0").innerHTML=isi[4];
-		document.getElementById("xx4").innerHTML=isi[4];
+		// document.getElementById("xx4").innerHTML=isi[4];
+		xx4[0].innerHTML=isi[4];
+		xx4[1].innerHTML=isi[4];
+		xx4[2].innerHTML=isi[4];
 		lan=0;
 	}
 }
@@ -1841,6 +2032,11 @@ function m2cek4(){
 function back24(){
 	let aa=a[4]*((isi[4]-1)*(isi[4]-1));
 	let hasil=aa-1;
+
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
 
 	//input a5
 	if (document.getElementById("ax4").value==""){
