@@ -168,6 +168,9 @@ p.matitle {
   width: 100%;
 }
 @media(max-width: 420px){
+  /* .suhu td, th {
+    padding: 25px;
+  } */
   .indikator {
     width: 100%;
     font-size: 18px;

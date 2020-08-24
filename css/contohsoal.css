@@ -145,7 +145,7 @@
     display: none;
   }
   .contohKanan{
-    line-height: 0;
+    line-height: 20px;
     font-size: 18px;
     box-shadow: none;
     margin-top: 0;

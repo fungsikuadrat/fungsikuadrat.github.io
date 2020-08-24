@@ -279,7 +279,7 @@ body {
 }
 .fullbawah{
   background-color:#d8d8d8;
-  height: 205px;
+  height: 81.5%;
 }
 .fullbawah a{
   text-decoration: none;
@@ -292,6 +292,7 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #19222a;
   font-size: 30px;
+  
   padding-left: 200px;
   float: left;
   cursor: pointer;
@@ -384,6 +385,7 @@ body {
   font-size: 100px;
 }
 .fungsi{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50px;
 }
 .strip{
@@ -393,9 +395,11 @@ body {
 }
 .menu{
   text-align: center;
+ 
 }
 .menu th{
   border: none;
+  padding: 90px;
 }
 .menu img{
   width: 120px; 
@@ -482,9 +486,7 @@ body {
     height: 60px;
   }
   .fullbawah{
-    height:30%;
-    margin-top: 110px;
-    margin-bottom: 60px;
+    height:100%;
   }
   .sidenav {
     top: 40px;
@@ -558,5 +560,8 @@ body {
 .fullbawah table{
   padding-left: 0;
   float: none;
+}
+.menu th{
+  padding: 25px;
 }
 }
