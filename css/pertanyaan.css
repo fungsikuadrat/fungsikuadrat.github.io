@@ -159,6 +159,7 @@ width:100%
         margin-top: 0;
         width:100%;
         height:auto;
+        margin-bottom: auto;
         background-color: white;
         margin-left: 0;
     }
@@ -179,7 +180,7 @@ width:100%
     color: #006A4E;
 }
 .pertanyaanKiri input{
-    width: 50px;
+    width: 30px;
     border-color: #006A4E;
 }
 .pertanyaanKiri button{
@@ -196,10 +197,10 @@ width:100%
     float: none;
     padding-top:10px ;
 }
-.hilangkal{
+/* .hilangkal{
     display: inline;
 }
 .hape{
     display: none;
-}
+} */
 }

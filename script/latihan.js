@@ -956,8 +956,11 @@ function ax0(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj0");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function bx0(val){
@@ -973,8 +976,11 @@ function bx0(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj0");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function cx0(val){
@@ -989,8 +995,11 @@ function cx0(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj0");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function ax1(val){
@@ -1006,8 +1015,11 @@ function ax1(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj1");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function bx1(val){
@@ -1023,8 +1035,11 @@ function bx1(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj1");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function cx1(val){
@@ -1039,8 +1054,11 @@ function cx1(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj1");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 
@@ -1057,8 +1075,11 @@ function ax2(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj2");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function bx2(val){
@@ -1074,8 +1095,11 @@ function bx2(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj2");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function cx2(val){
@@ -1090,8 +1114,11 @@ function cx2(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj2");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 
@@ -1108,8 +1135,11 @@ function ax3(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj3");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function bx3(val){
@@ -1125,8 +1155,11 @@ function bx3(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj3");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 function cx3(val){
@@ -1141,8 +1174,11 @@ function cx3(val){
 
 	if(lan=="3"){
 		let lanjut1 = document.getElementById("xj3");
-	
 		lanjut1.classList.remove("hilangi");
+		lan=0;
+		lan2=0;
+		lan1=0;
+		lan3=0;
 	}
 }
 
@@ -1326,7 +1362,7 @@ function back21(){
 	}
 
 	if (document.getElementById("cx1").value==""){
-		document.getElementById("cx1").style.borderColor="blue";
+		document.getElementById("cx1").style.borderColor="red";
 	}
 	else if (document.getElementById("cx1").value==c[1] ){
 		document.getElementById("cx1").style.borderColor="#006A4E";
@@ -1876,7 +1912,7 @@ function next25(){
 	lan1=0;
 	lan2=0;
 	lan3=0;
-	
+
 	let xx4 = document.querySelectorAll(".xx4");
 	//input a4
 	if (document.getElementById("ax3").value==""){
