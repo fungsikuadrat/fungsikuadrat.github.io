@@ -1871,6 +1871,12 @@ function next25(){
 	let aa=((isi[3]*isi[3])*(a[3]));
 	let bb=(b[3]*isi[3]);
 	let hasil=aa+bb+c[3];
+
+	lan=0;
+	lan1=0;
+	lan2=0;
+	lan3=0;
+	
 	let xx4 = document.querySelectorAll(".xx4");
 	//input a4
 	if (document.getElementById("ax3").value==""){
