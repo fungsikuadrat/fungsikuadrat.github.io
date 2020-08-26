@@ -205,7 +205,7 @@ body {
       padding-right:15px;
   }
   .bodyKiri p{
-    font-size: 21px;
+    font-size: 23px;
   }
   .bodyKiri ol{
     font-size: 21px;
@@ -431,9 +431,9 @@ body {
   padding: 5px;
 
 }
-.footer span:hover{
+/* .footer span:hover{
   background-color: #006A4E;
-}
+} */
 /* .navbawah{
   border-radius: 8px;
   background-color: #006A4E;
@@ -499,6 +499,7 @@ body {
   .sidenav {
     top: 40px;
     padding-top: 2px;
+    height: 95%;
   }
   .bodyfull{
     width:auto;

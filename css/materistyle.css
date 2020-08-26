@@ -18,8 +18,8 @@ p.matitle {
     padding-right: 10px;
     padding-top: 10px;
     text-align: left;
-    line-height: 20px;
-    font-size: 21px;
+    line-height: 30px;
+    font-size: 23px;
     display: inline-block !important;
 }
 .matisi2 {
@@ -127,6 +127,10 @@ p.matitle {
   font-size: 21px;
 }
 
+.subs2{
+  height: 380px;
+  width: 600px;
+}
 .subs1{
   height: 400px;
   width: 600px;

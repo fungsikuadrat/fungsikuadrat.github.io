@@ -31,6 +31,10 @@
     background-color: #D3D3D3;
     padding-top: 40px;
 }
+.latarcontoh2{
+  width: 100%;
+  background-color: #D3D3D3;
+}
 .contohtitle{
   width: 90%;
   height: 12%;
@@ -38,6 +42,17 @@
   background-color: white;
 }
 .contohtitle p{
+  margin:0;
+  color: #006A4E;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 45px;
+}
+.contohtitle2{
+  width: 100%;
+  height: 5%;
+  background-color: white;
+}
+.contohtitle2 p{
   margin:0;
   color: #006A4E;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -63,17 +78,34 @@
   box-shadow: 1px 1px 3px 3px #19222a;
   cursor: pointer;
 }
+.contohKiri2{
+  width:98%;
+  overflow:hidden;
+
+}
+.contohKiri2 span{
+  margin-left: 5px;
+  line-height: 115px;
+  background-color: white;
+  padding: 10px;
+  font-size: 30px;
+  color: #006A4E;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  box-shadow: 1px 1px 3px 3px #19222a;
+  cursor: pointer;
+}
 .contohKanan{
   line-height: 20px;
   font-size: 23px;
   box-shadow: 1px 1px 3px 3px #19222a;
   margin-top: 50px;
   background-color: white;
-  width:65%;
+  width:60%;
   height:65%;
   float:right;
   overflow:auto;
   margin-right: 70px;
+  padding: 20px;
 }
 .contohKanan span{
   width: auto
@@ -84,6 +116,14 @@
   background-color: rgba(255, 255, 255, 0);
   border:1px solid #006A4E;
   cursor: pointer;
+}
+.contohKanan2{
+  line-height: 20px;
+  font-size: 23px;
+  background-color: white;
+  width:97%;
+  overflow:auto;
+  padding: 20px;
 }
 .contohhilang{
   display: none;
@@ -98,6 +138,21 @@
 .fx22{
   margin-left: 50px;
 }
+.geowindows{
+  display: inline;
+}
+.geohape{
+  display: none;
+}
+/* .geocontoh{
+  src:url(https://www.geogebra.org/classic/b6qeqswb);
+  width:750px;
+  height:500px;
+} */
+/* .contohKanan2 table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */
   /* #chartContainer{
     height: 300px; width: 500px;
   } */
@@ -161,5 +216,20 @@
   }
   .fx22{
     margin-left: 39px;
+  }
+  .contohKanan2{
+    line-height: 20px;
+    font-size: 18px;
+    width:auto;
+    overflow:auto;
+    padding: 10px;
+  }
+  .geohape{
+    display: inline-block;
+    width:340px;
+    height:500px;
+  }
+  .geowindows{
+    display: none;
   }
 }

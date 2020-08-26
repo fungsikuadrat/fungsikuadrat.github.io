@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <meta name=viewport content="width=device-width,initial-scale=1">  
+    <meta charset="utf-8"/>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+</head>
+
+<body>
+    <div id="ggb-element"></div> 
+    <script>  
+        var ggbApp = new GGBApplet({"appName": "classic", "width": 150, "height": 500, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true }, true);
+        window.addEventListener("load", function() { 
+            ggbApp.inject('ggb-element');
+        });
+    </script>
+</body>
+</html> 
