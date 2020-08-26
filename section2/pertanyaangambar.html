@@ -1,0 +1,136 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>Pertanyaan</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/contohsoal.css" type="text/css">
+	<link rel="stylesheet" href="../css/pertanyaan.css" type="text/css">
+	<link rel="stylesheet" href="../css/pertanyaan2.css" type="text/css">
+	
+    
+    <script src="https://www.geogebra.org/classic/esu4w2td"></script>
+	<!-- <script src="https://www.geogebra.org/apps/deployggb.js"></script> -->
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body>
+<div>
+<div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+		<ul>
+			<!-- <li>
+				<a style="float: right;font-size: 30px;cursor: pointer;"onclick="tutup()"> <span onclick="tutup()">&times;</span></a></li><br/> -->
+		  <li>
+			<a href="../section1/materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="../section1/materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="../section1/materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="../section1/quiz1.html"><i></i>Kuis</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="section21.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="section21.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			  </li>
+			  <!-- <li>
+				<a href="#"><i></i>Times</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Hates</a>
+			  </li>
+			  <li>
+				<a href="#"><i></i>Beat</a>
+			  </li> -->
+			</ul>
+		  </li>
+		</ul>
+</div>
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+</div>
+<div class="latarpertanyaan2">
+<center><div class="pertanyaan2title">
+	<center><p ><img src="../logo/pertanyaan.png" width="50px" height="40px"> Pertanyaan</p></center>
+</div></center>
+
+<div class="isipertanyaan2">
+	<div class="soalp2" id="soal1p2">
+	<center><span class="pertanyaanval">1 dari 4</span></center>
+	<div class="pertanyaan2kiri">
+		<ol><p><li>
+			Gambarlah grafik fungsi kuadrat $f(x)=-3x^2+6x+9$, Jika nilai $x =${$-1,0,1,2,3$}.<br>
+			<br>Lengkapilah semua kotak dibawah ini.
+			<table class="titik" style="width:100%">
+				<tr>
+				  <td><b>$x$</b></td>
+				  <td><b>-1</b></td>
+				  <td><b>0</b></td>
+				  <td><b>1</b></td>
+				  <td><b>2</b></td>
+				  <td><b>3</b></td>
+				</tr>
+				<tr>
+				  <td><b>$f(x)$</b></td>
+				  <td><input type="text" id="ttk1" onkeyup="ttk1()"></td>
+				  <td><input type="text" id="ttk2" onkeyup="ttk2()"></td>
+				  <td><input type="text" id="ttk3" onkeyup="ttk3()"></td>
+				  <td><input type="text" id="ttk4" onkeyup="ttk4()"></td>
+				  <td><input type="text" id="ttk5" onkeyup="ttk5()"></td>
+				</tr>
+				<tr>
+				  <td><b>Titik</b></td>
+				  <td>(<input type="text" id="coord1" onkeyup="coord1()">)</td>
+				  <td>(<input type="text" id="coord2" onkeyup="coord2()">)</td>
+				  <td>(<input type="text" id="coord3" onkeyup="coord3()">)</td>
+				  <td>(<input type="text" id="coord4" onkeyup="coord4()">)</td>
+				  <td>(<input type="text" id="coord5" onkeyup="coord5()">)</td>
+				</tr>
+			  </table></li></p></ol> 
+
+	</div>
+	<div class="pertanyaan2kanan hilangs" id="pp202">
+		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeowindow" height="100%" width="80%"></iframe>
+		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeohp"></iframe>
+	</div>
+	<center><button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
+		<button type="button" onclick="next3()">Selanjutnya</button></center>
+	</div>
+</div>
+
+</div>
+
+<div id="menubawah" class="footer" style="width:100%;float:left;">
+	<center><a href="section21.html"><span class="navbawah">Sebelumnya</span></a>
+	<a href="section21.html"><span>1</span></a>
+	<a href="contohgambar.html"><span>2</span></a>
+	<a href="pertanyaangambar.html"><span style="background-color: #006A4E;">3</span></a>
+	<a href="#"><span class="navbawah">Selanjutnya</span></a></center>
+</div>
+</div>
+<!-- <script src="../ggb/geogebra.js"></script> -->
+<script src="../script/navigasi.js"></script>
+<!-- <script src="../script/csoal21.js"></script> -->
+<script src="../script/sideKiri.js"></script>
+<script src="../script/pertanyaan2.js"></script>
+</body>
+</html> 
