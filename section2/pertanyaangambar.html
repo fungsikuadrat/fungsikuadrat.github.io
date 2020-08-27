@@ -78,9 +78,44 @@
 	<center><span class="pertanyaanval">1 dari 4</span></center>
 	<div class="pertanyaan2kiri">
 		<ol><p><li>
-			Gambarlah grafik fungsi kuadrat $f(x)=-3x^2+6x+9$, Jika nilai $x =${$-1,0,1,2,3$}.<br>
-			<br>Lengkapilah semua kotak dibawah ini.
-			<table class="titik" style="width:100%">
+			Gambarlah grafik fungsi kuadrat $f(x)=-3x^2+6x+9$, Jika nilai $x =${$-1,0,1,2,3$}.<br><br>
+			<div class="p2kalkulator">
+				<center><span id="p2kal1">Kalkulator</span></center>
+				<table border="1" id="kalkul1" class="hape"> 
+					<tr> 
+					   <td colspan="3"><input type="text" id="result"/></td> 
+					   <td><input type="button" value="c" onclick="clr()"/> </td> 
+					</tr> 
+					<tr> 
+					   <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+					   <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+					   <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+					   <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+					</tr> 
+					<tr> 
+					   <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+					   <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+					   <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+					   <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+					</tr> 
+					<tr> 
+					   <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+					   <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+					   <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+					   <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+					</tr> 
+					<tr> 
+					   <td><input type="button" value="." onclick="dis('.')"/> </td> 
+					   <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+					   
+					   <td><input type="button" value="=" onclick="solve()"/> </td> 
+					   <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+					</tr> 
+				 </table> 
+			</div>
+			Lengkapilah semua kotak dibawah ini.
+			
+			<table class="titik2">
 				<tr>
 				  <td><b>$x$</b></td>
 				  <td><b>-1</b></td>
@@ -105,21 +140,40 @@
 				  <td>(<input type="text" id="coord4" onkeyup="coord4()">)</td>
 				  <td>(<input type="text" id="coord5" onkeyup="coord5()">)</td>
 				</tr>
-			  </table></li></p></ol> 
-
-	</div>
+			  </table>
+			  <p  id="inputitik" style="color: red;font-size: 15px;" class="hilangs">
+				*Input menggunakan titik atau koma. Contoh : "0,0" atau "0.0"<br>
+			</p>
+			  <p></p>
+			  <p id="ketz" class="twindows hilangs">Sekarang coba kalian susun titik yang telah di dapatkan tadi pada geogebra yang terletak disamping kanan</p>
+			  <!-- <p style="color: red;font-size: 15px;">*Jika titik koordinat $x$ dan $y$ tidak muncul coba zoom sampai titik tersebut muncul</p>
+			  <p class="thp">Sekarang coba kaliang susun titik yang telah di dapatkan tadi pada geogebra dibawah</p> -->
+			  <p id="ketz2" class="thp hilangs">Sekarang coba kalian susun titik yang telah di dapatkan tadi pada geogebra di bawah ini</p>
+			  <!-- <p style="color: red;font-size: 15px;">*Jika titik koordinat $x$ dan $y$ tidak muncul coba zoom sampai titik tersebut muncul</p> -->
+			</li></p></ol> 
+			</div>
 	<div class="pertanyaan2kanan hilangs" id="pp202">
-		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeowindow" height="100%" width="80%"></iframe>
+		<span style="color: red;font-size: 15px;">*Jika titik koordinat $x$ dan $y$ tidak muncul coba zoom sampai titik tersebut muncul</span>
+		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeowindow" height="99%" width="95%"></iframe>
 		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeohp"></iframe>
 	</div>
-	<center><button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
-		<button type="button" onclick="next3()">Selanjutnya</button></center>
+	<center><div class="navigasisoalbawah"><button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
+		<button type="button" onclick="next3()">Selanjutnya</button></div></center>
+		<div id="menubawah" class="footer hp2" style="width:100%;float:left;">
+			<center><a href="section21.html"><span class="navbawah">Sebelumnya</span></a>
+			<a href="section21.html"><span>1</span></a>
+			<a href="contohgambar.html"><span>2</span></a>
+			<a href="pertanyaangambar.html"><span style="background-color: #006A4E;">3</span></a>
+			<a href="#"><span class="navbawah">Selanjutnya</span></a></center>
+		</div>
 	</div>
-</div>
 
 </div>
 
-<div id="menubawah" class="footer" style="width:100%;float:left;">
+</div>
+
+</div>
+<div id="menubawah" class="footer pgeowindow" style="width:100%;float:left;">
 	<center><a href="section21.html"><span class="navbawah">Sebelumnya</span></a>
 	<a href="section21.html"><span>1</span></a>
 	<a href="contohgambar.html"><span>2</span></a>
@@ -132,5 +186,6 @@
 <!-- <script src="../script/csoal21.js"></script> -->
 <script src="../script/sideKiri.js"></script>
 <script src="../script/pertanyaan2.js"></script>
+<script src="../script/kalkulator.js"></script>
 </body>
 </html> 

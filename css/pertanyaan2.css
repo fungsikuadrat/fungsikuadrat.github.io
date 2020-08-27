@@ -3,7 +3,7 @@
     height: 10%;
     box-shadow: 1px 1px 3px 3px #19222a;
     background-color: white;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 .pertanyaan2title p{
@@ -34,7 +34,7 @@
     float: left;
 }
 .pertanyaan2kiri input{
-    width: 50px;
+    width: 30px;
     border-color: #006A4E;
 }
 .pertanyaan2kanan{
@@ -61,6 +61,54 @@
     font-family:  Impact;
     cursor:pointer;
   }
+  .p2kalkulator{
+      width: 29%;
+      float: right;
+}
+.p2kalkulator span{
+    border: 3px solid #006A4E ;
+    border-radius: 8px;
+    font-size: 21px;
+    background-color: #006A4E;
+    color: white;
+    transition: 0.3s;
+    position: relative;
+    margin-right:1px;
+    font-family:  Impact;
+    cursor: pointer;
+}
+.p2kalkulator input[type="button"] { 
+    background-color:#bcbcbc; 
+    color: black; 
+    border: solid black 2px; 
+    font-size: 21px;
+    width:100% 
+    } 
+    
+.p2kalkulator input[type="text"] { 
+    background-color:white; 
+    border: solid black 2px; 
+    font-size: 21px;
+    width:100% 
+} 
+    
+.titik2 {
+    text-align: center;
+    margin-bottom: 10px;
+    width:70%;
+    float: left;
+    font-size: 21px;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .titik2 td{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  .titik2 th{
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
 .soalp2 button:hover {
 
 background-color: #19222a;
@@ -69,10 +117,29 @@ border-color: #19222a;
 .pgeohp{
     display: none;
 }
+.hp2{
+    display: none;
+}
 .hilangs{
     display: none;
 }
+.thp{
+    display: none;
+}
+.navigasisoalbawah{
+    margin-top: 29.7%;
+    width: 100%;
+    margin-bottom: 20px;
+}
 @media(max-width: 430px){
+    .p2kalkulator{
+        width: 100%;
+        float: none;
+  }
+  .titik2 {
+    float: none;
+    width:95%;
+  }
     .pertanyaan2title{
         width: 100%;
         height: 10%;
@@ -114,7 +181,20 @@ border-color: #19222a;
         width: 350px;
         height: 400px;
     }
+    .hp2{
+        display: inline-block;
+    }
     .pgeowindow{
         display: none;
+    }
+    .navigasisoalbawah{
+        margin-top: 0;
+        width: 100%;
+    }
+    .twindows{
+        display: none;
+    }
+    .thp{
+        display: inline-block;
     }
 }
