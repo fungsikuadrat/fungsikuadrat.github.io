@@ -259,3 +259,270 @@ let kalkul1=document.getElementById("kalkul1");
 p2kal1.addEventListener('click', function(){
     kalkul1.classList.toggle("hilangkal");
 });
+let p2kal2=document.getElementById("p2kal2");
+let kalkul2=document.getElementById("kalkul2");
+p2kal2.addEventListener('click', function(){
+    kalkul2.classList.toggle("hilangkal");
+});
+
+function s2p2(){
+    let soal1p2=document.getElementById("soal1p2");
+    let soal2p2=document.getElementById("soal2p2");
+
+    soal1p2.classList.toggle("hilangs");
+    soal2p2.classList.toggle("hilangs");
+}
+
+let vals2=["0","0","0","0","0","0","0","0","0","0"];
+let valsa2=0;
+let geo2=document.getElementById("pp203");
+let titiks2=document.getElementById("inputitik2");
+let ketz3=document.getElementById("ketz3");
+let ketz4=document.getElementById("ketz4");
+
+function t2tk1(){
+    valsa2=0;
+    let ttk=document.getElementById("2ttk1").value;
+    console.log(ttk)
+    if(ttk==""){
+        document.getElementById("2ttk1").style.borderColor="red";
+    }
+    else if(ttk==0){
+        document.getElementById("2ttk1").style.borderColor="#006A4E";
+        vals2[0]= 1;
+        console.log("TES VALs "+vals2);
+    }
+    else{
+        document.getElementById("2ttk1").style.borderColor="red";
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+        console.log("TES VALSA "+valsa2);
+    }
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+    }
+}
+function t2tk2(){
+    valsa2=0;
+    let ttk=document.getElementById("2ttk2").value;
+    if(ttk==""){
+        document.getElementById("2ttk2").style.borderColor="red";
+    }
+    else if(ttk=="-6"){
+        document.getElementById("2ttk2").style.borderColor="#006A4E";
+        vals2[1]= 1;
+    }
+    else{
+        document.getElementById("2ttk2").style.borderColor="red";
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+    }
+}
+function t2tk3(){
+    valsa2=0;
+    let ttk=document.getElementById("2ttk3").value;
+    if(ttk==""){
+        document.getElementById("2ttk3").style.borderColor="red";
+    }
+    else if(ttk=="-8"){
+        document.getElementById("2ttk3").style.borderColor="#006A4E";
+        vals2[2]= 1;
+    }
+    else{
+        document.getElementById("2ttk3").style.borderColor="red";
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+    }
+}
+function t2tk4(){
+    valsa2=0;
+    let ttk=document.getElementById("2ttk4").value;
+    if(ttk==""){
+        document.getElementById("2ttk4").style.borderColor="red";
+    }
+    else if(ttk=="-6"){
+        document.getElementById("2ttk4").style.borderColor="#006A4E";
+        vals2[3]= 1;
+    }
+    else{
+        document.getElementById("2ttk4").style.borderColor="red";
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+    }
+}
+function t2tk5(){
+    valsa2=0;
+    let ttk=document.getElementById("2ttk5").value;
+    if(ttk==""){
+        document.getElementById("2ttk5").style.borderColor="red";
+    }
+    else if(ttk=="0"){
+        document.getElementById("2ttk5").style.borderColor="#006A4E";
+        vals2[4]= 1;
+    }
+    else{
+        document.getElementById("2ttk5").style.borderColor="red";
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+    }
+}
+
+//koordinat soal 2
+function co2ord1(){
+    valsa2=0;
+    let coord=document.getElementById("2coord1").value;
+    if(coord==""){
+        document.getElementById("2coord1").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    else if(coord=="-2,0"||coord=="-2.0"){
+        document.getElementById("2coord1").style.borderColor="#006A4E";
+        titiks2.classList.toggle("hilangs");
+        vals2[5]= 1;
+    }
+    else{
+        document.getElementById("2coord1").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+    }
+}
+function co2ord2(){
+    valsa2=0;
+    let coord=document.getElementById("2coord2").value;
+    if(coord==""){
+        document.getElementById("2coord2").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    else if(coord=="-1,-6"||coord=="-1.-6"){
+        document.getElementById("2coord2").style.borderColor="#006A4E";
+        titiks2.classList.toggle("hilangs");
+        vals2[6]= 1;
+    }
+    else{
+        document.getElementById("2coord2").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+        console.log("TES VALSA "+valsa2);
+    }
+    
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+    }
+}
+function co2ord3(){
+    valsa2=0;
+    let coord=document.getElementById("2coord3").value;
+    if(coord==""){
+        document.getElementById("2coord3").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    else if(coord=="0,-8"||coord=="0.-8"){
+        document.getElementById("2coord3").style.borderColor="#006A4E";
+        titiks2.classList.toggle("hilangs");
+        vals2[7]= 1;
+    }
+    else{
+        document.getElementById("2coord3").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+    }
+}
+function co2ord4(){
+    valsa2=0;
+    let coord=document.getElementById("2coord4").value;
+    if(coord==""){
+        document.getElementById("2coord4").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    else if(coord=="1,-6"||coord=="1.-6"){
+        document.getElementById("2coord4").style.borderColor="#006A4E";
+        titiks2.classList.toggle("hilangs");
+        vals2[8]= 1;
+    }
+    else{
+        document.getElementById("2coord4").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+    }
+}
+function co2ord5(){
+    valsa2=0;
+    let coord=document.getElementById("2coord5").value;
+    if(coord==""){
+        document.getElementById("2coord5").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    else if(coord=="2,0"||coord=="2.0"){
+        document.getElementById("2coord5").style.borderColor="#006A4E";
+        titiks2.classList.toggle("hilangs");
+        vals2[9]= 1;
+    }
+    else{
+        document.getElementById("2coord5").style.borderColor="red";
+        titiks2.classList.remove("hilangs");
+    }
+    for(let i=0; i<vals2.length; i++){
+        valsa2 = valsa2+vals2[i];
+    }
+    console.log("TES VALSA "+valsa2);
+    if(valsa2==10){
+        ketz3.classList.toggle("hilangs");
+        geo2.classList.toggle("hilangs");
+        ketz4.classList.toggle("hilangs");
+    }
+}

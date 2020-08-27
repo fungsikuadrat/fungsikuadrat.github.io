@@ -5,7 +5,7 @@
             "a": "\\[f(x)=x^2-2x\\]",
             "b": "\\[y=x^2+px+k\\]",
             "c": "\\[f(x)=x^2(x-1)+2\\]",
-            "d": "\\[y=x(x+3)^2-1\\]",
+            "d": "\\[y=x(x+3)-1\\]",
             "jawab" : "c"
         }
     },{
@@ -65,12 +65,12 @@
         }
     },{
         "soal7": {
-            "lat":"Nilai \\[f(-3)\\] dari fungsi kuadrat \\[f(x)=4(x-2)^2\\] adalah...",
+            "lat":"Nilai \\[f(3)\\] dari fungsi kuadrat \\[f(x)=4(x-2)^2\\] adalah...",
             "a": "16",
             "b": "12",
             "c": "4",
             "d": "24",
-            "jawab" : "a"
+            "jawab" : "c"
         }
     },{
         "soal8": {

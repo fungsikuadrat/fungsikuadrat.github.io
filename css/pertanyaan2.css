@@ -197,4 +197,7 @@ border-color: #19222a;
     .thp{
         display: inline-block;
     }
+    .hilangs{
+        display: none;
+    }
 }

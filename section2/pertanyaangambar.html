@@ -157,8 +157,9 @@
 		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeowindow" height="99%" width="95%"></iframe>
 		<iframe src="https://www.geogebra.org/classic/jmjvyhm4" class="pgeohp"></iframe>
 	</div>
-	<center><div class="navigasisoalbawah"><button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
-		<button type="button" onclick="next3()">Selanjutnya</button></div></center>
+	<center><div class="navigasisoalbawah">
+		<button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
+		<button type="button" onclick="s2p2()">Selanjutnya</button></div></center>
 		<div id="menubawah" class="footer hp2" style="width:100%;float:left;">
 			<center><a href="section21.html"><span class="navbawah">Sebelumnya</span></a>
 			<a href="section21.html"><span>1</span></a>
@@ -167,7 +168,97 @@
 			<a href="#"><span class="navbawah">Selanjutnya</span></a></center>
 		</div>
 	</div>
-
+	<div class="soalp2 hilangs" id="soal2p2">
+		<center><span class="pertanyaanval">2 dari 4</span></center>
+		<div class="pertanyaan2kiri">
+			<ol start="2"><p><li>
+				Gambarlah grafik fungsi kuadrat $f(x)=2x^2-8$, Jika nilai $x =${$-2,-1,0,1,2$}.<br><br>
+				<div class="p2kalkulator">
+					<center><span id="p2kal2">Kalkulator</span></center>
+					<table border="1" id="kalkul2" class="hape"> 
+						<tr> 
+						   <td colspan="3"><input type="text" id="result"/></td> 
+						   <td><input type="button" value="c" onclick="clr()"/> </td> 
+						</tr> 
+						<tr> 
+						   <td><input type="button" value="1" onclick="dis('1')"/> </td> 
+						   <td><input type="button" value="2" onclick="dis('2')"/> </td> 
+						   <td><input type="button" value="3" onclick="dis('3')"/> </td> 
+						   <td><input type="button" value="/" onclick="dis('/')"/> </td> 
+						</tr> 
+						<tr> 
+						   <td><input type="button" value="4" onclick="dis('4')"/> </td> 
+						   <td><input type="button" value="5" onclick="dis('5')"/> </td> 
+						   <td><input type="button" value="6" onclick="dis('6')"/> </td> 
+						   <td><input type="button" value="-" onclick="dis('-')"/> </td> 
+						</tr> 
+						<tr> 
+						   <td><input type="button" value="7" onclick="dis('7')"/> </td> 
+						   <td><input type="button" value="8" onclick="dis('8')"/> </td> 
+						   <td><input type="button" value="9" onclick="dis('9')"/> </td> 
+						   <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+						</tr> 
+						<tr> 
+						   <td><input type="button" value="." onclick="dis('.')"/> </td> 
+						   <td><input type="button" value="0" onclick="dis('0')"/> </td> 
+						   
+						   <td><input type="button" value="=" onclick="solve()"/> </td> 
+						   <td><input type="button" value="*" onclick="dis('*')"/> </td> 
+						</tr> 
+					 </table> 
+				</div>
+				Lengkapilah semua kotak dibawah ini.
+				
+				<table class="titik2">
+					<tr>
+					  <td><b>$x$</b></td>
+					  <td><b>-2</b></td>
+					  <td><b>-1</b></td>
+					  <td><b>0</b></td>
+					  <td><b>1</b></td>
+					  <td><b>2</b></td>
+					</tr>
+					<tr>
+					  <td><b>$f(x)$</b></td>
+					  <td><input type="text" id="2ttk1" onkeyup="t2tk1()"></td>
+					  <td><input type="text" id="2ttk2" onkeyup="t2tk2()"></td>
+					  <td><input type="text" id="2ttk3" onkeyup="t2tk3()"></td>
+					  <td><input type="text" id="2ttk4" onkeyup="t2tk4()"></td>
+					  <td><input type="text" id="2ttk5" onkeyup="t2tk5()"></td>
+					</tr>
+					<tr>
+					  <td><b>Titik</b></td>
+					  <td>(<input type="text" id="2coord1" onkeyup="co2ord1()">)</td>
+					  <td>(<input type="text" id="2coord2" onkeyup="co2ord2()">)</td>
+					  <td>(<input type="text" id="2coord3" onkeyup="co2ord3()">)</td>
+					  <td>(<input type="text" id="2coord4" onkeyup="co2ord4()">)</td>
+					  <td>(<input type="text" id="2coord5" onkeyup="co2ord5()">)</td>
+					</tr>
+				  </table>
+				  <p  id="inputitik2" style="color: red;font-size: 15px;" class="hilangs">
+					*Input menggunakan titik atau koma. Contoh : "0,0" atau "0.0"<br>
+				</p>
+				  <p></p>
+				  <p id="ketz3" class="twindows hilangs">Sekarang coba kalian susun titik yang telah di dapatkan tadi pada geogebra yang terletak disamping kanan</p>
+				  <p id="ketz4" class="thp hilangs">Sekarang coba kalian susun titik yang telah di dapatkan tadi pada geogebra di bawah ini</p>
+				</li></p></ol> 
+				</div>
+		<div class="pertanyaan2kanan hilangs" id="pp203">
+			<span style="color: red;font-size: 15px;">*Jika titik koordinat $x$ dan $y$ tidak muncul coba zoom sampai titik tersebut muncul</span>
+			<iframe src="https://www.geogebra.org/classic/ducjadj7" class="pgeowindow" height="99%" width="95%"></iframe>
+			<iframe src="https://www.geogebra.org/classic/ducjadj7" class="pgeohp"></iframe>
+		</div>
+		<center><div class="navigasisoalbawah">
+			<button type="button" onclick="s2p2()">Sebelumnya</button>
+			<button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Selanjutnya</button></div></center>
+			<div id="menubawah" class="footer hp2" style="width:100%;float:left;">
+				<center><a href="section21.html"><span class="navbawah">Sebelumnya</span></a>
+				<a href="section21.html"><span>1</span></a>
+				<a href="contohgambar.html"><span>2</span></a>
+				<a href="pertanyaangambar.html"><span style="background-color: #006A4E;">3</span></a>
+				<a href="#"><span class="navbawah">Selanjutnya</span></a></center>
+			</div>
+		</div>
 </div>
 
 </div>
