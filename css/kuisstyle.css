@@ -127,7 +127,24 @@ mjx-container {
 .hide{
     display: none !important;
   }
-
+.full{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(134, 133, 133, 0.8);
+    position: fixed;
+    text-align: center;
+}
+.full p{
+    display: inline-block;
+    font-size: 50px;
+    margin-top: 200px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #19222a;
+}
   @media(max-width: 430px){
     #nama{
         font-size: 18px;

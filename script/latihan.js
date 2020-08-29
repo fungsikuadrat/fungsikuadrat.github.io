@@ -777,13 +777,13 @@ c[4]=2;
 
 
 function dx4(val){
-	lan1 = 1;
 	let hhas=isi[4]-1;
 	if(val==""){
 		document.getElementById("dx4").style.borderColor="red";
 	}
 	else if(val==hhas){
 		document.getElementById("dx4").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("dx4").style.borderColor="red";
@@ -801,13 +801,13 @@ function dx4(val){
 }
 
 function cx4(val){
-	lan2 = 1;
 	let hhas=isi[4]-1;
 	if(val==""){
 		document.getElementById("cx4").style.borderColor="red";
 	}
 	else if(val==hhas){
 		document.getElementById("cx4").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("cx4").style.borderColor="red";
@@ -825,13 +825,13 @@ function cx4(val){
 }
 
 function ax4(val){
-	lan1 = 1;
 	let hhas=a[4]*((isi[4]-1)*(isi[4]-1));
 	if(val==""){
 		document.getElementById("ax4").style.borderColor="red";
 	}
 	if(val==hhas){
 		document.getElementById("ax4").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("ax4").style.borderColor="red";
@@ -847,12 +847,12 @@ function ax4(val){
 	}
 }
 function bx42(val){
-	lan2 = 1;
 	if(val==""){
 		document.getElementById("bx42").style.borderColor="red";
 	}
 	else if(val=="1"){
 		document.getElementById("bx42").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("bx42").style.borderColor="red";
@@ -872,12 +872,12 @@ function bx42(val){
 }
 
 function bx4(val){
-	lan3 = 1;
 	if(val==""){
 		document.getElementById("bx4").style.borderColor="red";
 	}
 	else if(val=="1"){
 		document.getElementById("bx4").style.borderColor="#006A4E";
+		lan3 = 1;
 	}
 	else{
 		document.getElementById("bx4").style.borderColor="red";
@@ -896,7 +896,6 @@ function bx4(val){
 }
 
 function ax41(val){
-	lan1 = 1;
 	let hhas=isi[4]-1;
 	let hhas1=hhas*hhas;
 	if(val==""){
@@ -904,6 +903,7 @@ function ax41(val){
 	}
 	else if(val==hhas1){
 		document.getElementById("ax41").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("ax41").style.borderColor="red";
@@ -920,12 +920,12 @@ function ax41(val){
 	}
 }
 function bx41(val){
-	lan2 = 1;
 	if(val==""){
 		document.getElementById("bx41").style.borderColor="red";
 	}
 	else if(val=="1"){
 		document.getElementById("bx41").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("bx41").style.borderColor="red";
@@ -944,10 +944,13 @@ function bx41(val){
 }
 
 function ax0(val){
-	lan1 = 1;
 	let hhas=a[0]*(isi[0]*isi[0]);
-	if(val==hhas){
+	if(val==""){
+		document.getElementById("ax0").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("ax0").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("ax0").style.borderColor="red";
@@ -964,10 +967,13 @@ function ax0(val){
 	}
 }
 function bx0(val){
-	lan2 = 1;
 	let hhas=b[0]*isi[0];
-	if(val==hhas){
+	if(val==""){
+		document.getElementById("bx0").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("bx0").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("bx0").style.borderColor="red";
@@ -984,9 +990,12 @@ function bx0(val){
 	}
 }
 function cx0(val){
-	lan3 = 1;
-	if(val==c[0]){
+	if(val==""){
+		document.getElementById("cx0").style.borderColor="red";
+	}
+	else if(val==c[0]){
 		document.getElementById("cx0").style.borderColor="#006A4E";
+		lan3 = 1;
 	}
 	else{
 		document.getElementById("cx0").style.borderColor="red";
@@ -1003,10 +1012,14 @@ function cx0(val){
 	}
 }
 function ax1(val){
-	lan1 = 1;
 	let hhas=a[1]*(isi[1]*isi[1]);
-	if(val==hhas){
+	console.log("hhas 2 "+hhas);
+	if(val==""){
+		document.getElementById("ax1").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("ax1").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("ax1").style.borderColor="red";
@@ -1023,10 +1036,13 @@ function ax1(val){
 	}
 }
 function bx1(val){
-	lan2 = 1;
 	let hhas=b[1]*isi[1];
-	if(val==hhas){
+	if(val==""){
+		document.getElementById("bx1").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("bx1").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("bx1").style.borderColor="red";
@@ -1043,9 +1059,12 @@ function bx1(val){
 	}
 }
 function cx1(val){
-	lan3 = 1;
-	if(val==c[1]){
+	if(val==""){
+		document.getElementById("cx1").style.borderColor="red";
+	}
+	else if(val==c[1]){
 		document.getElementById("cx1").style.borderColor="#006A4E";
+		lan3 = 1;
 	}
 	else{
 		document.getElementById("cx1").style.borderColor="red";
@@ -1063,10 +1082,13 @@ function cx1(val){
 }
 
 function ax2(val){
-	lan1 = 1;
 	let hhas=a[2]*(isi[2]*isi[2]);
-	if(val==hhas){
+	if(val==""){
+		document.getElementById("ax2").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("ax2").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("ax2").style.borderColor="red";
@@ -1083,10 +1105,13 @@ function ax2(val){
 	}
 }
 function bx2(val){
-	lan2 = 1;
 	let hhas=b[2]*isi[2];
+	if(val==""){
+		document.getElementById("bx2").style.borderColor="red";
+	}
 	if(val==hhas){
 		document.getElementById("bx2").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("bx2").style.borderColor="red";
@@ -1103,9 +1128,12 @@ function bx2(val){
 	}
 }
 function cx2(val){
-	lan3 = 1;
-	if(val=="1"){
+	if(val==""){
+		document.getElementById("cx2").style.borderColor="red";
+	}
+	else if(val=="1"){
 		document.getElementById("cx2").style.borderColor="#006A4E";
+		lan3 = 1;
 	}
 	else{
 		document.getElementById("cx2").style.borderColor="red";
@@ -1123,10 +1151,13 @@ function cx2(val){
 }
 
 function ax3(val){
-	lan1 = 1;
 	let hhas=a[3]*(isi[3]*isi[3]);
-	if(val==hhas){
+	if(val==""){
+		document.getElementById("ax3").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("ax3").style.borderColor="#006A4E";
+		lan1 = 1;
 	}
 	else{
 		document.getElementById("ax3").style.borderColor="red";
@@ -1143,10 +1174,13 @@ function ax3(val){
 	}
 }
 function bx3(val){
-	lan2 = 1;
 	let hhas=b[3]*isi[3];
-	if(val==hhas){
+	if(val==""){
+		document.getElementById("bx3").style.borderColor="red";
+	}
+	else if(val==hhas){
 		document.getElementById("bx3").style.borderColor="#006A4E";
+		lan2 = 1;
 	}
 	else{
 		document.getElementById("bx3").style.borderColor="red";
@@ -1163,9 +1197,12 @@ function bx3(val){
 	}
 }
 function cx3(val){
-	lan3 = 1;
-	if(val=="2"){
+	if(val==""){
+		document.getElementById("cx3").style.borderColor="red";
+	}
+	else if(val=="2"){
 		document.getElementById("cx3").style.borderColor="#006A4E";
+		lan3 = 1;
 	}
 	else{
 		document.getElementById("cx3").style.borderColor="red";

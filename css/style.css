@@ -95,7 +95,6 @@ body {
     background: #19222a ;
     height: 10%;
     width: 100%;
-    
 }
 
 .logo{
@@ -110,8 +109,25 @@ body {
 }
 
 
+.latarpetunjuk{
+  height: 100%;
+  background-color: #D3D3D3;
+}
+.latarpetunjuk ol{
+  text-align: left;
+}
+.latarpetunjuk img{
+  margin-left: 0;
+}
 
-
+.latarpetunjuk a{
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  background-color: #006A4E ;
+  border: 2px solid #006A4E;
+  border-radius: 8px;
+}
 
 .Navigasi a {
     text-decoration: none;
@@ -294,7 +310,6 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #19222a;
   font-size: 30px;
-  
   padding-left: 200px;
   float: left;
   cursor: pointer;
@@ -373,7 +388,15 @@ body {
   text-align: center;
   color: #006A4E;
 }
-
+.petunjuk{
+  padding: 20px;
+  width: 50%;
+  border: 3px solid #19222a;
+  border-radius: 8px;
+  font-size: 25px;
+  background-color: white;
+  display: inline-block;
+}
 
 .val {
   font-size: 20px;
@@ -391,8 +414,9 @@ body {
 }
 .fungsi{
   display: inline-block;
+  color: white;
   margin-bottom: 100px;
-  color: #19222a;
+  background-color: #19222a;
   width: 100%;
   box-shadow: 1px 1px 3px 3px #19222a;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

@@ -10,7 +10,18 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-
+window.onload=function(){
+    let temp = document.querySelector(".full");
+    let task = firebase.database().ref('kontrol/');
+    task.on("child_added", function(data){
+        let values=data.val();
+        console.log("NILAI "+values.nilai)
+        console.log("Task "+task)
+        if(values.nilai==0){
+            temp.classList.remove("hilang");
+        }
+    });
+}
 let nama;
 let sekolah;
 let kelas;
