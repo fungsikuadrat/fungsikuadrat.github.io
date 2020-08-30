@@ -141,9 +141,20 @@ mjx-container {
 .full p{
     display: inline-block;
     font-size: 50px;
-    margin-top: 200px;
+    margin-top: 300px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #19222a;
+}
+.full a{
+    text-decoration:none ;
+    color: white;
+    font-size: 21px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.full span{
+    background-color: #006A4E;
+    border:2px solid #006A4E;
+    border-radius: 8px;
 }
   @media(max-width: 430px){
     #nama{
