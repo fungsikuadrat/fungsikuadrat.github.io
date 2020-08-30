@@ -604,4 +604,10 @@ body {
   width: 100px;
   height: 80px;
 }
+
+.petunjuk{
+  padding: 5px;
+  font-size: 18px;
+  width: 90%;
+}
 }

@@ -129,13 +129,20 @@ dat.onreadystatechange = function () {
             txt += "</form>"
 
             txt += "<br><center>"
-            if(y != 0){
+            if(y == 9){
                 txt += "<button type='button' onclick='backk()'>Sebelumnya</button>"
+                txt +="<button type='button' style='cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;'>Selanjutnya</button><br/>"
+                txt += "<button type='button' onclick='pengingat()'>SELESAI</button>"
             }
-            // txt += "<button type='button' onclick='ragu()'>Ragu - Ragu</button>"
-            if(y != 9){
+            else if(y == 0){
+                txt +="<button type='button' style='cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;'>Sebelumnya</button>"
                 txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center>"
             }
+            else if(y!=0||y!=9){
+                txt += "<button type='button' onclick='backk()'>Sebelumnya</button>"
+                txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center>"
+            }
+            // txt += "<button type='button' onclick='ragu()'>Ragu - Ragu</button>"
 
             txt += "</ol>";
             document.getElementById("soal"+y).innerHTML = txt;
@@ -153,6 +160,13 @@ let n=1;
 let z=0;
     // let klik = document.getElementById("lanjut"+n);
     // klik.addEventListener("click", function (){
+function pengingat(){
+    var txt;
+    var r = confirm("Apakah kamu yakin?");
+    if (r == true) {
+      skor();
+    }
+}
 function checkk(){
     let pilgan = document.getElementById("soal"+z)
     let soal_nav = document.getElementById("k"+z);
@@ -236,7 +250,6 @@ function skor(){
                 skor1 += 10;
             }
         }
-        console.log("SEKOR AKHER = "+skor1);
     }
     if(cek11==10){
         let lanjut = document.getElementById("kuis"+z);
@@ -260,7 +273,7 @@ function skor(){
     createTask(sekolah, nama, kelas, skor1, waktunya, harinya);
     }
     else{
-        alert("Masih Ada Soal Yang Belum Dijawab");
+        alert("Masih Ada Soal Yang Belum Dijawab!");
     }
 }
 

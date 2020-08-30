@@ -247,13 +247,28 @@ function back2(){
 	let skor3=0;
 	  if (document.getElementById("jwb3a").value==-1 ) {
 		skor3 += 1;
+		document.getElementById("jwb3a").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3a").style.borderColor="red";
+	  }
+
       if (document.getElementById("jwb3b").value==5 ) {
 		skor3 += 1;
+		document.getElementById("jwb3b").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3b").style.borderColor="red";
+	  }
+
       if (c3==10 ) {
 		skor3 += 1;
+		document.getElementById("jwb3c").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3c").style.borderColor="red";
+	  }
+
 	  if(skor3==3){
 		document.getElementById("nonav3").style.backgroundColor="#00FF00";
 		document.getElementById("nonav3").style.color="#006A4E";
@@ -282,15 +297,30 @@ function back2(){
 function m1cek3(){
 	let c3= 1+document.getElementById("jwb3c").value;
 	let skor3=0;
-	  if (document.getElementById("jwb3a").value==-1 ) {
+	if (document.getElementById("jwb3a").value==-1 ) {
 		skor3 += 1;
+		document.getElementById("jwb3a").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3a").style.borderColor="red";
+	  }
+
       if (document.getElementById("jwb3b").value==5 ) {
 		skor3 += 1;
+		document.getElementById("jwb3b").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3b").style.borderColor="red";
+	  }
+
       if (c3==10 ) {
 		skor3 += 1;
+		document.getElementById("jwb3c").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3c").style.borderColor="red";
+	  }
+
 	  if(skor3==3){
 		document.getElementById("nonav3").style.backgroundColor="#00FF00";
 		document.getElementById("nonav3").style.color="#006A4E";
@@ -306,13 +336,28 @@ function next4(){
 	let skor3=0;
 	  if (document.getElementById("jwb3a").value==-1 ) {
 		skor3 += 1;
+		document.getElementById("jwb3a").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3a").style.borderColor="red";
+	  }
+
       if (document.getElementById("jwb3b").value==5 ) {
 		skor3 += 1;
+		document.getElementById("jwb3b").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3b").style.borderColor="red";
+	  }
+
       if (c3==10 ) {
 		skor3 += 1;
+		document.getElementById("jwb3c").style.borderColor="#006A4E";
 	  }
+	  else{
+		document.getElementById("jwb3c").style.borderColor="red";
+	  }
+
 	  if(skor3==3){
 		document.getElementById("nonav3").style.backgroundColor="#00FF00";
 		document.getElementById("nonav3").style.color="#006A4E";
@@ -338,18 +383,34 @@ function next4(){
 		document.getElementById("lat4").classList.remove("hilangi");
 	}
 }
+
 function back3(){
 	let b4= 1+document.getElementById("jwb4b").value;
 	let skor4=0;
 	if (document.getElementById("jwb4a").value==-2 ) {
 		skor4 += 1;
-	} 
+		document.getElementById("jwb4a").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb4a").style.borderColor="red";
+	}
+
 	if (b4==10 ) {
 		skor4 += 1;
+		document.getElementById("jwb4b").style.borderColor="#006A4E";
 	} 
+	else{
+		document.getElementById("jwb4b").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb4c").value==8 ) {
 		skor4 += 1;
+		document.getElementById("jwb4c").style.borderColor="#006A4E";
 	}
+	else{
+		document.getElementById("jwb4c").style.borderColor="red";
+	}
+
 	if(skor4==3){
 		document.getElementById("nonav4").style.backgroundColor="#00FF00";
 		document.getElementById("nonav4").style.color="#006A4E";
@@ -380,13 +441,28 @@ function m1cek4(){
 	let skor4=0;
 	if (document.getElementById("jwb4a").value==-2 ) {
 		skor4 += 1;
-	} 
+		document.getElementById("jwb4a").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb4a").style.borderColor="red";
+	}
+
 	if (b4==10 ) {
 		skor4 += 1;
+		document.getElementById("jwb4b").style.borderColor="#006A4E";
 	} 
+	else{
+		document.getElementById("jwb4b").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb4c").value==8 ) {
 		skor4 += 1;
+		document.getElementById("jwb4c").style.borderColor="#006A4E";
 	}
+	else{
+		document.getElementById("jwb4c").style.borderColor="red";
+	}
+
 	if(skor4==3){
 		document.getElementById("nonav4").style.backgroundColor="#00FF00";
 		document.getElementById("nonav4").style.color="#006A4E";
@@ -401,13 +477,28 @@ function next5(){
 	let skor4=0;
 	if (document.getElementById("jwb4a").value==-2 ) {
 		skor4 += 1;
-	} 
+		document.getElementById("jwb4a").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb4a").style.borderColor="red";
+	}
+
 	if (b4==10 ) {
 		skor4 += 1;
+		document.getElementById("jwb4b").style.borderColor="#006A4E";
 	} 
+	else{
+		document.getElementById("jwb4b").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb4c").value==8 ) {
 		skor4 += 1;
+		document.getElementById("jwb4c").style.borderColor="#006A4E";
 	}
+	else{
+		document.getElementById("jwb4c").style.borderColor="red";
+	}
+
 	if(skor4==3){
 		document.getElementById("nonav4").style.backgroundColor="#00FF00";
 		document.getElementById("nonav4").style.color="#006A4E";
@@ -435,13 +526,28 @@ function back4(){
 	let skor5=0;
 	if (document.getElementById("jwb5a").value==2 ) {
 		skor5 += 1;
-	} 
+		document.getElementById("jwb5a").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb5a").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb5b").value==5 ) {
 		skor5 += 1;
-	} 
+		document.getElementById("jwb5b").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb5b").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb5c").value==-8 ) {
 		skor5 += 1;
+		document.getElementById("jwb5c").style.borderColor="#006A4E";
 	}
+	else{
+		document.getElementById("jwb5c").style.borderColor="red";
+	}
+
 	if(skor5==3){
 		document.getElementById("nonav5").style.backgroundColor="#00FF00";
 		document.getElementById("nonav5").style.color="#006A4E";
@@ -470,12 +576,26 @@ function m1cek5(){
 	let skor5=0;
 	if (document.getElementById("jwb5a").value==2 ) {
 		skor5 += 1;
-	} 
+		document.getElementById("jwb5a").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb5a").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb5b").value==5 ) {
 		skor5 += 1;
-	} 
+		document.getElementById("jwb5b").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb5b").style.borderColor="red";
+	}
+
 	if (document.getElementById("jwb5c").value==-8 ) {
 		skor5 += 1;
+		document.getElementById("jwb5c").style.borderColor="#006A4E";
+	}
+	else{
+		document.getElementById("jwb5c").style.borderColor="red";
 	}
 	if(skor5==3){
 		document.getElementById("nonav5").style.backgroundColor="#00FF00";

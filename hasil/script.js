@@ -129,9 +129,8 @@ function hapussemua(id) {
 }
 
 function deletesemua(id) {
-    console.log(kuisfix);
     for (let i = 0; i < id.length; i++) {
-        var task = firebase.database().ref(kuisfix + id[i]);
+        var task = firebase.database().ref('hasil/' + id);
         task.remove();
     }
     tmp.innerHTML = "";

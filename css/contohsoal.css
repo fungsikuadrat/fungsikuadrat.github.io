@@ -190,7 +190,7 @@
   }
   .contohKiri{
     margin-top: 0;
-    width:100%;
+    width:auto;
     height:auto;
     float:none;
     overflow:hidden;
@@ -215,11 +215,11 @@
     box-shadow: none;
     margin-top: 0;
     background-color: white;
-    width:100%;
+    width:auto;
     height:auto;
     float:none;
     overflow:auto;
-    margin-right: 0;
+    margin-left: 0;
   }
   .fx21{
     margin-left: 54px;
