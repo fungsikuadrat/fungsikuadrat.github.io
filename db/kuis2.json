@@ -1,0 +1,94 @@
+[
+    {
+        "soal0": {
+            "lat":"Diketahui sebuah grafik fungsi kuadrat \\[f(x)=5x^2-20x+1\\], maka sumbu simetrinya adalah...",
+            "a": "7",
+            "b": "2",
+            "c": "8",
+            "d": "5",
+            "jawab" : "b"
+        }
+    },{
+        "soal1": {
+            "lat":"Grafik fungsi kuadrat \\[f(x)=3x^2-2x-2\\] memotong sumbu\\[-y\\] negatif di titik...",
+            "a": "(0, -2)",
+            "b": "(0, -4)",
+            "c": "(0, -8)",
+            "d": "(0, -5)",
+            "jawab" : "a"
+        }
+    }
+    ,{
+        "soal2": {
+            "lat":"Diketahui fungsi kuadrat \\[f(x)=x^2+3x-4\\], maka grafik fungsi kuadratnya adalah...",
+            "a": "<img src='../kuis2/3a.png' width='100%'/>",
+            "b": "<img src='../kuis2/3b.png' width='100%'/>",
+            "c": "<img src='../kuis2/3c.png' width='100%'/>",
+            "d": "<img src='../kuis2/3d.png' width='100%'/>",
+            "jawab" : "d"
+        }
+    },{
+        "soal3": {
+            "lat":"Diketahui fungsi kuadrat \\[f(x)=x^2-4x\\], maka grafik fungsi kuadratnya adalah...",
+            "a": "<img src='../kuis2/4a.png' width='100%'/>",
+            "b": "<img src='../kuis2/4b.png' width='100%'/>",
+            "c": "<img src='../kuis2/4b.png' width='100%'/>",
+            "d": "<img src='../kuis2/4b.png' width='100%'/>",
+            "jawab" : "b"
+        }
+    },{
+        "soal4": {
+            "lat":"Diketahui grafik fungsi kuadrat \\[f(x)=-x^2-x+2\\] seperti gambar dibawah ini.<br><center><img src='../kuis2/5.png'  width='100%'/></center><br>Pernyataan yang tidak benar terkait grafik fungsi kuadrat tersebut adalah...",
+            "a": "Grafik memotong sumbu\\[-x\\] di dua titik",
+            "b": "Grafik memotong sumbu\\[-y\\] positif",
+            "c": "Sumbu simetri berada di sumbu\\[-x\\] positif",
+            "d": "Grafik terbuka ke bawah",
+            "jawab" : "c"
+        }
+    },{
+        "soal5": {
+            "lat":"Diketahui fungsi kuadrat \\[f(x)=x^2+6x+5\\]. Koordinat titik potong terhadap sumbu\\[-y\\] adalah...",
+            "a": "(0, 5)",
+            "b": "(0, -7)",
+            "c": "(0, 2)",
+            "d": "(0, -7)",
+            "jawab" : "a"
+        }
+    },{
+        "soal6": {
+            "lat":"Sifat / karateristik yang benar dari fungsi kuadrat \\[f(x)=3x^2+6x-9\\] adalah...",
+            "a": "Grafiknya terbuka ke bawah dan memotong sumbu\\[-y\\] negatif",
+            "b": "Grafiknya terbuka ke bawah dan memotong sumbu\\[-y\\] positif",
+            "c": "Grafiknya terbuka ke atas dan memotong sumbu\\[-y\\] positif",
+            "d": "Grafiknya terbuka ke atas dan memotong sumbu\\[-y\\] negatif",
+            "jawab" : "d"
+        }
+    },{
+        "soal7": {
+            "lat":"Titik puncak grafik fungsi kuadrat \\[f(x)=4x^2+8x-8\\] adalah...",
+            "a": "(5, 7)",
+            "b": "(-1, -12)",
+            "c": "(-7, -9)",
+            "d": "(6, 8)",
+            "jawab" : "b"
+        }
+    },{
+        "soal8": {
+            "lat":"Fungsi kuadrat \\[f(x)=x^2-4x-5\\] mempunyai titik ...",
+            "a": "Minimum (2, -9)",
+            "b": "Maksimum (-9, 9)",
+            "c": "Minimum (-2, -7)",
+            "d": "Maksimum(-2, 7)",
+            "jawab" : "a"
+        }
+    },{
+        "soal9": {
+            "lat":"Persamaan sumbu simetri grafik fungsi kuadrat \\[f(x)=x^2+6x+5\\] adalah...",
+            "a": "15",
+            "b": "-3",
+            "c": "7",
+            "d": "2",
+            "jawab" : "b"
+        }
+    }
+]
