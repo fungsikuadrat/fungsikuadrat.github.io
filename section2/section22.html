@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+      <title>Menggambar Grafik Fungsi Kuadrat</title>
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+      <link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+      <link rel="stylesheet" href="../css/contohsoal.css" type="text/css">
+      <script src="../script/sideKiri.js"></script>
+    <script src="../script/latihan.js"></script>
+    <script src="../script/contohsoal.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+          });
+          </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  </head>
+  
+  <body>
+    <div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+      <ul>
+        <li>
+          <a href="materi1.html"><i></i> <span>1. Pengertian Fungsi Kuadrat</span></a>
+          <ul class="nav-flyout">
+          <li>
+            <a href="materi1.html"><i></i>1.1. Bentuk Umum Fungsi Kuadrat</a>
+          </li>
+          <li>
+            <a href="materi2.html"><i></i>1.2. Nilai Fungsi Kuadrat</a>
+          </li>
+          <li>
+            <a href="quiz1.html"><i></i>Kuis</a>
+          </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../section2/section21.html"><i></i> <span>2. Grafik Fungsi Kuadrat</span></a>
+          <ul class="nav-flyout">
+            <li>
+            <a href="../section2/section21.html"><i></i>2.1. Menggambar Grafik Fungsi Kuadrat</a>
+            </li>
+            <li>
+            <a href="../section2/section22.html"><i></i>2.2. Titik Potong, Sumbu Simetri, dan Titik Puncak</a>
+            </li>
+            <li>
+            <a href="../section2/section23.html"><i></i>2.3. Sifat - Sifat Grafik Fungsi Kuadrat</a>
+            </li>
+            <li>
+            <a href="#"><i></i>Kuis</a>
+            </li>
+          </ul>
+          </li>
+          <li>
+            <a href="#"><i></i> <span>3. Menyusun Persamaan Grafik Fungsi Kuadrat</span></a>
+            <ul class="nav-flyout">
+            <li>
+              <a href="#"><i></i>2.1. Diketahui Koordinat Titik Puncak</a>
+            </li>
+            <li>
+              <a href="#"><i></i>2.2. Diketahui Titik Potong dengan Sumbu-$x$</a>
+            </li>
+            <li>
+              <a href="#"><i></i>Kuis</a>
+            </li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+  <div class="Navigasi">
+    <a class="pointerr" onclick="buka()">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+  </div>
+  <div class="bodyKiri" onclick="tutup()">
+      <p class="matitle" id="kurang" style="width: 130px;">
+          <img src="../logo/indikator.png" width="20px" height="20px"> Tujuan</p>
+      <table class="indikator hide" id="hilang2">
+          <tr><td>
+              <ul>
+                  <li>Siswa mampu menentukan nilai Titik Potong, Sumbu Simetri dan Titik Puncak</li>
+              </ul>
+          </td></tr>
+      </table>
+      <p class="matitle" id="titikpotong2" style="width: 200px;">
+          <img src="../logo/mat.png" width="30px" height="20px"> Titik Potong Grafik</p>
+          <table class="matisi" id="titikpotong">
+            <tr><td>
+                <p><b>Sumbu-$x$</b><br/>
+              Sebuah grafik fungsi akan memotong sumbu-$x$ jika nilai $y=0$. Jadi, titik potong sumbu-$x$ akan diperoleh jika $ax^2+bx+c=0$.
+
+                <b>Sumbu-$y$</b><br/>
+                Jika sebelumnya grafik fungsi kuadrat akan memotong sumbu-$x$ ketika $y=0$, maka sebaliknya sebuah grafik fungsi akan
+                 memotong sumbu-$y$ jika nilai $x=0$.
+                <center><table class="navmat" style="text-align: center;text-decoration: none;">
+                    <tr>
+                        <th class="nohov"><a>Sebelumnya</a></th>
+                        <!-- <th onclick="mat11()" class="m1"><a>Sebelumnya</a></th> -->
+                        <th onclick="potong()" style="cursor: unset;background-color: #006a4e;"><a>1</a></th>
+                        <th onclick="simetri()"><a>2</a></th>
+                        <th onclick="puncak()"><a>3</a></th>
+                        <th onclick="simetri()"><a>Selanjutnya</a></th>
+                    </tr>
+                  </table></center>
+                <!-- <iframe src="https://www.geogebra.org/classic/hu88xebj" height="500px" width="30%"></iframe> -->
+              </p></td></tr></table>
+              <p class="matitle hilang"  id="simetri2" style="width: 300px;">
+                <img src="../logo/mat.png" width="30px" height="20px"> Sumbu Simetri & Nilai Optimum</p>
+                <table class="matisi hilang" id="simetri">
+                  <tr><td>
+                      <p><b>Sumbu Simetri</b><br/>
+                        <img src="../img/simetri.png"><br>
+                        Garis yang membagi dua bagian grafik fungsi kuadrat secara simetris seperti tampak pada gambar diatas disebut sumbu simetri fungsi kuadrat yang dapat dicari dengan :
+                        <br><center>Sumbu Simetri$=-\frac{b}{2a}$.</center><br>
+                        <b>Nilai Optimum</b><br>
+                        Nilai optimum adalah nilai maksimum atau minimum dari suatu fungsi $f(x)$. Rumus nilai optimum adalah.<br>
+                        <center>$f(x)_p=-\frac{b^2-4ac}{-4a}$</center><br>
+
+                        <center><table class="navmat" style="text-align: center;text-decoration: none;">
+                          <tr>
+                              <th onclick="potong()"><a>Sebelumnya</a></th>
+                              <!-- <th onclick="mat11()" class="m1"><a>Sebelumnya</a></th> -->
+                              <th onclick="potong()"><a>1</a></th>
+                              <th onclick="simetri()" style="cursor: unset;background-color: #006a4e;"><a>2</a></th>
+                              <th onclick="puncak()"><a>3</a></th>
+                              <th onclick="puncak()"><a>Selanjutnya</a></th>
+                          </tr>
+                        </table></center>
+                      <!-- <iframe src="https://www.geogebra.org/classic/hu88xebj" height="500px" width="30%"></iframe> -->
+                    </p></td></tr></table>
+                    <p class="matitle hilang" id="titikpuncak2" style="width: 250px;">
+                      <img src="../logo/mat.png" width="30px" height="20px"> Titik Puncak / Titik Balik</p>
+                      <table class="matisi hilang" id="titikpuncak">
+                        <tr><td>
+                          Koordinat titik puncak sering juga disebut koordinat titik balik. Koordinat ini ada 2 macam yaitu :
+                          <ul>
+                            <li>
+                              Koordinat titik balik maksimum terjadi jika $a<0$.
+                            </li>
+                            <li>
+                              Koordinat titik balik minimum terjadi jika $a>0$.
+                            </li> </ul>  
+                            Titik puncak / titik balik grafik fungsi kuadrat berada pada koordinat :
+                            <br><center>(Sumbu Simetri, Nilai Optimum)</center><br>
+                         
+                          <center><table class="navmat" style="text-align: center;text-decoration: none;">
+                                <tr>
+                                    <th onclick="simetri()"><a>Sebelumnya</a></th>
+                                    <!-- <th onclick="mat11()" class="m1"><a>Sebelumnya</a></th> -->
+                                    <th onclick="potong()"><a>1</a></th>
+                                    <th onclick="simetri()"><a>2</a></th>
+                                    <th onclick="puncak()" style="cursor: unset;background-color: #006a4e;"><a>3</a></th>
+                                    <th class="nohov"><a>Selanjutnya</a></th>
+                                </tr>
+                              </table></center>
+                            <!-- <iframe src="https://www.geogebra.org/classic/hu88xebj" height="500px" width="30%"></iframe> -->
+                          </p></td></tr></table>
+  </div>
+  <div class="bodyKanan" onclick="tutup()">
+    <p class="matitle" style="width: 200px;">
+      <img src="../logo/mat.png" width="30px" height="20px"> Mari Mencoba</p>
+      <p>Untuk lebih memahami bagaimana cara mencari titik potong, sumbu simetri, niai optimum, dan titik puncak. Coba kalian simak animasi dibawah ini.
+      </p>
+      <iframe src="https://scratch.mit.edu/projects/421710972/embed" allowtransparency="true" width="100%" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe><br/><br/>
+      <!-- <center><a href="../scratch/section2.html" target="_blank" class="perbesar">Perbesar</a></center> -->
+      <p style="color: red;font-size: 15px;">*Tunggu sampai tombol mulai muncul</p>
+  </div>
+  
+  <div id="menubawah" class="footer" style="width:100%;float:left;">
+      <center>
+          <a><span class="nohoper">Sebelumnya</span></a>
+          <a href="section22.html"><span style="background-color: #006A4E;">1</span></a>
+          <a href="contohsoal2.html"><span>2</span></a>
+          <a href="pertanyaan22.html"><span>3</span></a>
+          <a href="contohsoal2.html"><span class="navbawah">Selanjutnya</span></a>
+      </center>
+  </div>
+  </div>
+  <script src="../script/navigasi.js"></script>
+  </body>

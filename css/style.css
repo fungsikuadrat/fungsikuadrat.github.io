@@ -458,6 +458,9 @@ body {
   padding: 5px;
 
 }
+.bodyKanan ol{
+  font-size: 23px;
+}
 /* .footer span:hover{
   background-color: #006A4E;
 } */
@@ -609,5 +612,14 @@ body {
   padding: 5px;
   font-size: 18px;
   width: 90%;
+}
+.bodyKanan p{
+  font-size: 18px;
+}
+.bodyKanan ol{
+  font-size: 18px;
+}
+.bodyKiri p{
+  font-size: 18px;
 }
 }

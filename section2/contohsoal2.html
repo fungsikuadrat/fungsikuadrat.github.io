@@ -1,0 +1,177 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/contohsoal.css" type="text/css">
+    <link rel="stylesheet" href="../css/pertanyaan.css" type="text/css">
+	<script src="../script/latihan.js"></script>
+	
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body>
+
+  <div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+    <ul>
+      <li>
+        <a href="materi1.html"><i></i> <span>1. Pengertian Fungsi Kuadrat</span></a>
+        <ul class="nav-flyout">
+        <li>
+          <a href="materi1.html"><i></i>1.1. Bentuk Umum Fungsi Kuadrat</a>
+        </li>
+        <li>
+          <a href="materi2.html"><i></i>1.2. Nilai Fungsi Kuadrat</a>
+        </li>
+        <li>
+          <a href="quiz1.html"><i></i>Kuis</a>
+        </li>
+        </ul>
+      </li>
+      <li>
+        <a href="../section2/section21.html"><i></i> <span>2. Grafik Fungsi Kuadrat</span></a>
+        <ul class="nav-flyout">
+          <li>
+          <a href="../section2/section21.html"><i></i>2.1. Menggambar Grafik Fungsi Kuadrat</a>
+          </li>
+          <li>
+          <a href="../section2/section22.html"><i></i>2.2. Titik Potong, Sumbu Simetri, dan Titik Puncak</a>
+          </li>
+          <li>
+          <a href="../section2/section23.html"><i></i>2.3. Sifat - Sifat Grafik Fungsi Kuadrat</a>
+          </li>
+          <li>
+          <a href="#"><i></i>Kuis</a>
+          </li>
+        </ul>
+        </li>
+        <li>
+          <a href="#"><i></i> <span>3. Menyusun Persamaan Grafik Fungsi Kuadrat</span></a>
+          <ul class="nav-flyout">
+          <li>
+            <a href="#"><i></i>2.1. Diketahui Koordinat Titik Puncak</a>
+          </li>
+          <li>
+            <a href="#"><i></i>2.2. Diketahui Titik Potong dengan Sumbu-$x$</a>
+          </li>
+          <li>
+            <a href="#"><i></i>Kuis</a>
+          </li>
+          </ul>
+      </li>
+      </ul>
+  </div>
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+</div>
+<div class="latarcontoh" onclick="tutup()">
+    <center><div class="contohtitle">
+        <center><p ><img src="../logo/contohsoal.png" id="logocontoh"> Contoh Soal</p></center>
+    </div></center>
+    <div class="contohfull">
+        <div class="indexcsoal">
+            <center><span onclick="csimetri1()">Contoh Soal 1</span>
+            <span onclick="csimetri2()">Contoh Soal 2</span>
+            <span >Contoh Soal 3</span></center>
+        </div>
+        <div class="section22" id="csimetri1">
+
+            <ol><li> Diketahui grafik fungsi kuadrat $f(x)=x^2+6x+5$.<br>
+                Tentukan :
+                <ol type="a">
+                    <li>
+                        Titik potong kurva dengan sumbu $-x$.
+                    </li>
+                    <li>
+                        Titik potong kurva dengan sumbu $-y$.
+                    </li>
+                    <li>
+                        Persamaan sumbu simetrinya.
+                    </li>
+                    <li>
+                        Titik puncak / titik balik.
+                    </li>
+                    <li>
+                        Gambarlah grafik fungsi kuadratnya.
+                    </li>
+                </ol>
+                <b>Pembahasan :</b><br>
+                <ol type="a">
+                    <li>
+                        $0=x^2+6x+5$<br>
+                        $(x+1)(x+5)$<br>
+                        $1 * 5 = 5$<br>
+                        $1 + 5 = 6$<br>
+                        $x+1=0$ V $x+5=0$<br>
+                        $x=-1$ V  $x=-5$<br>
+                        Jadi, didapatkan titik potong sumbu-x nya adalah(-1, 0) dan (-5, 0).
+                        
+                    </li>
+                    <li>
+                        $f(0)=0^2+6*0+5$<br>
+                        <span style="margin-left: 3.7vw;">$=5$</span><br>
+                        Jadi, didapatkan titik potong sumbu-y nya adalah (0, 5).<br>
+                    </li>
+                    <li>
+                        Sumbu Simetri $= -\frac{b}{-2a}$<br>
+                        <span style="margin-left: 10.5vw;">$=-\frac{6}{2(1)}=-3$</span><br>
+                        Jadi, persamaan sumbu simetrinya adalah $x=-3$
+                    </li>
+                    <li>
+                        Titik Puncak = (Sumbu Simetri,nilai optimum)<br>
+                        $=(-3,\frac{16}{-4(1)})$<br>
+                        $=(-3,-4)$<br>
+                        Jadi, titik puncak / titik baliknya adalah (-3,-4).
+                    </li>
+                    <li>
+                        Gambarlah grafik fungsi kuadratnya.
+                    </li>
+                </ol>
+        </li>
+        </ol>
+        </div>
+        <div class="section22 hilang" id="csimetri2">
+        
+            <ol start="2"><li>Amin membawa bakul purun berisi dua jenis buah yaitu kasturi dan langsat dengan 
+            jumlah 18 buah. Berapakah jumlah terbesar dari perkalian dua jenis buah tersebut.<br>
+            <b>Pembahasan :</b><br>
+            Misalkan buah kasutri $= x$ dan buah langsat $= y$, maka :<br>
+            $x+y=18$<br> 
+            $y=18-x$<br>
+            Perkalian kedua buah tersebut :<br>
+            $xy=x(18-x)$<br>
+            <span style="margin-left:2.5vw;">$=18x-x^2$</span><br>
+            Didapatkan : $a=-1,b=18$ dan $c=0$.<br>
+            Jumlah Terbesar $=\frac{D}{-4a}=\frac{18^2-4(-1)0}{-4(-1)}=\frac{324}{4}=81$
+        </li>
+        </ol>
+        </div>
+    </div>
+</div>
+
+<div id="menubawah" class="footer" style="width:100%;float:left;">
+	<center><a href="section22.html"><span class="navbawah">Sebelumnya</span></a>
+	<a href="section22.html"><span>1</span></a>
+	<a href="contohsoal2.html"><span style="background-color: #006A4E;">2</span></a>
+	<a href="pertanyaan22.html"><span>3</span></a>
+	<a href="pertanyaan22.html"><span class="navbawah">Selanjutnya</span></a></center>
+</div>
+</div>
+
+<script src="../script/navigasi.js"></script>
+<script src="../script/contohsoal.js"></script>
+<script src="../script/sideKiri.js"></script>
+</body>
+</html> 

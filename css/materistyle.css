@@ -1,3 +1,9 @@
+.nohov a:hover{
+  background-color: white !important;
+}
+.nohov:hover{
+  background-color: white !important;
+}
 p.matitle {
     border: 3px solid #006A4E;
     border-radius: 20px;
@@ -20,7 +26,7 @@ p.matitle {
     text-align: left;
     line-height: 30px;
     font-size: 23px;
-    display: inline-block !important;
+    display: inline-block;
 }
 .matisi2 {
   border: 3px solid #006A4E;
@@ -185,6 +191,9 @@ p.matitle {
 
 .navawal span:hover{
   background-color: white;
+}
+.hilang{
+  display: none;
 }
 @media(max-width: 420px){
   /* .suhu td, th {

@@ -116,8 +116,19 @@ width:100%
     overflow:auto;
     margin-right: 60px;
 }
+.pertanyaanKanan2{
+    box-shadow: 1px 1px 3px 3px #19222a;
+    margin-top: 20px;
+    background-color: white;
+    width:20%;
+    height:85%;
+    float:right;
+    overflow:auto;
+    margin-right: 60px;
+}
 .lat table{
-    font-size: 25px;
+    font-size: 23px;
+    line-height: 2.5vw;
 }
 .lat button {
     text-decoration: none;
@@ -170,6 +181,13 @@ width:100%
         margin-right: 0;
         margin-top: 100%;
     }
+    .pertanyaanKanan2{
+        box-shadow: none;
+        width:100%;
+        height:auto;
+        margin-right: 0;
+        /* margin-top: 100%; */
+    }
     #pertanyaannav th{
     border: 2px solid #006A4E;
     height: 30px;
@@ -203,4 +221,8 @@ width:100%
 .hape{
     display: none;
 } */
+.lat table{
+    font-size: 18px;
+    line-height: 8vw;
+}
 }

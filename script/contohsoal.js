@@ -1,47 +1,47 @@
-let grafik = document.getElementById("chartContainer");
-console.log("grafik "+grafik);
-if(grafik !="null"){
-window.onload = function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-	  axisY: {	
-	  tickPlacement: "inside",
-    tickLength: 75,
-    labelFontWeight: "bold",
-    labelFontSize: 15,
-	  labelPlacement: "inside", 
-			interval: 2
-		},
-		axisX: {
-      tickPlacement: "inside",
-	  tickLength: 15,
-    labelPlacement: "inside", 
-    labelFontWeight: "bold",
-    labelFontSize: 15,
-			interval: 1,
-      gridThickness: 1,
-		},
-      data: [
-      {
-        markerType: "circle",  //"circle", "square", "cross", "none"
-        type: "spline",
-        dataPoints: [
+// let grafik = document.getElementById("chartContainer");
+// console.log("grafik "+grafik);
+// if(grafik !="null"){
+// window.onload = function () {
+//     var chart = new CanvasJS.Chart("chartContainer",
+//     {
+// 	  axisY: {	
+// 	  tickPlacement: "inside",
+//     tickLength: 75,
+//     labelFontWeight: "bold",
+//     labelFontSize: 15,
+// 	  labelPlacement: "inside", 
+// 			interval: 2
+// 		},
+// 		axisX: {
+//       tickPlacement: "inside",
+// 	  tickLength: 15,
+//     labelPlacement: "inside", 
+//     labelFontWeight: "bold",
+//     labelFontSize: 15,
+// 			interval: 1,
+//       gridThickness: 1,
+// 		},
+//       data: [
+//       {
+//         markerType: "circle",  //"circle", "square", "cross", "none"
+//         type: "spline",
+//         dataPoints: [
 
-       { x: -2, y: 12 },
-        { x: -1, y: 4},
-        { x: 0, y: 0 },
-		{ x: 0.5, y: -0.5 },
-        { x: 1, y: 0 },
-        { x: 2, y: 4 },
-        { x: 3, y: 12 }
-        ]
-      }
-      ]
-    });
+//        { x: -2, y: 12 },
+//         { x: -1, y: 4},
+//         { x: 0, y: 0 },
+// 		{ x: 0.5, y: -0.5 },
+//         { x: 1, y: 0 },
+//         { x: 2, y: 4 },
+//         { x: 3, y: 12 }
+//         ]
+//       }
+//       ]
+//     });
 
-    chart.render();
-  }
-}
+//     chart.render();
+//   }
+// }
 let tambah1 = document.getElementById("tambah1");
 if(tambah1 != "null"){
 let c1a1 = document.getElementById("c1a1");
@@ -275,4 +275,20 @@ contoh1.addEventListener('click', function(){
       hor2.classList.toggle("contohhilang");
   }
 });
+}
+function csimetri1(){
+  let csimetri1=document.getElementById("csimetri1");
+  let csimetri2=document.getElementById("csimetri2");
+  csimetri1.classList.toggle("hilang");
+  if(csimetri2.className.indexOf("hilang")==-1){
+      csimetri2.className += " hilang";
+  }
+}
+function csimetri2(){
+  let csimetri1=document.getElementById("csimetri1");
+  let csimetri2=document.getElementById("csimetri2");
+  csimetri2.classList.toggle("hilang");
+  if(csimetri1.className.indexOf("hilang")==-1){
+      csimetri1.className += " hilang";
+  }
 }

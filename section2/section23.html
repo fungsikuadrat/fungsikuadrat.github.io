@@ -1,0 +1,178 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+      <title>Menggambar Grafik Fungsi Kuadrat</title>
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+      <link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+      <link rel="stylesheet" href="../css/contohsoal.css" type="text/css">
+      <script src="../script/sideKiri.js"></script>
+    <script src="../script/latihan.js"></script>
+    <script src="../script/contohsoal.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+          });
+          </script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  </head>
+  
+  <body>
+    <div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+      <ul>
+        <li>
+          <a href="materi1.html"><i></i> <span>1. Pengertian Fungsi Kuadrat</span></a>
+          <ul class="nav-flyout">
+          <li>
+            <a href="materi1.html"><i></i>1.1. Bentuk Umum Fungsi Kuadrat</a>
+          </li>
+          <li>
+            <a href="materi2.html"><i></i>1.2. Nilai Fungsi Kuadrat</a>
+          </li>
+          <li>
+            <a href="quiz1.html"><i></i>Kuis</a>
+          </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../section2/section21.html"><i></i> <span>2. Grafik Fungsi Kuadrat</span></a>
+          <ul class="nav-flyout">
+            <li>
+            <a href="../section2/section21.html"><i></i>2.1. Menggambar Grafik Fungsi Kuadrat</a>
+            </li>
+            <li>
+            <a href="../section2/section22.html"><i></i>2.2. Titik Potong, Sumbu Simetri, dan Titik Puncak</a>
+            </li>
+            <li>
+            <a href="../section2/section23.html"><i></i>2.3. Sifat - Sifat Grafik Fungsi Kuadrat</a>
+            </li>
+            <li>
+            <a href="#"><i></i>Kuis</a>
+            </li>
+          </ul>
+          </li>
+          <li>
+            <a href="#"><i></i> <span>3. Menyusun Persamaan Grafik Fungsi Kuadrat</span></a>
+            <ul class="nav-flyout">
+            <li>
+              <a href="#"><i></i>2.1. Diketahui Koordinat Titik Puncak</a>
+            </li>
+            <li>
+              <a href="#"><i></i>2.2. Diketahui Titik Potong dengan Sumbu-$x$</a>
+            </li>
+            <li>
+              <a href="#"><i></i>Kuis</a>
+            </li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+  <div class="Navigasi">
+    <a class="pointerr" onclick="buka()">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+  </div>
+  <div class="bodyKiri" onclick="tutup()">
+      <p class="matitle" id="kurang" style="width: 130px;">
+          <img src="../logo/indikator.png" width="20px" height="20px"> Tujuan</p>
+      <table class="indikator hide" id="hilang2">
+          <tr><td>
+              <ul>
+                  <li>	Menjelaskan pengaruh dari koefisien $x^2$ pada fungsi kuadrat $f(x)$ terhadap karakteristik dari grafik fungsi $f(x).$</li>
+              </ul>
+          </td></tr>
+      </table>
+      <p class="matitle" id="titikpotong2" style="width: 300px;">
+                <img src="../logo/mat.png" width="30px" height="20px"> Sifat-Sifat Grafik Fungsi Kuadrat</p>
+                <table class="matisi" id="simetri">
+                    <tr><td>
+                        <b>Ditinjau dari Koefisien $x^2$ dan Diskriminan</b><br>
+                        Cara pertama untuk mengetahui sifat-sifat grafik fungsi kuadrat dapat dilakukan dengan meninjau koefisien $x^2$ (Nilai $a$). 
+                        Jika sebuah fungsi kuadrat ditinjau dari koefisien $x^2$ memiliki sifat sebagai berikut :
+                        <ul>
+                          <li>
+                            Jika $a$ positf $(a>0)$, maka grafiknya terbuka keatas.
+                          </li>
+                          <li>
+                            Jika $a$ negatif $(a<0)$, maka grafiknya terbuka ke bawah.
+                          </li>
+                        </ul>
+                        Fungsi kuadrat juga memiliki sifat-sifat yang berbeda jika ditinjau dari diskriminannya. Dalam fungsi kuadrat,
+                         diskriminan digunakan untuk menentukan banyaknya titik potong kurva dengan sumbu$-x$ seperti sebagai berikut :
+                         <ul>
+                           <li>
+                            Jika $D>0$, kurva memotong sumbu$-x$ pada dua titik.
+                           </li>
+                           <li>
+                            Jika $D=0$, kurva memotong sumbu$-x$ pada satu titik atau menyinggung sumbu-x.
+                           </li>
+                           <li>
+                            Jika $D<0$, kurva tidak memotong sumbu$-x$.
+                           </li>
+                         </ul>
+                        <b>Ditinjau dari Koefisien $x$ dan Konstanta</b><br>
+                        Grafik fungsi kuadrat juga memiliki sifat atau karakteristik yang berbeda jika ditinjau 
+                        dari koefisien $x$ (nilai $b$) dan konstanta (nilai $c$). jika ditinjau dari konstanta (nilai $c$) grafik fungsi kuadrat memiliki 2 sifat / karakteristik , yaitu :
+                        <ul>
+                          <li>
+                            Jika $𝑐>0$, maka grafik fungsi akan memotong sumbu$-𝑦$ positif.
+                          </li>
+                          <li>
+                            Jika $𝑐<0$, maka grafik fungsi akan memotong sumbu$-𝑦$ negatif.
+                          </li>
+                        </ul>
+                        untuk meninjau sifat/karakteristik fungsi kuadrat dari koefisien $x$(nilai $b$) kita juga harus meninjau Koefisien $x^2$(nilai $a$) juga.
+                         sifat / karakteristiknya sebagai berikut :
+                         <Ul>
+                            <li>
+                              Jika $a>0$ dan $b>0$, maka sumbu simetri berada pada sumbu-x negatif.
+                            </li>
+                            <li>
+                              Jika $a>0$ dan $b<0$, maka sumbu simetri berada pada sumbu-x positif.
+                            </li>
+                            <li>
+                              Jika $a<0$ dan $b<0$, maka sumbu simetri berada pada sumbu-x negatif.
+                            </li>
+                            <li>
+                              Jika $a<0$ dan $b>0$, maka sumbu simetri berada pada sumbu-x positif.
+                            </li>
+                         </Ul>
+                          </td></tr></table>
+  </div>
+  <div class="bodyKanan" onclick="tutup()">
+    <p class="matitle" style="width: 200px;">
+      <img src="../logo/mat.png" width="30px" height="20px"> Mari Mengamati</p>
+      <p>Perhatikan grafik fungsi kuadrat $f(x)=x^2+4x+3$ dibawah ini :</p>
+      <iframe src="https://www.geogebra.org/classic/uzbxbds7" height="800px" width="100%" ></iframe>
+      <p>Grafik tersebut meiliki sifat/karakteristik sebagai berikut :<br>
+      <ol type="a">
+        <li>
+          Grafiknya terbuka ke atas karena $a=1 (a>0)$
+        </li>
+        <li>
+          Kurva memotong sumbu$-x$ pada dua titik karena nilai diskriminan = 4 $(D>0)$
+        </li>
+        <li>
+          Grafik fungsi memotong sumbu$-y$ positf karena nilai $c$ = 3 $(c>0)$
+        </li>
+        <li>
+          Sumbu simetri berada pada sumbu$-x$ negatif karena nilai $a$ dan $b$ sama-sama >0.
+        </li>
+      </ol></p>
+  </div>
+  
+  <div id="menubawah" class="footer" style="width:100%;float:left;">
+      <center>
+          <a><span class="nohoper">Sebelumnya</span></a>
+          <a href="section23.html"><span style="background-color: #006A4E;">1</span></a>
+          <a href="contohsoal23.html"><span>2</span></a>
+          <a href="#"><span>3</span></a>
+          <a href="contohsoal23.html"><span class="navbawah">Selanjutnya</span></a>
+      </center>
+  </div>
+  </div>
+  <script src="../script/navigasi.js"></script>
+  </body>

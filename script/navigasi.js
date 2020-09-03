@@ -141,3 +141,78 @@ function s22(){
     console.log(mat121);
     mat121.className = "matisi";
 }
+function potong(){
+    let simetri=document.getElementById("simetri");
+    let simetri2=document.getElementById("simetri2");
+    // simetri.classList.toggle("hilang");
+    // simetri2.classList.toggle("hilang");
+    let potong=document.getElementById("titikpotong");
+    let potong2=document.getElementById("titikpotong2");
+    // potong.classList.toggle("hilang");
+    // potong2.classList.toggle("hilang2");
+    let puncak=document.getElementById("titikpuncak");
+    let puncak2=document.getElementById("titikpuncak2");
+    // puncak.classList.toggle("hilang");
+    // puncak2.classList.toggle("hilang2");
+    potong.classList.toggle("hilang");
+    potong2.classList.toggle("hilang");
+    if(simetri.className.indexOf("hilang")==-1){
+        simetri.className += " hilang";
+        simetri2.className += " hilang";
+    }
+    if(puncak.className.indexOf("hilang")==-1){
+        puncak.className += " hilang";
+        puncak2.className += " hilang";
+    }
+}
+
+function simetri(){
+    let simetri=document.getElementById("simetri");
+    let simetri2=document.getElementById("simetri2");
+    let potong=document.getElementById("titikpotong");
+    let potong2=document.getElementById("titikpotong2");
+    let puncak=document.getElementById("titikpuncak");
+    let puncak2=document.getElementById("titikpuncak2");
+        simetri.classList.toggle("hilang");
+        simetri2.classList.toggle("hilang");
+
+    if(potong.className.indexOf("hilang")==-1){
+        potong.className += " hilang";
+        potong2.className += " hilang";
+    }
+    if(puncak.className.indexOf("hilang")==-1){
+        puncak.className += " hilang";
+        puncak2.className += " hilang";
+    }
+}
+function puncak(){
+    // let simetri=document.getElementById("simetri");
+    // let simetri2=document.getElementById("simetri2");
+    // simetri.classList.remove("hilang");
+    // simetri2.classList.remove("hilang");
+    // let potong=document.getElementById("titikpotong");
+    // let potong2=document.getElementById("titikpotong2");
+    // potong.classList.remove("hilang");
+    // potong2.classList.remove("hilang2");
+    // let puncak=document.getElementById("titikpuncak");
+    // let puncak2=document.getElementById("titikpuncak2");
+    // puncak.classList.toggle("hilang");
+    // puncak2.classList.toggle("hilang2");
+    let simetri=document.getElementById("simetri");
+    let simetri2=document.getElementById("simetri2");
+    let potong=document.getElementById("titikpotong");
+    let potong2=document.getElementById("titikpotong2");
+    let puncak=document.getElementById("titikpuncak");
+    let puncak2=document.getElementById("titikpuncak2");
+    puncak.classList.toggle("hilang");
+    puncak2.classList.toggle("hilang");
+    if(simetri.className.indexOf("hilang")==-1){
+        simetri.className += " hilang";
+        simetri2.className += " hilang";
+    }
+    if(potong.className.indexOf("hilang")==-1){
+        potong.className += " hilang";
+        potong2.className += " hilang";
+    }
+        
+}
