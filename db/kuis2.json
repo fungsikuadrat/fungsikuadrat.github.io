@@ -21,24 +21,24 @@
     ,{
         "soal2": {
             "lat":"Diketahui fungsi kuadrat \\[f(x)=x^2+3x-4\\], maka grafik fungsi kuadratnya adalah...",
-            "a": "<img src='../kuis2/3a.png' width='100%'/>",
-            "b": "<img src='../kuis2/3b.png' width='100%'/>",
-            "c": "<img src='../kuis2/3c.png' width='100%'/>",
-            "d": "<img src='../kuis2/3d.png' width='100%'/>",
+            "a": "<img src='../kuis2/3a.PNG' width='100%'/>",
+            "b": "<img src='../kuis2/3b.PNG' width='100%'/>",
+            "c": "<img src='../kuis2/3c.PNG' width='100%'/>",
+            "d": "<img src='../kuis2/3d.PNG' width='100%'/>",
             "jawab" : "d"
         }
     },{
         "soal3": {
             "lat":"Diketahui fungsi kuadrat \\[f(x)=x^2-4x\\], maka grafik fungsi kuadratnya adalah...",
-            "a": "<img src='../kuis2/4a.png' width='100%'/>",
-            "b": "<img src='../kuis2/4b.png' width='100%'/>",
-            "c": "<img src='../kuis2/4b.png' width='100%'/>",
-            "d": "<img src='../kuis2/4b.png' width='100%'/>",
+            "a": "<img src='../kuis2/4a.PNG' width='100%'/>",
+            "b": "<img src='../kuis2/4b.PNG' width='100%'/>",
+            "c": "<img src='../kuis2/4b.PNG' width='100%'/>",
+            "d": "<img src='../kuis2/4b.PNG' width='100%'/>",
             "jawab" : "b"
         }
     },{
         "soal4": {
-            "lat":"Diketahui grafik fungsi kuadrat \\[f(x)=-x^2-x+2\\] seperti gambar dibawah ini.<br><center><img src='../kuis2/5.png'  width='100%'/></center><br>Pernyataan yang tidak benar terkait grafik fungsi kuadrat tersebut adalah...",
+            "lat":"Diketahui grafik fungsi kuadrat \\[f(x)=-x^2-x+2\\] seperti gambar dibawah ini.<br><center><img src='../kuis2/5.PNG'  width='100%'/></center><br>Pernyataan yang tidak benar terkait grafik fungsi kuadrat tersebut adalah...",
             "a": "Grafik memotong sumbu\\[-x\\] di dua titik",
             "b": "Grafik memotong sumbu\\[-y\\] positif",
             "c": "Sumbu simetri berada di sumbu\\[-x\\] positif",
