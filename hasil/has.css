@@ -84,6 +84,14 @@ td{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
 }
+.benar{
+    background-color: #00FF00;
+    color: white;
+}
+.salah{
+    background-color: red;
+    color: white;
+}
 @media(max-width: 430px){
     table{
         width: auto;

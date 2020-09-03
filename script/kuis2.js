@@ -109,7 +109,7 @@ dat.onreadystatechange = function () {
             txt += "<p>" + soal + "</p>";
             txt += "</li>";
 
-            txt += "<form name=soall id='soall" + x + "'>";
+            txt += "<p><form name=soall id='soall" + x + "'>";
 
             txt += "<label class=container > ";
             txt += "<input type=radio name='soal" + x + "' onclick='checkk()' value=a>"
@@ -126,21 +126,21 @@ dat.onreadystatechange = function () {
             txt += "<label class=container > ";
             txt += "<input type=radio name='soal"+ x + "' onclick='checkk()' value=d>"
             txt += "<span class=checkmark >"+d+"</span> </label><br/>"
-            txt += "</form>"
+            txt += "</form></p>"
 
             txt += "<br><center>"
             if(y == 9){
-                txt += "<button type='button' onclick='backk()'>Sebelumnya</button>"
+                txt += "<div style='display:inline'><button type='button' onclick='backk()'>Sebelumnya</button>"
                 txt +="<button type='button' style='cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;'>Selanjutnya</button><br/>"
-                txt += "<button type='button' onclick='pengingat()'>SELESAI</button>"
+                txt += "<button type='button' onclick='pengingat()'>SELESAI</button></div>"
             }
             else if(y == 0){
-                txt +="<button type='button' style='cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;'>Sebelumnya</button>"
-                txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center>"
+                txt +="<div style='display:inline'><button type='button' style='cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;'>Sebelumnya</button>"
+                txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center></div>"
             }
             else if(y!=0||y!=9){
-                txt += "<button type='button' onclick='backk()'>Sebelumnya</button>"
-                txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center>"
+                txt += "<div style='display:inline'><button type='button' onclick='backk()'>Sebelumnya</button>"
+                txt += "<button type='button' id='lanjut"+no+"' onclick='next()'>Selanjutnya</button></center></div>"
             }
             // txt += "<button type='button' onclick='ragu()'>Ragu - Ragu</button>"
 
@@ -234,6 +234,9 @@ function backk(){
 function skor(){
     let skor1 = 0;
     let cek11 = 0;
+    let pil_user = [];
+    new_jwb_urut = [];
+    new_jwb_urut_no = [];
     for(d=0;d<10;d++){
         let x= cek[d];
         let form = document.querySelector("#soall"+x);
@@ -241,11 +244,12 @@ function skor(){
         let jwb = '';
         for (const entry of data) {
             jwb = entry[1];
+            pil_user.push(jwb);
             if(jwb!=''){
                 cek11+=1;
             }
-            console.log("jawaban dipilih = "+jwb);
-            console.log("jawaban benar = "+jwb_benar[d]);
+            // console.log("jawaban dipilih = "+jwb);
+            // console.log("jawaban benar = "+jwb_benar[d]);
             if(jwb==jwb_benar[d]){
                 skor1 += 10;
             }
@@ -269,12 +273,24 @@ function skor(){
     document.getElementById("skorr").innerHTML=skor1;
     let waktunya = waktu();
     let harinya = hari();
-
-    createTask(sekolah, nama, kelas, skor1, waktunya, harinya);
+    for (let i = 0; i < cek.length; i++) {
+        for (let j = 0; j < cek.length; j++) {
+            if (i == cek[j]) {
+                new_jwb_urut.push(pil_user[j]);
+                new_jwb_urut_no.push(cek[j]);
+            }
+        }
+    }
+    createTask(sekolah, nama, kelas, skor1, waktunya, harinya, new_jwb_urut);
     }
     else{
         alert("Masih Ada Soal Yang Belum Dijawab!");
     }
+
+    console.log("PIL USEER "+pil_user);
+    console.log("NOMOR ACAKX "+cek);
+    console.log("NOMOR JAWAB URUT "+new_jwb_urut_no);
+    console.log("JAWAB URUT "+new_jwb_urut);
 }
 
 function no10(){
@@ -444,7 +460,7 @@ function hari() {
 
 
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
     counter += 1;
     var task = {
         id: counter,
@@ -453,7 +469,8 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
         kelas: kelas,
         nilai: nilai,
         waktu: waktunya,
-        hari: hari
+        hari: hari,
+        jawabannya: jwb
     }
 
     let db = firebase.database().ref("hasil2/" + counter);

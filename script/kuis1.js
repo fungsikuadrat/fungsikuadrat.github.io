@@ -234,6 +234,9 @@ function backk(){
 function skor(){
     let skor1 = 0;
     let cek11 = 0;
+    let pil_user = [];
+    new_jwb_urut = [];
+    new_jwb_urut_no = [];
     for(d=0;d<10;d++){
         let x= cek[d];
         let form = document.querySelector("#soall"+x);
@@ -241,11 +244,12 @@ function skor(){
         let jwb = '';
         for (const entry of data) {
             jwb = entry[1];
+            pil_user.push(jwb);
             if(jwb!=''){
                 cek11+=1;
             }
-            console.log("jawaban dipilih = "+jwb);
-            console.log("jawaban benar = "+jwb_benar[d]);
+            // console.log("jawaban dipilih = "+jwb);
+            // console.log("jawaban benar = "+jwb_benar[d]);
             if(jwb==jwb_benar[d]){
                 skor1 += 10;
             }
@@ -270,7 +274,15 @@ function skor(){
     let waktunya = waktu();
     let harinya = hari();
 
-    createTask(sekolah, nama, kelas, skor1, waktunya, harinya);
+    for (let i = 0; i < cek.length; i++) {
+        for (let j = 0; j < cek.length; j++) {
+            if (i == cek[j]) {
+                new_jwb_urut.push(pil_user[j]);
+                new_jwb_urut_no.push(cek[j]);
+            }
+        }
+    }
+    createTask(sekolah, nama, kelas, skor1, waktunya, harinya, new_jwb_urut);
     }
     else{
         alert("Masih Ada Soal Yang Belum Dijawab!");
@@ -444,7 +456,7 @@ function hari() {
 
 
 
-function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
+function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
     counter += 1;
     var task = {
         id: counter,
@@ -453,7 +465,8 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari) {
         kelas: kelas,
         nilai: nilai,
         waktu: waktunya,
-        hari: hari
+        hari: hari,
+        jawabannya: jwb
     }
 
     let db = firebase.database().ref("hasil/" + counter);

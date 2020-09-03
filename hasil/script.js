@@ -34,9 +34,9 @@ let cek11 = 0;
 
 
 function readlah() {
-    // kuisfix = kuisnya.value;
-    // console.log(kuisfix);
-    var task = firebase.database().ref('hasil/');
+    kuisfix = kuisnya.value;
+    console.log(kuisfix);
+    var task = firebase.database().ref(kuisfix);
 
     tmp.innerHTML = "";
     if (kelasnya.value == "1") {
@@ -112,7 +112,7 @@ function hapus(id) {
 }
 
 function deletetask(id) {
-    var task = firebase.database().ref('hasil/' + id);
+    var task = firebase.database().ref(kuisfix + id);
     task.remove();
     tmp.innerHTML = "";
     readlah();
@@ -130,7 +130,7 @@ function hapussemua(id) {
 
 function deletesemua(id) {
     for (let i = 0; i < id.length; i++) {
-        var task = firebase.database().ref('hasil/' + id);
+        var task = firebase.database().ref(kuisfix + id);
         task.remove();
     }
     tmp.innerHTML = "";
