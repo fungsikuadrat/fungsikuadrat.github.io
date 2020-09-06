@@ -1,0 +1,187 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/contohsoal.css" type="text/css">
+    <link rel="stylesheet" href="../css/pertanyaan.css" type="text/css">
+	<script src="../script/latihan.js"></script>
+	
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+
+<body>
+<div>
+  <div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+    <ul>
+      <li>
+        <a href="../section1/materi1.html"><i></i> <span>1. Pengertian Fungsi Kuadrat</span></a>
+        <ul class="nav-flyout">
+        <li>
+          <a href="../section1/materi1.html"><i></i>1.1. Bentuk Umum Fungsi Kuadrat</a>
+        </li>
+        <li>
+          <a href="../section1/materi2.html"><i></i>1.2. Nilai Fungsi Kuadrat</a>
+        </li>
+        <li>
+          <a href="../section1/quiz1.html"><i></i>Kuis</a>
+        </li>
+        </ul>
+      </li>
+      <li>
+        <a href="../section2/section21.html"><i></i> <span>2. Grafik Fungsi Kuadrat</span></a>
+        <ul class="nav-flyout">
+          <li>
+          <a href="../section2/section21.html"><i></i>2.1. Menggambar Grafik Fungsi Kuadrat</a>
+          </li>
+          <li>
+          <a href="../section2/section22.html"><i></i>2.2. Titik Potong, Sumbu Simetri, dan Titik Puncak</a>
+          </li>
+          <li>
+          <a href="../section2/section23.html"><i></i>2.3. Sifat - Sifat Grafik Fungsi Kuadrat</a>
+          </li>
+          <li>
+          <a href="#"><i></i>Kuis</a>
+          </li>
+        </ul>
+        </li>
+        <li>
+          <a href="section31.html"><i></i> <span>3. Menyusun Persamaan Grafik Fungsi Kuadrat</span></a>
+          <ul class="nav-flyout">
+          <li>
+          <a href="section31.html"><i></i>2.1. Diketahui Koordinat Titik Puncak</a>
+          </li>
+          <li>
+          <a href="section32.html"><i></i>2.2. Diketahui Titik Potong dengan Sumbu-$x$</a>
+          </li>
+          <li>
+          <a href="#"><i></i>Kuis</a>
+          </li>
+          </ul>
+        </li>
+          </ul>
+      </li>
+      </ul>
+  </div>
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+</div>
+<div class="latarcontoh" onclick="tutup()">
+    <center><div class="contohtitle">
+        <center><p ><img src="../logo/contohsoal.png" id="logocontoh"> Contoh Soal</p></center>
+    </div></center>
+    <div class="contohfull">
+        <div class="indexcsoal">
+            <center><span onclick="csimetri1()">Contoh Soal 1</span>
+            <span onclick="csimetri2()">Contoh Soal 2</span>
+            <!-- <span >Contoh Soal 3</span> -->
+          </center>
+        </div>
+        <div class="section22" id="csimetri1">
+
+            <ol>
+                <li>Haris bermain tenis di lapangan tenis kayuh baimbai pekauman dan melempar bola tenis ke atas 
+                    secara vertikal sehingga membentuk lintasan bola menyerupai parabola seperti sketsa grafik 
+                    dibawah ini. Coba tentukan persamaan fungsi kuadrat dari sketsa grafik tersebut.<br>
+                    <center><div class="divgeogeb">
+                        <iframe class="cgeogeb" src="https://www.geogebra.org/classic/s9c94xyt"></iframe>
+                        <iframe class="hpgeogeb" src="https://www.geogebra.org/classic/xy2fcu6r"></iframe>
+                    </div></center>
+                    <b>Pembahasan :</b><br>
+                    Diketahui	: $(x_p,y_p) = (2, 1)$<br>
+                    <span class="diketahui">$(x,y)=(0,-3)$</span><br>
+                    Ditanyakan	: Persamaan fungsi kuadrat?<br>
+                    Jawab		: $y=(x-x_p )^2+y_p$<br>
+                    <span class="jawab">$: y=a(x- 2)^2+ 1$</span><br>
+                    <span class="jawab">$: -3 = a4+ 1$</span><br>
+                    <span class="jawab">$: -4a=1+3$</span><br>
+                    <span class="jawab">$: 4a= -1-3$</span><br>
+                    <span class="jawab">$: a=\frac{-4}{4}=-1$</span><br>
+                    Sehingga diperoleh persamaan fungsi kuadrat : <br>
+                    $y= -1(x-2)^2+1$<br>
+				    $y=-(x-2)(x-2)+1$<br>
+					$y=-(x^2-4x+4)+1$<br>
+					$y=-x^2+4x-4+1$<br>
+					$y=-x^2+4x-3$
+                </li>
+            </ol>
+        </div>
+        <div class="section22 hilang" id="csimetri2">
+        
+            <ol start="2"><li>
+                Sebuah bola tenis dijatuhkan dari lantai 3 menara pandang siring dan memantul kembali sehingga 
+                lintasan bola tersebut membentuk menyerupai parabola seperti sketsa grafik dibawah ini . Coba 
+                tentukan persamaan fungsi kuadrat dari sketsa grafik tersebut.<br>
+                <center><div class="divgeogeb">
+                    <iframe class="cgeogeb" src="https://www.geogebra.org/classic/tf3jksvb"></iframe>
+                    <iframe class="hpgeogeb" src="https://www.geogebra.org/classic/g9eseas9"></iframe>
+                </div></center>
+                <b>Pembahasan :</b><br>
+                Diketahui	: $(x_p,y_p) = (-1, -8)$<br>
+                <span class="diketahui">$(x,y)=(0,-6)$</span><br>
+                Ditanyakan	: Persamaan fungsi kuadrat?<br>
+                Jawab		: $y=(x-x_p )^2+y_p$<br>
+                <span class="jawab">$: y=(x-x_p )^2+y_p$</span><br>
+                <span class="jawab">$: =a(x- 1)^2-8$</span><br>
+                <span class="jawab">$: -6 = a4- 8$</span><br>
+                <span class="jawab">$: -4a=-8+6$</span><br>
+                <span class="jawab">$: a=\frac{4}{2}=2$</span><br>
+                Sehingga diperoleh persamaan fungsi kuadrat : <br>
+                $y= 2(x-(-1))^2-8$<br>
+                $y= 2(x+1)(x+1)-8$<br>
+                $y= 2(x^2+x+x+1)-8$<br>
+                $y= 2x^2+4x+2-8$<br>
+                $y= 2x^2+4x-6$<br>
+                    <!-- <center><div class="divgeogeb">
+                        <iframe class="cgeogeb" src="https://www.geogebra.org/classic/s9c94xyt"></iframe>
+                        <iframe class="hpgeogeb" src="https://www.geogebra.org/classic/xy2fcu6r"></iframe>
+                    </div></center>
+                    <b>Pembahasan :</b><br>
+                    Diketahui	: $(x_p,y_p) = (2, 1)$<br>
+                    <span class="diketahui">$(x,y)=(0,-3)$</span><br>
+                    Ditanyakan	: Persamaan fungsi kuadrat?<br>
+                    Jawab		: $y=(x-x_p )^2+y_p$<br>
+                    <span class="jawab">$: y=a(x- 2)^2+ 1$</span><br>
+                    <span class="jawab">$: -3 = a4+ 1$</span><br>
+                    <span class="jawab">$: -4a=1+3$</span><br>
+                    <span class="jawab">$: 4a= -1-3$</span><br>
+                    <span class="jawab">$: a=\frac{-4}{4}=-1$</span><br>
+                    Sehingga diperoleh persamaan fungsi kuadrat : <br>
+                    $y= -1(x-2)^2+1$<br>
+				    $y=-(x-2)(x-2)+1$<br>
+					$y=-(x^2-4x+4)+1$<br>
+					$y=-x^2+4x-4+1$<br>
+					$y=-x^2+4x-3$ -->
+        </li>
+        </ol>
+        </div>
+        
+    </div>
+</div>
+
+<div id="menubawah" class="footer" style="width:100%;float:left;">
+	<center><a href="section31.html"><span class="navbawah">Sebelumnya</span></a>
+	<a href="section31.html"><span>1</span></a>
+	<a href="contohsoal31.html"><span style="background-color: #006A4E;">2</span></a>
+	<a href="pertanyaan31.html"><span>3</span></a>
+	<a href="pertanyaan31.html"><span class="navbawah">Selanjutnya</span></a></center>
+</div>
+</div>
+
+<script src="../script/navigasi.js"></script>
+<script src="../script/contohsoal.js"></script>
+<script src="../script/sideKiri.js"></script>
+</body>
+</html> 

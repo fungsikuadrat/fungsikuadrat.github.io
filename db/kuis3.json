@@ -1,0 +1,94 @@
+[
+    {
+        "soal0": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis1.PNG' width='100%'/>",
+            "a": "\\[y=-x^2-2x-8\\]",
+            "b": "\\[y=x^2-2x-4\\]",
+            "c": "\\[y=x^2+3x+6\\]",
+            "d": "\\[y=-x^2-2x-4\\]",
+            "jawab" : "c"
+        }
+    },{
+        "soal1": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis2.PNG' width='100%'/>",
+            "a": "\\[y=-x^2-3x-6\\]",
+            "b": "\\[y=-3x^2-6x+9\\]",
+            "c": "\\[y=x^2-2x-8\\]",
+            "d": "\\[y=-3x^2+5x+9\\]",
+            "jawab" : "b"
+        }
+    }
+    ,{
+        "soal2": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis3.PNG' width='100%'/>",
+            "a": "\\[y=2x^2+4x-6\\]",
+            "b": "\\[y=-3x^2-6x-12\\]",
+            "c": "\\[y=3x^2+6x-12\\]",
+            "d": "\\[y=-12x^2+4x+6\\]",
+            "jawab" : "a"
+        }
+    },{
+        "soal3": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis4.PNG' width='100%'/>",
+            "a": "\\[y=-4x^2-2x+9\\]",
+            "b": "\\[y=-2x^2+4x+6\\]",
+            "c": "\\[y=4x^2+2x-9\\]",
+            "d": "\\[y=2x^2+2x-12\\]",
+            "jawab" : "d"
+        }
+    },{
+        "soal4": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis5.PNG' width='100%'/>",
+            "a": "\\[y=-4x^2-2x+4\\]",
+            "b": "\\[y=-4x^2+4x+8\\]",
+            "c": "\\[y=2x^2+2x-4\\]",
+            "d": "\\[y=2x^2-2x-8\\]",
+            "jawab" : "b"
+        }
+    },{
+        "soal5": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis6.PNG' width='100%'/>",
+            "a": "\\[y=x^2+3x-4\\]",
+            "b": "\\[y=3x^2+3x-8\\]",
+            "c": "\\[y=-3x^2-3x-8\\]",
+            "d": "\\[y=-x^2+3x+4\\]",
+            "jawab" : "a"
+        }
+    },{
+        "soal6": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis7.PNG' width='100%'/>",
+            "a": "\\[y=8x^2-8x-8\\]",
+            "b": "\\[y=-8x^2+4x-8\\]",
+            "c": "\\[y=4x^2-8x-4\\]",
+            "d": "\\[y=-4x^2+8x-4\\]",
+            "jawab" : "d"
+        }
+    },{
+        "soal7": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis8.PNG' width='100%'/>",
+            "a": "\\[y=x^2-3x+4\\]",
+            "b": "\\[y=-x^2-3x-4\\]",
+            "c": "\\[y=-x^2-3x+4\\]",
+            "d": "\\[y=x^2+3x+4\\]",
+            "jawab" : "c"
+        }
+    },{
+        "soal8": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis9.PNG' width='100%'/>",
+            "a": "\\[y=2x^2+4x\\]",
+            "b": "\\[y=-2x^2+4x\\]",
+            "c": "\\[y=-2x^2-4x\\]",
+            "d": "\\[y=2x^2-4x\\]",
+            "jawab" : "b"
+        }
+    },{
+        "soal9": {
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../kuis3/kuis10.PNG' width='100%'/>",
+            "a": "\\[y=-2x^2+4x+6\\]",
+            "b": "\\[y=2x^2-4x-6\\]",
+            "c": "\\[y=-2x^2-4x-6\\]",
+            "d": "\\[y=2x^2+4x+6\\]",
+            "jawab" : "c"
+        }
+    }
+]

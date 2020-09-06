@@ -195,6 +195,17 @@ p.matitle {
 .hilang{
   display: none;
 }
+
+.divgeogeb{
+  overflow-y: hidden;
+  height: 600px;
+  margin-top: 50px;
+}
+.geogeb{
+  margin-top: -95px;
+  width: 50%;
+  height: 550px;
+}
 @media(max-width: 420px){
   /* .suhu td, th {
     padding: 25px;
@@ -252,5 +263,11 @@ p.matitle {
 }
 .menuawal a{
   font-size: 40px;
+}
+.divgeogeb{
+  height: 450px;
+}
+.geogeb{
+  width: 100%;
 }
 }

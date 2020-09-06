@@ -204,6 +204,20 @@
   border: 1px solid black;
   border-collapse: collapse;
 }
+.cgeogeb{
+  margin-top: -95px;
+  width: 50%;
+  height: 650px;
+}
+.diketahui{
+  margin-left:8vw;
+}
+.jawab{
+  margin-left:4.5vw;
+}
+.hpgeogeb{
+  display: none;
+}
   /* #chartContainer{
     height: 300px; width: 500px;
   } */
@@ -308,5 +322,20 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     border: 3px solid #006A4E;
+  }
+  .diketahui{
+    margin-left:24vw;
+  }
+  .jawab{
+    margin-left:14vw;
+  }
+  .cgeogeb{
+    display: none;
+  }
+  .hpgeogeb{
+    margin-top: -55px;
+    display: inline-block;
+    width: 100%;
+    height: 600px;
   }
 }

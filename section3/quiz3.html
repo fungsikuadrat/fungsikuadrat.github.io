@@ -1,0 +1,162 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<title>Media Pembelajaran Fungsi Kuadrat</title>
+	<link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/materistyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/sidestyle.css" type="text/css">
+    <link rel="stylesheet" href="../css/kuisstyle.css" type="text/css">
+	<script src="../script/latihan.js"></script>
+	<script src="../script/dragdrop.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
+	<!-- <script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+		});
+		</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script> -->
+</head>
+
+<body>
+	<div class="full hilang"><p>HALAMAN TIDAK DAPAT DI AKSES</p><br/>
+		<a href="../index.html"><span>Menu Awal</span></a>
+	</div>
+<div>
+<!-- <div id="menukiri" class="sidenav" style="float:left;text-decoration:none;">
+		<ul>
+		  <li>
+			<a href="materi1.html"><i></i> <span>Pengertian Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="materi1.html"><i></i>Bentuk Umum Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="materi2.html"><i></i>Nilai Fungsi Kuadrat</a>
+			  </li>
+			  <li>
+				<a href="quiz1.html"><i></i>Kuis</a>
+			  </li>
+			</ul>
+		  </li>
+		  <li>
+			<a href="../section2/section21.html"><i></i> <span>Grafik Fungsi Kuadrat</span></a>
+			<ul class="nav-flyout">
+			  <li>
+				<a href="../section2/section21.html"><i></i>Menggambar Grafik Fungsi Kuadrat</a>
+			  </li>
+			</ul>
+		  </li>
+		</ul>
+</div> -->
+<div class="Navigasi">
+    <a class="pointerr">&#9776; </a>
+    <img class="logo" src="../img/icon.png" />
+    <a href="../index.html"><span>Home</span></a>
+    <!-- <a href="materi1.html"><span>Materi</span></a>
+    <a href="quiz1.html"><span>Evaluasi</span></a> -->
+</div>
+<div class="bodyfull2" onclick="tutup()">
+    <center><h1 class="kuistitle">Kuis 2||Menyusun Persamaan Fungsi Kuadrat</h1></center>
+    <center><div class="formkuis" id="formkuis">
+        <div class="form2"><p class="matitle" style="width: 150px;" id="klik1">
+            <img src="../logo/petunjuk.png" width="20px" height="20px"> Petunjuk</p>
+        	<table class="kuisisi" id="hilang1"><tr><td>
+			<ol>
+				<li>Masukkan nama lengkap, kelas, dan sekolah.</li>
+                <li>Setelah mengisi nama, kelas, dan sekolah klik tombol selanjutnya untuk mulai menjawab kuis.</li>
+                <li>Pastikan form pengisian tidak kosong.</li>
+			</ol>
+	</td></tr></table>
+        </div><div class="form3"></div>
+        <div class="form4">
+            <p>Nama Lengkap : <input id="nama"></input></p>
+        <p>Sekolah : <input id="sekolah"></input></p>
+        <p>Kelas : 
+            <select name="kelas" id="kelas">
+                <option value="0">PILIH KELAS</option>
+                <option value="IX A">IX A</option>
+                <option value="IX B">IX B</option>
+                <option value="IX C">IX C</option>
+                <option value="IX D">IX D</option>
+                <option value="IX E">IX E</option>
+                <option value="IX F">IX F</option>
+                <option value="IX G">IX G</option>
+              </select>
+        </p></div><div class="form5"></div>
+        <button type="button" onclick="mulaikuis()">Selanjutnya</button>
+    </div></center>
+    <div class="kuis1" id="kuiss1">
+        <div class="hilang0" id="kuis0">
+        <p id="soal0"></p></div>
+        <div class="hilang1" id="kuis1">
+            <p id="soal1"></p></div>
+        <div class="hilang2" id="kuis2">
+            <p id="soal2"></p></div>
+        <div class="hilang3" id="kuis3">
+            <p id="soal3"></p></div>
+        <div class="hilang4" id="kuis4">
+            <p id="soal4"></p></div>
+        <div class="hilang5" id="kuis5">
+            <p id="soal5"></p></div>
+        <div class="hilang6" id="kuis6">
+            <p id="soal6"></p></div>
+        <div class="hilang7" id="kuis7">
+            <p id="soal7"></p></div>
+        <div class="hilang8" id="kuis8">
+            <p id="soal8"></p></div>
+        <div class="hilang9" id="kuis9">
+            <p id="soal9"></p></div>
+        <div class="hilang2" id="kuiss12">
+            <table class="matisi" id="navkuis">
+				<tr>
+					<td>
+						<table class="kuisisi" id="kuisnav" style="border:none">
+							<br>
+							<tr>
+							<th id="k0" onclick="no1()">1</th>
+							<th id="k1" onclick="no2()">2</th>
+							<th id="k2" onclick="no3()">3</th></tr>
+							<th id="k3" onclick="no4()">4</th>
+							<th id="k4" onclick="no5()">5</th>
+							<th id="k5" onclick="no6()">6</th></tr>
+							<th id="k6" onclick="no7()">7</th>
+							<th id="k7" onclick="no8()">8</th>
+							<th id="k8" onclick="no9()">9</th></tr>
+							<th id="k9" onclick="no10()">10</th></tr>
+							<td id="ket" colspan="3"><p>Keterangan : <br/>
+									<img src="../img/belum.png" width="40px" height="30px"> = Belum Dijawab.<br/>
+									<img src="../img/yakin.png" width="40px" height="30px"> = Sudah Dijawab.<br/>
+									<!-- <img src="/img/ragu.png" width="40px" height="30px"> = Ragu - Ragu.<br/> -->
+									<button type='button' onclick='pengingat()'>SELESAI</button></p></td>
+							
+						</table>
+					</td>
+				</tr></table>
+        </div>
+	</div>
+	<center><div class="hilang" id="hasil">
+		<p class="matitle" style="width: 150px;" > HASIL KUIS 1</p>
+        <center><div class="form4">
+        <p>Nama Lengkap : <span id="namaa"></span></p>
+        <p>Sekolah : <span id="sekolahh"></span></p>
+		<p>Kelas : <span id="kelass"></span>
+		<p>Nilai : <span id="skorr"></span></p>
+        </p></div></center>
+    </div></center>
+</div>
+<!-- <footer><div id="menubawah" class="footer" style="width:95%;float:right;">
+	<a>&copy;Muhammad Drajat</a>
+	<a>&phone;</a>
+</div></footer> -->
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+<script src="../script/navigasi.js"></script>
+<script src="../script/kuis3.js"></script>
+<script src="../script/sideKiri.js"></script>
+</body>
+</html>

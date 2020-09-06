@@ -152,7 +152,7 @@ dat.onreadystatechange = function () {
 
     }
 }
-dat.open('GET', '../db/kuis2.json', true);
+dat.open('GET', '../db/kuis3.json', true);
 dat.send();
 
 
@@ -288,10 +288,10 @@ function skor(){
         alert("Masih Ada Soal Yang Belum Dijawab!");
     }
 
-    console.log("PIL USEER "+pil_user);
-    console.log("NOMOR ACAKX "+cek);
-    console.log("NOMOR JAWAB URUT "+new_jwb_urut_no);
-    console.log("JAWAB URUT "+new_jwb_urut);
+    // console.log("PIL USEER "+pil_user);
+    // console.log("NOMOR ACAKX "+cek);
+    // console.log("NOMOR JAWAB URUT "+new_jwb_urut_no);
+    // console.log("JAWAB URUT "+new_jwb_urut);
 }
 
 function no10(){
@@ -474,7 +474,7 @@ function createTask(sekolah, nama, kelas, nilai, waktunya, hari, jwb) {
         jawabannya: jwb
     }
 
-    let db = firebase.database().ref("hasil2/" + counter);
+    let db = firebase.database().ref("hasil3/" + counter);
     db.set(task);
 
 }

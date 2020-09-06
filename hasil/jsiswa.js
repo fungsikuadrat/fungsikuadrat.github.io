@@ -82,8 +82,8 @@ function readlah() {
         jwbfixx = jwb2;
     }
 
-    let jwb3 = ["a", "c", "b", "a", "a", "d", "c", "b", "a", "a"];
-    if (kuisfix == "kuis3/") {
+    let jwb3 = ["c", "b", "a", "d", "b", "a", "d", "c", "b", "c"];
+    if (kuisfix == "hasil3/") {
         let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
         for (let i = 0; i < jwb3.length; i++) {
             hhh += `<td class = "nah"> ${jwb3[i]}</td>`;
@@ -93,38 +93,38 @@ function readlah() {
         jwbfixx = jwb3;
     }
 
-    let jwb4 = ["a", "c", "b", "a", "a", "d", "c", "b", "a", "a"];
-    if (kuisfix == "kuis4/") {
-        let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
-        for (let i = 0; i < jwb4.length; i++) {
-            hhh += `<td class = "nah"> ${jwb4[i]}</td>`;
-        }
-        hhh += `</tr>`;
-        tmp.innerHTML += hhh;
-        jwbfixx = jwb4;
-    }
+    // let jwb4 = ["a", "c", "b", "a", "a", "d", "c", "b", "a", "a"];
+    // if (kuisfix == "kuis4/") {
+    //     let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
+    //     for (let i = 0; i < jwb4.length; i++) {
+    //         hhh += `<td class = "nah"> ${jwb4[i]}</td>`;
+    //     }
+    //     hhh += `</tr>`;
+    //     tmp.innerHTML += hhh;
+    //     jwbfixx = jwb4;
+    // }
 
-    let jwb5 = ["c", "d", "a", "b", "a", "a", "a", "b", "b", "d"];
-    if (kuisfix == "kuis5/") {
-        let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
-        for (let i = 0; i < jwb5.length; i++) {
-            hhh += `<td class = "nah"> ${jwb5[i]}</td>`;
-        }
-        hhh += `</tr>`;
-        tmp.innerHTML += hhh;
-        jwbfixx = jwb5;
-    }
+    // let jwb5 = ["c", "d", "a", "b", "a", "a", "a", "b", "b", "d"];
+    // if (kuisfix == "kuis5/") {
+    //     let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
+    //     for (let i = 0; i < jwb5.length; i++) {
+    //         hhh += `<td class = "nah"> ${jwb5[i]}</td>`;
+    //     }
+    //     hhh += `</tr>`;
+    //     tmp.innerHTML += hhh;
+    //     jwbfixx = jwb5;
+    // }
 
-    let jwb6 = ["a", "c", "a", "b", "b", "a", "b", "a", "b", "d"];
-    if (kuisfix == "kuis6/") {
-        let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
-        for (let i = 0; i < jwb6.length; i++) {
-            hhh += `<td class = "nah"> ${jwb6[i]}</td>`;
-        }
-        hhh += `</tr>`;
-        tmp.innerHTML += hhh;
-        jwbfixx = jwb6;
-    }
+    // let jwb6 = ["a", "c", "a", "b", "b", "a", "b", "a", "b", "d"];
+    // if (kuisfix == "kuis6/") {
+    //     let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
+    //     for (let i = 0; i < jwb6.length; i++) {
+    //         hhh += `<td class = "nah"> ${jwb6[i]}</td>`;
+    //     }
+    //     hhh += `</tr>`;
+    //     tmp.innerHTML += hhh;
+    //     jwbfixx = jwb6;
+    // }
 
     if (kelasfix != '') {
         task.orderByChild("nama").on("child_added", function (data) {

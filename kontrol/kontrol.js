@@ -36,6 +36,34 @@ matiklik.addEventListener('click', function(){
     console.log("VALUE = "+ value);
 })
 
+
+// //Kuis 2
+// let aktifklik2 = document.getElementById("aktifkuis2");
+// let valueaktif2 = document.getElementById("aktif2").value;
+// let task2 = firebase.database().ref('kontrol/');
+// let value2 = "";
+// let id2="1610132";
+// let taskz2 = firebase.database().ref('kontrol/'+ id2);
+// aktifklik2.addEventListener('click', function(){
+//     value2=valueaktif2;
+//     let valupdate2={
+//         nilai:value2
+//     }
+//     taskz2.set(valupdate2)
+//     console.log("VALUE = "+ value2);
+// })
+
+// let matiklik2 = document.getElementById("matikuis2");
+// let valuemati2 = document.getElementById("mati2").value;
+// matiklik.addEventListener('click', function(){
+//     value2=valuemati2;
+//     let valupdate2={
+//         nilai:value2
+//     }
+//     taskz2.set(valupdate2)
+//     console.log("VALUE = "+ value2);
+// })
+
 window.onload=function(){
 task.on("child_added", function(data){
     let values=data.val();

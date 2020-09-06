@@ -461,6 +461,13 @@ body {
 .bodyKanan ol{
   font-size: 23px;
 }
+.hape {
+  display: none;
+}
+.windows{
+  color: red;
+  display: inline-block;
+}
 /* .footer span:hover{
   background-color: #006A4E;
 } */
@@ -621,5 +628,12 @@ body {
 }
 .bodyKiri p{
   font-size: 18px;
+}
+.hape {
+  color: red;
+  display: inline-block;
+}
+.windows{
+  display: none;
 }
 }
