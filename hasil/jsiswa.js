@@ -82,7 +82,7 @@ function readlah() {
         jwbfixx = jwb2;
     }
 
-    let jwb3 = ["c", "b", "a", "d", "b", "a", "d", "c", "b", "c"];
+    let jwb3 = ["a", "b", "a", "d", "b", "a", "d", "c", "b", "a"];
     if (kuisfix == "hasil3/") {
         let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
         for (let i = 0; i < jwb3.length; i++) {
