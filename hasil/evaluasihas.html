@@ -16,10 +16,7 @@
     <div class="hasz">
         <center> <label for="nama">Kuis : 
             <select id="kuis" name="kuis" class="mundur">
-                <option value="hasil/" selected="selected">KUIS 1</option>
-                <option value="hasil2/">KUIS 2</option>
-                <option value="hasil3/">KUIS 3</option>
-                <option value="evaluasi/">EVALUASI</option>
+                <option value="evaluasi/" selected="selected">EVALUASI</option>
             </select>
         <label for="nama">Kelas : 
         <select id="kelas" name="kelas" class="mundur" aria-placeholder="-PILIH SEKOLAH-">
@@ -35,23 +32,40 @@
     </label>
     <span class="cari" onclick="readlah()">Cari</span>
     <span class="cari download">Download</span>
-    <table id='table_wrapper'>
-        <thead class="jrkbawah">
-            <tr>
-                <th class="ukr1">Nama</td>
-                <th class="ukr3">Kelas</td>
-                <th class="ukr1">Sekolah</td>
-                <th class="ukr3">Skor</td>
-                <th class="ukr2">Hari</td>
-                <th class="ukr2">Waktu</td>
-                <th class="ukr4">Hapus</td>
-            </tr>
-        </thead>
-        <tbody class="disini"></tbody>
-    </table>
+        <table id='table_wrapper'>
+            <thead class="jrkbawah">
+                <tr>
+                    <th class="ukr1" colspan="" rowspan="2">Nama</th>
+                    <th class="ukr3" colspan="" rowspan="2">Skor</th>
+                    <th class="ukr0" colspan="20">Jawaban</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                    <th>9</th>
+                    <th>10</th>
+                    <th>11</th>
+                    <th>12</th>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th>16</th>
+                    <th>17</th>
+                    <th>18</th>
+                    <th>19</th>
+                    <th>20</th>
+                </tr>
+            </thead>
+            <tbody class="disini"></tbody>
+        </table>
+    
     <center class="ha">
-    </center>
-</center>
 <div class=" clear"></div>
     </div>
 </div>
@@ -59,6 +73,6 @@
 <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
 
-<script src="script.js"></script>
+<script src="jsiswa.js"></script>
 </body>
 </html> 

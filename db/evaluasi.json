@@ -1,26 +1,26 @@
 [
     {
         "soal0": {
-            "lat":"Grafik fungsi kuadrat yang melalui titik \\[(1, 0), (4, 0)\\] dan \\[(0, -4)\\] memiliki persamaan...",
-            "a": "\\[x^2+5x-4\\]",
-            "b": "\\[-x^2+5x+4\\]",
-            "c": "\\[-x^2+5x-4\\]",
-            "d": "\\[x^2-5x-4\\]",
-            "jawab" : "c"
+            "lat":"Dari bentuk berikut yang bukan merupakan fungsi kuadrat, adalah...",
+            "a": "\\[f(x)=-x^2+3x\\]",
+            "b": "\\[f(x)=(x^2+2)(x-4)\\]",
+            "c": "\\[y=ax^2+3x+2\\]",
+            "d": "\\[y=-\\frac{1}{2}x^2+x-3\\]",
+            "jawab" : "b"
         }
     },{
         "soal1": {
-            "lat":"Nilai \\[a,b,\\] dan \\[c\\] dari fungsi kuadrat \\[f(x)=2x^2-3x-8\\] adalah...",
-            "a": "2, -3, dan 8",
-            "b": "2, -3, dan -8",
-            "c": "-2, -3 dan -8",
-            "d": "2, 3, dan 8",
-            "jawab" : "b"
+            "lat":"Koefisien x^2 dan konstanta dari fungsi kuadrat \\[f(x)=-3x^2+3x+18\\] adalah...",
+            "a": "3 dan 18",
+            "b": "-3 dan -18",
+            "c": "-3 dan 18",
+            "d": "3 dan -18",
+            "jawab" : "c"
         }
     }
     ,{
         "soal2": {
-            "lat":"Diketahui fungsi kuadrat f(x)=3x^2-3x-6. Nilai fungsi f untuk x=-2 adalah...",
+            "lat":"Nilai \\[f(-2)\\] fungsi kuadrat \\[f(x)=3x^2-3x-6\\] adalah...",
             "a": "-12",
             "b": "9",
             "c": "12",
@@ -29,30 +29,30 @@
         }
     },{
         "soal3": {
-            "lat":"Sumbu simetri dari fungsi kuadrat f(x)=2x^2-4x-6 adalah...",
-            "a": "-1",
-            "b": "2",
-            "c": "-4",
-            "d": "1",
+            "lat":"Diketahui fungsi kuadrat \\[y=2x^2-qx-8\\]  dengan nilai \\[x=3\\] dan \\[y=1\\],maka nilai \\[q\\] adalah...",
+            "a": "2",
+            "b": "4",
+            "c": "6",
+            "d": "3",
             "jawab" : "d"
         }
     },{
         "soal4": {
-            "lat":"Koordinat titik puncak dari fungsi kuadrat f(x)=-x^2+2x+8 adalah...",
-            "a": "(1, 9)",
-            "b": "(-1, 8)",
-            "c": "(-1, -9)",
-            "d": "(1, -8)",
+            "lat":"Jika \\[f\\] adalah fungsi kuadrat yang grafiknya melalui titik (1,0), (4,0), dan (0,−4), maka nilai dari \\[f(2)\\] adalah...",
+            "a": "10",
+            "b": "2",
+            "c": "8",
+            "d": "4",
             "jawab" : "b"
         }
     },{
         "soal5": {
-            "lat":"Koefisien \\[x^2\\] dan konstanta dari fungsi kuadrat \\[f(x)=-3x^2+3x+18\\] adalah...",
-            "a": "3 dan 18",
-            "b": "-3 dan -18",
-            "c": "-3 dan 18",
-            "d": "3 dan -18",
-            "jawab" : "c"
+            "lat":"Sketsa grafik fungsi kuadrat \\[f(x)=-x^2-2x+8\\] adalah....",
+            "a": "<img src='../evaluasi/evaluasi6a.PNG' width='100%'/>",
+            "b": "<img src='../evaluasi/evaluasi6b.PNG' width='100%'/>",
+            "c": "<img src='../evaluasi/evaluasi6c.PNG' width='100%'/>",
+            "d": "<img src='../evaluasi/evaluasi6d.PNG' width='100%'/>",
+            "jawab" : "b"
         }
     },{
         "soal6": {
@@ -65,15 +65,24 @@
         }
     },{
         "soal7": {
-            "lat":"Sketsa grafik fungsi kuadrat \\[f(x)=-x^2-2x+8\\] adalah....",
-            "a": "<img src='../evaluasi/evaluasi8a.PNG' width='100%'/>",
-            "b": "<img src='../evaluasi/evaluasi8b.PNG' width='100%'/>",
-            "c": "<img src='../evaluasi/evaluasi8c.PNG' width='100%'/>",
-            "d": "<img src='../evaluasi/evaluasi8d.PNG' width='100%'/>",
-            "jawab" : "b"
+            "lat":"Sumbu simetri dari fungsi kuadrat \\[y=2(x+1)(x-3)\\] adalah...",
+            "a": "-1",
+            "b": "2",
+            "c": "-4",
+            "d": "1",
+            "jawab" : "d"
         }
     },{
         "soal8": {
+            "lat":"Koordinat titik puncak dari fungsi kuadrat \\[f(x)=-x^2+2x+8\\] adalah...",
+            "a": "(1, 9)",
+            "b": "(-1, 8)",
+            "c": "(-1, -9)",
+            "d": "(1, -8)",
+            "jawab" : "a"
+        }
+    },{
+        "soal9": {
             "lat":"Diketahui jumlah dua bilangan sama dengan 12. Nilai terbesar perkalian kedua bilangan tersebut adalah...",
             "a": "-32",
             "b": "12",
@@ -82,8 +91,8 @@
             "jawab" : "d"
         }
     },{
-        "soal9": {
-            "lat":"Diketahui grafik fungsi kuadrat \\[f(x)=-x^2-x+2\\] seperti gambar dibawah ini.<br><img src='../evaluasi/soal10.PNG' width='100%'/><br>Pernyataan yang tidak benar terkait grafik fungsi kuadrat tersebut adalah ...",
+        "soal10": {
+            "lat":"Diketahui grafik fungsi kuadrat \\[f(x)=-x^2-x+2\\] seperti gambar dibawah ini.<br><img src='../evaluasi/soal11.PNG' width='100%'/><br>Pernyataan yang tidak benar terkait grafik fungsi kuadrat tersebut adalah ...",
             "a": "Grafik memotong sumbu\\[-x\\] di dua titik",
             "b": "Grafik memotong sumbu\\[-y\\] positif",
             "c": "Sumbu simetri berada di sumbu\\[-x\\] negatif",
@@ -91,7 +100,7 @@
             "jawab" : "c"
         }
     },{
-        "soal10": {
+        "soal11": {
             "lat":"Sifat/karateristik yang benar dari fungsi kuadrat \\[f(x)=-4x^2-8x+12\\] adalah...",
             "a": "Grafiknya terbuka ke bawah dan memotong sumbu\\[-y\\] negatif",
             "b": "Grafiknya terbuka ke bawah dan memotong sumbu\\[-y\\] positif",
@@ -100,22 +109,13 @@
             "jawab" : "b"
         }
     },{
-        "soal11": {
-            "lat":"Diketahui fungsi kuadrat \\[f(x)=4x^2+8x-12\\]. Koordinat titik potong terhadap sumbu\\[-y\\] adalah...",
+        "soal12": {
+            "lat":"Diketahui fungsi kuadrat \\[y=4(x-1)(x+3)\\]. Koordinat titik potong terhadap sumbu\\[-y\\] adalah...",
             "a": "(0, 10)",
             "b": "(0, -12)",
             "c": "(0, 2)",
             "d": "(0, -8)",
             "jawab" : "b"
-        }
-    },{
-        "soal12": {
-            "lat":"Diketahui fungsi kuadrat \\[f(x)=2x^2-6x-8\\]. Koordinat titik potong terhadap sumbu\\[-x\\] adalah...",
-            "a": "(-2, 0), dan (4, 0)",
-            "b": "(-4, 0), dan (2,0)",
-            "c": "(-1, 0), dan (4,0)",
-            "d": "(-4, 0), dan (1,0)",
-            "jawab" : "c"
         }
     },{
         "soal13": {
@@ -173,12 +173,12 @@
         }
     },{
         "soal19": {
-            "lat":"Persamaan grafik fungsi kuadrat yang memiliki titik puncak (1, 4) dan melalui titik (0, 3) adalah...",
-            "a": "\\[f(x)=-x^2-2x-3\\]",
-            "b": "\\[f(x)=-x^2+2x+3\\]",
-            "c": "\\[f(x)=x^2-2x-3\\]",
-            "d": "\\[f(x)=x^2+2x+3\\]",
-            "jawab" : "b"
+            "lat":"Grafik fungsi kuadrat pada gambar dibawah ini mempunyai persamaan...<br><img src='../evaluasi/evaluasi20.PNG' width='100%'/>",
+            "a": "\\[f(x)=2x^2-6x-8\\]",
+            "b": "\\[f(x)=-2x^2+6x-8\\]",
+            "c": "\\[f(x)=-2x^2-6x+8\\]",
+            "d": "\\[f(x)=2x^2+6x-8\\]",
+            "jawab" : "a"
         }
     }
 ]

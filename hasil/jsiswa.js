@@ -93,6 +93,17 @@ function readlah() {
         jwbfixx = jwb3;
     }
 
+    let evaluasi = ["b", "c", "c", "d", "b", "b", "d", "d", "a", "d", "c", "b", "b", "a", "b", "c", "d", "a", "c", "a"];
+    if (kuisfix == "evaluasi/") {
+        let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
+        for (let i = 0; i < evaluasi.length; i++) {
+            hhh += `<td class = "nah"> ${evaluasi[i]}</td>`;
+        }
+        hhh += `</tr>`;
+        tmp.innerHTML += hhh;
+        jwbfixx = evaluasi;
+    }
+
     // let jwb4 = ["a", "c", "b", "a", "a", "d", "c", "b", "a", "a"];
     // if (kuisfix == "kuis4/") {
     //     let hhh = `<tr><td class="nah" colspan="2">Kunci Jawaban </td>`;
