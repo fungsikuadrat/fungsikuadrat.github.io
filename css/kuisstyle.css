@@ -86,6 +86,9 @@ mjx-container {
 .hilang, .hilang0, .hilang1, .hilang2, .hilang3, .hilang4, .hilang5, .hilang6, .hilang7, .hilang8, .hilang9{
     display: none;
 }
+.hilang10, .hilang11, .hilang12, .hilang13, .hilang14, .hilang15, .hilang16, .hilang17, .hilang18, .hilang19{
+    display: none;
+}
 .kuis12{
     margin-top: 20px;
     margin-right: 150px;
@@ -103,6 +106,16 @@ mjx-container {
     cursor: pointer;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
+    text-align: center;
+    color: #006A4E;
+  }
+  #evaluasinav th{
+    border: 2px solid #006A4E;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
     text-align: center;
     color: #006A4E;
   }
@@ -219,6 +232,11 @@ mjx-container {
         height: 35px;
         font-size: 25px;
       }
+      #evaluasinav th{
+        width: 50px;
+        height: 35px;
+        font-size: 25px;
+      }
       #ket{
         font-size: 18px;
       }
@@ -230,6 +248,7 @@ mjx-container {
           height: 100%;
       }
   }
+  
 
   @media(max-width: 360px){
     .kuis12{
