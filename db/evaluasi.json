@@ -10,7 +10,7 @@
         }
     },{
         "soal1": {
-            "lat":"Koefisien x^2 dan konstanta dari fungsi kuadrat \\[f(x)=-3x^2+3x+18\\] adalah...",
+            "lat":"Koefisien \\[x^2\\] dan konstanta dari fungsi kuadrat \\[f(x)=-3x^2+3x+18\\] adalah...",
             "a": "3 dan 18",
             "b": "-3 dan -18",
             "c": "-3 dan 18",
