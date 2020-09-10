@@ -20,7 +20,7 @@
     }
     ,{
         "soal2": {
-            "lat":"Nilai \\[f(-2)\\] fungsi kuadrat \\[f(x)=3x^2-3x-6\\] adalah...",
+            "lat":"Nilai \\[f(-2)\\] dari fungsi kuadrat \\[f(x)=3x^2-3x-6\\] adalah...",
             "a": "-12",
             "b": "9",
             "c": "12",
@@ -129,7 +129,7 @@
     },{
         "soal14": {
             "lat":"Fungsi kuadrat berikut yang memiliki titik balik maksimum dan memotong sumbu\\[-x\\] di dua titik adalah...",
-            "a": "\\[f(x)=-2x^2+4x-6\\]",
+            "a": "\\[f(x)=2x^2-4x-6\\]",
             "b": "\\[f(x)=-2x^2+4x+6\\]",
             "c": "\\[f(x)=2x^2-4x+6\\]",
             "d": "\\[f(x)=2x^2+4x+6\\]",
