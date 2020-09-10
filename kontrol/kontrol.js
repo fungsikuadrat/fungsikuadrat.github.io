@@ -12,10 +12,11 @@ var firebaseConfig = {
 
 let aktifklik = document.getElementById("aktifkuis1");
 let valueaktif = document.getElementById("aktif").value;
-let task = firebase.database().ref('kontrol/');
+let task = firebase.database().ref('kontroleva/');
 let value = "";
 let id="161013";
-let taskz = firebase.database().ref('kontrol/'+ id);
+let taskz = firebase.database().ref('kontroleva/' +id);
+// console.log("EVAL "+taskz)
 aktifklik.addEventListener('click', function(){
     value=valueaktif;
     let valupdate={

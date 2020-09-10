@@ -13,11 +13,16 @@ var firebaseConfig = {
 window.onload=function(){
     let temp = document.querySelector(".full");
     let id = '1610132';
-    let task = firebase.database().ref('kontrol/' + id);
+    let task = firebase.database().ref('kontroleva/');
     task.on("child_added", function(data){
+
         let values=data.val();
-        console.log("NILAI "+values.Kuis)
-        console.log("Task "+task)
+
+
+        console.log("Data "+values.nilai);
+        // console.log("Nama "+task.nama);
+        // console.log("Nilai "+task.nilai);
+        // console.log("Task "+task)
         if(values.nilai==0){
             temp.classList.remove("hilang");
         }
