@@ -74,10 +74,10 @@
         }
     },{
         "soal8": {
-            "lat":"Koordinat titik puncak dari fungsi kuadrat \\[f(x)=-x^2+2x+8\\] adalah...",
-            "a": "(1, 9)",
+            "lat":"Koordinat titik puncak dari fungsi kuadrat \\[f(x)=-2x^2+4x+8\\] adalah...",
+            "a": "(1, 10)",
             "b": "(-1, 8)",
-            "c": "(-1, -9)",
+            "c": "(-1, -10)",
             "d": "(1, -8)",
             "jawab" : "a"
         }
