@@ -34,6 +34,7 @@
 .latarcontoh2{
   width: 100%;
   background-color: #D3D3D3;
+  padding-top: 40px;
 }
 .contohtitle{
   width: 90%;
@@ -71,6 +72,30 @@
   font-size: 23px;
 }
 .contohfull ol{
+  font-size: 23px;
+  line-height: 2.5vw;
+}
+.contohfull button{
+  font-size: 18px;
+  margin:10px;
+  background-color: rgba(255, 255, 255, 0);
+  border:1px solid #006A4E;
+  cursor: pointer;
+}
+.contohfull2{
+  margin-left:5vw ;
+  margin-top:20px;
+  width: 88.5%;
+  padding:10px;
+  /* height: 81%; */
+  box-shadow: 1px 1px 3px 3px #19222a;
+  background-color: white;
+}
+.contohfull2 p{
+  margin: 2vw;
+  font-size: 23px;
+}
+.contohfull2 ol{
   font-size: 23px;
   line-height: 2.5vw;
 }
@@ -312,6 +337,7 @@
     font-size: 18px;
     line-height: 8vw;
   }
+
   .indexcsoal span{
     margin-top: 0;
     margin-bottom: 0;
