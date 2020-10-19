@@ -180,8 +180,10 @@ p.matitle {
 .menuawal{
   padding: 20px;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 20px;
   box-shadow: 1px 1px 3px 3px #19222a;
+  /* height: 310px; */
+  /* width: 200px; */
 }
 .menuawal a{
   cursor: pointer;
@@ -260,6 +262,7 @@ p.matitle {
 .menuawal{
   margin-right: 0;
   margin-bottom: 25px;
+  width: 60%;
 }
 .menuawal a{
   font-size: 40px;

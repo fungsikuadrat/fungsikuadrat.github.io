@@ -293,10 +293,10 @@ function ceksimetri3(){
         simetrinav3.style.backgroundColor="red";
         simetrinav3.style.color="white"
     }
-    else if(sumbuy1.value=="0.3"||sumbuy1.value=="0,3"){
+    else if(sumbuy1.value=="0.8"||sumbuy1.value=="0,8"){
         sumbuy1.style.borderColor="#006A4E";
         simetrinav3.style.backgroundColor="#00FF00";
-        simetrinav2.style.color="#006A4E";
+        simetrinav3.style.color="#006A4E";
     }
     else{
         sumbuy1.style.borderColor="red"
@@ -312,7 +312,7 @@ function backsimetri2(){
         simetrinav3.style.backgroundColor="red";
         simetrinav3.style.color="white"
     }
-    else if(sumbuy1.value=="0.3"||sumbuy1.value=="0,3"){
+    else if(sumbuy1.value=="0.8"||sumbuy1.value=="0,8"){
         sumbuy1.style.borderColor="#006A4E";
         simetrinav3.style.backgroundColor="#00FF00";
         simetrinav3.style.color="#006A4E";
@@ -335,7 +335,7 @@ function simetri24(){
         simetrinav3.style.backgroundColor="red";
         simetrinav3.style.color="white"
     }
-    else if(sumbuy1.value=="0.3"||sumbuy1.value=="0,3"){
+    else if(sumbuy1.value=="0.8"||sumbuy1.value=="0,8"){
         sumbuy1.style.borderColor="#006A4E";
         simetrinav3.style.backgroundColor="#00FF00";
         simetrinav3.style.color="#006A4E";

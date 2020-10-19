@@ -5,6 +5,11 @@ console.log("GEO "+geo);
 let titiks=document.getElementById("inputitik");
 let ketz=document.getElementById("ketz");
 let ketz2=document.getElementById("ketz2");
+let vals2=["0","0","0","0","0","0","0","0","0","0"];
+let titiks2=document.getElementById("inputitik2");
+let geo2=document.getElementById("pp203");
+let ketz3=document.getElementById("ketz3");
+let ketz4=document.getElementById("ketz4");
 
 function ttk1(){
     valsa=0;
@@ -273,12 +278,11 @@ function s2p2(){
     soal2p2.classList.toggle("hilangs");
 }
 
-let vals2=["0","0","0","0","0","0","0","0","0","0"];
-let valsa2=0;
-let geo2=document.getElementById("pp203");
-let titiks2=document.getElementById("inputitik2");
-let ketz3=document.getElementById("ketz3");
-let ketz4=document.getElementById("ketz4");
+// let vals2=["0","0","0","0","0","0","0","0","0","0"];
+// let geo2=document.getElementById("pp203");
+// let titiks2=document.getElementById("inputitik2");
+// let ketz3=document.getElementById("ketz3");
+// let ketz4=document.getElementById("ketz4");
 
 function t2tk1(){
     valsa2=0;
