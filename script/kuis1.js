@@ -12,7 +12,7 @@ var firebaseConfig = {
 
 window.onload=function(){
     let temp = document.querySelector(".full");
-    let task = firebase.database().ref('kontrol/');
+    let task = firebase.database().ref('kontrolq1/');
     task.on("child_added", function(data){
         let values=data.val();
         console.log("NILAI "+values.nilai)

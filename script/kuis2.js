@@ -13,7 +13,7 @@ var firebaseConfig = {
 window.onload=function(){
     let temp = document.querySelector(".full");
     let id = '1610132';
-    let task = firebase.database().ref('kontrol/');
+    let task = firebase.database().ref('kontrolq2/');
     task.on("child_added", function(data){
         let values=data.val();
         console.log("NILAI "+values.Kuis)

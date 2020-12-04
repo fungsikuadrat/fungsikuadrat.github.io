@@ -110,7 +110,7 @@ function m1cek1(){
 			else{
 				document.getElementById("nonav1").style.backgroundColor="red";
 				document.getElementById("nonav1").style.color="white";
-}
+			}
 }
 function back1(){
 	// let skor2=0;

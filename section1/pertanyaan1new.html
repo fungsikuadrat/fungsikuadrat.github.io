@@ -7,16 +7,17 @@
 	<link rel="stylesheet" href="../css/materistyle.css" type="text/css">
     <link rel="stylesheet" href="../contohsoal.css" type="text/css">
     <link rel="stylesheet" href="../css/pertanyaan.css" type="text/css">
-	
-	<script src="../script/latihan.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<!-- <script src="../script/pertanyaan1new.js"></script> -->
 	
 	<!-- <script src='https://codepen.io/MaciejCaputa/pen/2100d933c0577daf9ab4e3e65cec6b36.js'></script> -->
-	<script type="text/x-mathjax-config">
+	<!-- <script type="text/x-mathjax-config">
 		MathJax.Hub.Config({
 		  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 		});
 		</script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script> -->
 </head>
 
 <body>
@@ -87,14 +88,14 @@
 		<tr><td>
 			<center><span class="pertanyaanval">1 dari 5</span></center>
 			<ol><li>Dari bentuk berikut yang bukan merupakan fungsi kuadrat, adalah...
-				
-					<form name=soall id="pp11"></form>
-					<input type="radio" id="a" name="pertanyaan1" value="a">
- 					<label for="a">$f(x)=9-3x-2x^2$</label><br>
-					<input type="radio" id="b" name="pertanyaan1" value="b">
-					<label for="b">$f(x)=3x^2+6x-9$</label><br>
-					<input type="radio" id="c" name="pertanyaan1" value="c">
-					<label for="c">$f(x)=2x+4$</label></form>
+                    
+                <form name=soall id="pp11"></form>
+				<input type="radio" id="a" name="pertanyaan1" value="a">
+ 				<label id="a1" for="a"></label><br>
+				<input type="radio" id="b" name="pertanyaan1" value="b">
+                <label id="b1" for="b"></label><br>
+                <input type="radio" id="c" name="pertanyaan1" value="c">
+				<label id="c1" for="c"></label></form>
 				</li>
 			
 		</ol><center><button type="button" style="cursor: unset;background-color: #bcbcbc;border-color: #bcbcbc;">Sebelumnya</button>
@@ -106,15 +107,12 @@
 	<table class="pertanyaan" id="lat2">
 		<tr><td>
 			<center><span class="pertanyaanval">2 dari 5</span></center>
-			<ol start="2"><li>Dari bentuk berikut yang bukan merupakan fungsi kuadrat, adalah...
-				<form name=soall id="pp12"></form>
-				<input type="radio" id="a" name="pertanyaan2" value="a">
-				 <label for="a">$f(x)=6x+3x^2-9$</label><br>
-				<input type="radio" id="b" name="pertanyaan2" value="b">
-				<label for="b">$f(x)=3x^3+2x$</label><br>
-				<input type="radio" id="c" name="pertanyaan2" value="c">
-				<label for="c">$f(x)=-4x^2+2x+12$</label></form>
-			</li>
+            <ol start="2"><li>Tentukan nilai \[a,b , \] dan \[c\] dari fungsi kuadrat dibawah ini : <br/>
+                <span id="ss2"></span>
+            </li>
+            <p>\[a\] = <input id=jwb2a></input><span id="2a"></span> \[b\] = <input id=jwb2b></input>
+                <span id="2b"></span>
+                \[c\] = <input id=jwb2c></input><span id="2c"></span></p>
 			
 		</ol><center><button type="button" onclick="back1()">Sebelumnya</button>
 			<button type="button" onclick="m1cek2()">Cek Jawaban</button>
@@ -126,16 +124,17 @@
 		<tr><td>
 			<center><span class="pertanyaanval">3 dari 5</span></center>
 			<ol start="3">
-				
-				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
-					$f(x)=-x^2+5x$</li>
-				<p>$a$ = <input id=jwb3a></input><span id="3a"></span> $b$ = <input id=jwb3b></input>
+				<li>
+                    Tentukan nilai \[a,b , \] dan \[c\] dari fungsi kuadrat dibawah ini : <br/>
+                    <span id="ss3"></span>
+                </li>
+				<p>\[a\] = <input id=jwb3a></input><span id="3a"></span> \[b\] = <input id=jwb3b></input>
 					<span id="3b"></span>
-					$c$ = <input id=jwb3c></input><span id="3c"></span></p>
+					\[c\] = <input id=jwb3c></input><span id="3c"></span></p>
 			
-		</ol><center><button type="button" onclick="back1()">Sebelumnya</button>
-			<button type="button" onclick="m1cek2()">Cek Jawaban</button>
-			<button type="button" onclick="next3()">Selanjutnya</button></center></td>
+		</ol><center><button type="button" onclick="back2()">Sebelumnya</button>
+			<button type="button" onclick="m1cek3()">Cek Jawaban</button>
+			<button type="button" onclick="next4()">Selanjutnya</button></center></td>
 	<td></td>
 	</tr>
 	</table>
@@ -143,11 +142,12 @@
 		<tr><td>
 			<center><span class="pertanyaanval">4 dari 5</span></center>
 			<ol start="4">
-				
-				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
-					$f(x)=-2x^2+8$</li>
-					<p>$a$ = <input id=jwb4a></input><span id="4a"></span> $b$ = <input id=jwb4b></input><span id="4b"></span>
-						$c$ = <input id=jwb4c></input><span id="4c"></span></p>
+				<li>
+                    Tentukan nilai \[a,b , \] dan \[c\] dari fungsi kuadrat dibawah ini : <br/>
+                    <span id="ss4"></span>
+                </li>
+					<p>\[a\] = <input id=jwb4a></input><span id="4a"></span> \[b\] = <input id=jwb4b></input><span id="4b"></span>
+						\[c\] = <input id=jwb4c></input><span id="4c"></span></p>
 			
 		</ol><center><button type="button" onclick="back3()">Sebelumnya</button>
 			<button type="button" onclick="m1cek4()">Cek Jawaban</button>
@@ -159,11 +159,12 @@
 		<tr><td>
 			<center><span class="pertanyaanval">5 dari 5</span></center>
 			<ol start="5">
-				
-				<li>Tentukan nilai $a,b , $ dan $c$ dari fungsi kuadrat dibawah ini : <br/>
-					$f(x)=2x^2+5x-8$</li>
-					<p>$a$ = <input id=jwb5a></input><span id="5a"></span> $b$ = <input id=jwb5b></input><span id="5b"></span>
-						$c$ = <input id=jwb5c></input><span id="5c"></span></p>
+				<li>
+                    Tentukan nilai \[a,b , \] dan \[c\] dari fungsi kuadrat dibawah ini : <br/>
+                    <span id="ss5"></span>
+                </li>
+					<p>\[a\] = <input id=jwb5a></input><span id="5a"></span> \[b\] = <input id=jwb5b></input><span id="5b"></span>
+						\[c\] = <input id=jwb5c></input><span id="5c"></span></p>
 			
 		</ol><center><button type="button" onclick="back4()">Sebelumnya</button>
 			<button type="button" onclick="m1cek5()">Cek Jawaban</button>
@@ -255,7 +256,7 @@
 
 </div>
 </div>
-
+<script src="../script/pertanyaan1new.js"></script>
 <script src="../script/navigasi.js"></script>
 <script src="../script/sideKiri.js"></script>
 </body>
